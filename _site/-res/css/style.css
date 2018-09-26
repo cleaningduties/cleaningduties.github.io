@@ -3683,3 +3683,83 @@ div[class*="elementor-widget-wp-widget-sydney"] h5 {
 		float: none;
 	}
 }
+
+._ga_switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top:20px;
+  left:10px;
+}
+
+._ga_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+._ga_slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+._ga_checked {
+  background-color: #2196F3;
+}
+
+._ga_slider:focus {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+._ga_checked:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+._ga_slider.round {
+  border-radius: 34px;
+}
+
+._ga_slider.round:before {
+  border-radius: 50%;
+}
+
+.cookie-notice{
+	position: absolute;
+	top: 0;
+	min-height: 60px;
+	width: 100%;
+	z-index: 9999;
+	background: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+.accept-cookies-btn{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.hidden{display:none;}

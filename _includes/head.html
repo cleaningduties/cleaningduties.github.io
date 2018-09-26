@@ -1,13 +1,6 @@
 <head>
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97550725-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-97550725-1');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +28,64 @@
   <![endif]-->
   <script type='text/javascript' src='-res/js/jquery.js'></script>
   <script type='text/javascript' src='-res/js/jquery-migrate.min.js'></script>
+
+  <script src="-res/js/cookies.js"></script>
+  <script type="text/javascript">
+  var cookieFlag = '_c_duties_no',
+      returningVisitor = 'isReturningVisitor';
+
+  function enableGa(){
+      if(!cookieStash.isset(cookieFlag)){
+          (function() {
+            var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + ".googletagmanager.com/gtag/js?id=UA-97550725-1";
+            var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+
+            if(cookieStash.isset(cookieFlag)){
+              window["gat-disable-UA-97550725-1"] = true;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', "UA-97550725-1");
+          })();
+        } else {
+          disableGa();
+        }
+      }
+
+      function disableGa(){
+        if(cookieStash.isset(cookieFlag)){
+          cookieStash.erase('_ga');
+          cookieStash.erase('_gat_gtag_UA_97550725_1');
+          cookieStash.erase('_gid');
+        }
+      }
+
+      enableGa();
+
+      (function($){
+        $(document).ready(function(){
+          $('.accept-cookies-btn').on('click', function(){
+            cookieStash.set(returningVisitor, 1);
+            cookieStash.erase(cookieFlag);
+            $('.cookie-notice').hide();
+            enableGa();
+          });
+
+          if(cookieStash.isset(cookieFlag) || cookieStash.isset(returningVisitor)){            
+            $('.cookie-notice').addClass('hidden');
+          }
+        });
+      })(jQuery);
+
+  </script>
+
   <link rel="canonical" href="https://cleaningduties.ro/" />
   <link rel='shortlink' href='https://cleaningduties.ro/' />
   <link rel="icon" href="-res/img/cropped-icon-browser-32x32.png" sizes="32x32" />

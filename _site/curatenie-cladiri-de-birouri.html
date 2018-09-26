@@ -2,14 +2,7 @@
 <html>
   <head>
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97550725-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-97550725-1');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,6 +30,64 @@
   <![endif]-->
   <script type='text/javascript' src='-res/js/jquery.js'></script>
   <script type='text/javascript' src='-res/js/jquery-migrate.min.js'></script>
+
+  <script src="-res/js/cookies.js"></script>
+  <script type="text/javascript">
+  var cookieFlag = '_c_duties_no',
+      returningVisitor = 'isReturningVisitor';
+
+  function enableGa(){
+      if(!cookieStash.isset(cookieFlag)){
+          (function() {
+            var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + ".googletagmanager.com/gtag/js?id=UA-97550725-1";
+            var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+
+            if(cookieStash.isset(cookieFlag)){
+              window["gat-disable-UA-97550725-1"] = true;
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', "UA-97550725-1");
+          })();
+        } else {
+          disableGa();
+        }
+      }
+
+      function disableGa(){
+        if(cookieStash.isset(cookieFlag)){
+          cookieStash.erase('_ga');
+          cookieStash.erase('_gat_gtag_UA_97550725_1');
+          cookieStash.erase('_gid');
+        }
+      }
+
+      enableGa();
+
+      (function($){
+        $(document).ready(function(){
+          $('.accept-cookies-btn').on('click', function(){
+            cookieStash.set(returningVisitor, 1);
+            cookieStash.erase(cookieFlag);
+            $('.cookie-notice').hide();
+            enableGa();
+          });
+
+          if(cookieStash.isset(cookieFlag) || cookieStash.isset(returningVisitor)){            
+            $('.cookie-notice').addClass('hidden');
+          }
+        });
+      })(jQuery);
+
+  </script>
+
   <link rel="canonical" href="https://cleaningduties.ro/" />
   <link rel='shortlink' href='https://cleaningduties.ro/' />
   <link rel="icon" href="-res/img/cropped-icon-browser-32x32.png" sizes="32x32" />
@@ -46,7 +97,19 @@
 </head>
 
   <body id="birouri_p">
-      <div class="preloader">
+      
+  <p class="cookie-notice">
+    <strong>Site-ul nostru utilizează cookie-uri.</strong>
+    Poți alege tipurile de cookie-uri pe care ești de acord să le folosim.
+    <a href="cookies.html">Modifica status cookieuri</a>
+      <span id="nk-cookie-alert-confirm">
+        <a class="accept-cookies-btn">Accept cookieuri</a>
+      </span>
+  </p>
+
+
+
+<div class="preloader">
   <div class="spinner">
       <div class="pre-bounce1"></div>
       <div class="pre-bounce2"></div>
@@ -150,6 +213,7 @@
                           </article><!-- #post-## -->
                       </main><!-- #main -->
                   </div><!-- #primary -->
+                  
                   <div class="widget-area col-md-3" id="secondary" role="complementary">
     <aside class="widget widget_text" id="text-2">
         <h3 class="widget-title">Cere o oferta!</h3>
@@ -174,23 +238,28 @@
     </aside>
 </div><!-- #secondary -->
 
+                  
               </div>
           </div>
       </div><!-- #content -->
-      
+
       <a class="go-top"><i class="fa fa-angle-up"></i></a>
 <footer class="site-footer" id="colophon" role="contentinfo">
     <div class="site-info container">
-        <a href="https://cleaningduties.ro/">&copy; 2018 CleaningDuties</a>
+        <a href="https://cleaningduties.ro/">&copy; 2018 CleaningDuties</a> |
+        <a href="servicii-curatenie-profesionale.html">Servicii</a> |
+        <a href="preturi-servicii-profesionale-curatenie.html">Preturi</a> |
+        <a href="portofoliu-clienti.html">Portofoliu</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="cookies.html">Cookies</a>
+
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
-<script src='-res/js/scripts.js' type='text/javascript'>
-</script>
-<script src='-res/js/main.min.js' type='text/javascript'>
-</script>
-<script src='-res/js/skip-link-focus-fix.js' type='text/javascript'>
-</script>
+
+<script src='-res/js/scripts.js' type='text/javascript'></script>
+<script src='-res/js/main.min.js' type='text/javascript'></script>
+<script src='-res/js/skip-link-focus-fix.js' type='text/javascript'></script>
 
   </body>
 </html>

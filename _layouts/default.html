@@ -26,11 +26,13 @@
                           </article><!-- #post-## -->
                       </main><!-- #main -->
                   </div><!-- #primary -->
+                  {% if page.id != 'cookies_p' %}
                   {% include sidebar_form.html %}
+                  {% endif %}
               </div>
           </div>
       </div><!-- #content -->
-      
+
       {% include footer.html %}
   </body>
 </html>
