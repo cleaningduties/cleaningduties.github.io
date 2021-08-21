@@ -61,7 +61,7 @@ $(document).ready(function(){
 		loop: true,
 		responsive:{
 			0:{
-				items:1,
+				items:3,
 				autoplay: 500,
 			},
 			1000:{
