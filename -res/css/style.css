@@ -698,6 +698,7 @@ Header
 	}
 	.site-header.fixed {
 		position: fixed;
+		background: #000;
 	}
 
 	.site-header .col-md-4,
