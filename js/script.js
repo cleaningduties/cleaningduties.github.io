@@ -44,27 +44,29 @@ $(document).ready(function(){
 	caro.owlCarousel({
 		items: 1,
 		autoplay: true,
-		autoplayTimeout: 5000,
+		autoplayTimeout: 2000,
 		autoplayHoverPause: true,
 		loop: true,
 	});
 	
 	var owl = $("#owl-testimony");
 	owl.owlCarousel({
-		autoplay: 5000,
+		autoplay: 500,
 		stopOnHover: true,
 		margin: 30,
-		items : 2,
+		items : 5,
 		nav: true,
 		navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
 		dots: true,
 		loop: true,
 		responsive:{
 			0:{
-				items:1
+				items:1,
+				autoplay: 500,
 			},
 			1000:{
-				items:2
+				items:5,
+				autoplay: 500,
 			}
 		}
 	});
