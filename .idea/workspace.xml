@@ -1,8 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0eb45c3-0e40-4de8-8b58-c024b1ff4e7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-quote.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-quote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/-bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendor/simple-line-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curatenie-birouri-si-spatii-comerciale.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curatenie-rezidentiala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curatienie-dupa-constructor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Simple-Line-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Simple-Line-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Simple-Line-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Simple-Line-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Simple-Line-Icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontello.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontello.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontello.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontello.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/100x100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1920x960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/500x400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/600x400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/600x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/800x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/800x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/900x420.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/900x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/about-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cd-icon-controller.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cd-icon-location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cd-icon-location.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cd-top-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/office.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/partners.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/agricover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/all-beauty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/ambra-salon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/bulrom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/centrele-ideal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/danya-cebus-rom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/fivestar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/frigotehnics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/gregorio-rizo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/greyder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/hardrock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/kinetic-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/novum-invest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/polo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/sphera_group.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/ssab-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/poze/starbucks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/probiotics-left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/probiotics-right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/special.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.bkp.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.bkp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/bootstrap-hover-dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/bootstrap-hover-dropdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/easings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/form-scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/jquery.superslides.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/modernizr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/validator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parteneri.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preturi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricing-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/pricing-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/services-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/services-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/services-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimonials.html" beforeDir="false" afterPath="$PROJECT_DIR$/testimonials.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,57 +126,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="newWeb" />
-                    <option name="lastUsedInstant" value="1629546983" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1629546982" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-  <component name="ProjectId" id="1x2InkoxQzCgWUiZYN9DoymJEy9" />
+  <component name="ProjectId" id="1xfkTs3UjW99S0Avyr7tThuMWxC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/-res/js" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/../visual-search-app/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/-res/js" />
+      <recent name="$PROJECT_DIR$/-res" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="c0eb45c3-0e40-4de8-8b58-c024b1ff4e7c" name="Default Changelist" comment="" />
-      <created>1629546926063</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1629546926063</updated>
-      <workItem from="1629546927390" duration="383000" />
-      <workItem from="1629547425509" duration="34000" />
-    </task>
-    <servers />
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -76,6 +159,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
