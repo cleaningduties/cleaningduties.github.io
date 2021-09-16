@@ -360,9 +360,13 @@
   <div class="col-sm-7 col-md-7"><div class="free-quote">
   <h2 class="section-heading-2 color_white">Get free quote</h2>
   <form
-    action="#"
-    class="form-contact"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSej3nWN4_iL6QBx7KYRdD9G5NGYmGQKGPCuOYNT4ZoK8z4GDg/formResponse?"
+    enctype="text/plain"
     id="contactForm"
+    name="gform"
+    onsubmit="gFormSubmitted=true;"
+    target="hidden_iframe"
+    class="form-contact"
     data-toggle="validator"
     novalidate="true"
   >
@@ -370,13 +374,14 @@
       <input
         type="text"
         class="form-control"
-        id="p_name"
+        id="entry.2005620554"
+        name="entry.2005620554"
         placeholder="Full Name..."
         required=""
       />
       <div class="help-block with-errors"></div>
     </div>
-    <div class="form-group">
+    <!--<div class="form-group">
       <input
         type="email"
         class="form-control"
@@ -385,7 +390,7 @@
         required=""
       />
       <div class="help-block with-errors"></div>
-    </div>
+    </div>-->
     <div class="form-group">
       <input
         type="text"
@@ -410,6 +415,58 @@
     </div>
   </form>
 </div>
+
+<div class="widget-area col-md-3" id="secondary" role="complementary">
+  <aside class="widget widget_text" id="text-2">
+    <h3 class="widget-title">Cere o oferta!</h3>
+    <div class="textwidget">
+      <div class="wpcf7" dir="ltr" id="wpcf7-f37-o1" lang="en-US" role="form">
+        <div class="screen-reader-response"></div>
+        <script type="text/javascript">
+          var gFormSubmitted = false;
+        </script>
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLSej3nWN4_iL6QBx7KYRdD9G5NGYmGQKGPCuOYNT4ZoK8z4GDg/formResponse?"
+          enctype="text/plain"
+          id="gform"
+          name="gform"
+          onsubmit="gFormSubmitted=true;"
+          target="hidden_iframe"
+        >
+          <p>
+            <label>Nume:</label><br />
+            <input id="entry.2005620554" name="entry.2005620554" type="text" />
+          </p>
+          <p>
+            <label>Telefon:</label><br />
+            <input
+              id="entry.1166974658"
+              name="entry.1166974658"
+              required="required"
+              type="text"
+            />
+          </p>
+          <p>
+            <label>Mesajul tau:</label><br />
+            <textarea id="entry.839337160" name="entry.839337160"></textarea>
+          </p>
+          <input type="submit" value="Submit" />
+        </form>
+        <iframe
+          id="hidden_iframe"
+          name="hidden_iframe"
+          onload="if(gFormSubmitted) {}"
+          style="display: none"
+        ></iframe>
+        <script
+          src="-res/js/contact.scripts.js"
+          type="text/javascript"
+        ></script>
+      </div>
+    </div>
+  </aside>
+</div>
+<!-- #secondary -->
 </div>
 </div>
 </div>
