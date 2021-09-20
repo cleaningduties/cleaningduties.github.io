@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/-res/images/favicon/cropped-icon-browser-180x180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/-res/images/favicon/cropped-icon-browser-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/-res/images/favicon/cropped-icon-browser-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/-res/images/favicon/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/-res/images/favicon/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/-res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/-res/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/get_free_quote_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/get_free_quote_contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/-res/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/-res/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/-res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/-res/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/-res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/-res/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/cookies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/curatenie-cladiri-de-birouri.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/curatenie-cladiri-de-birouri.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/curatenie-dupa-constructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/curatenie-dupa-constructor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/curatenie-generala.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/curatenie-generala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/portofoliu-clienti.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/portofoliu-clienti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/preturi-servicii-profesionale-curatenie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/preturi-servicii-profesionale-curatenie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/servicii-curatenie-profesionale.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/servicii-curatenie-profesionale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/va-multumim.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/va-multumim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/cookies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/curatenie-birouri-si-spatii-comerciale.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatenie-birouri-si-spatii-comerciale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/curatenie-rezidentiala.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatenie-rezidentiala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/curatienie-dupa-constructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatienie-dupa-constructor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/parteneri.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/parteneri.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/preturi.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/preturi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/produse.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/produse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

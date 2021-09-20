@@ -6,16 +6,26 @@
 <meta charset="utf-8" />
 <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- ==============================================
+    Favicons
+    =============================================== -->
+<link rel="canonical" href="https://cleaningduties.ro/" />
+<link rel='shortlink' href='https://cleaningduties.ro/' />
+<link rel="icon" href="-res/images/favicon/cropped-icon-browser-32x32.png" sizes="32x32" />
+<link rel="icon" href="-res/images/favicon/cropped-icon-browser-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="-res/images/favicon/cropped-icon-browser-180x180.png" />
+<link rel="manifest" href="-res/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="-res/images/favicon//ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
 <title>
    Curatenie birouri si spatii comerciale &#8211;  Cleaning
   Duties
 </title>
 
-<!-- ==============================================
-    Favicons
-    =============================================== -->
-<link rel="shortcut icon" href="-res/images/favicon.ico" />
-<link rel="apple-touch-icon" href="-res/images/apple-touch-icon.png" />
 <link
   rel="apple-touch-icon"
   sizes="72x72"
@@ -355,21 +365,21 @@
   <div class="col-sm-7 col-md-7"><div class="free-quote">
   <h2 class="section-heading-2 color_white">Solicita oferta</h2>
   <form
-    action="https://docs.google.com/forms/d/e/1FAIpQLSej3nWN4_iL6QBx7KYRdD9G5NGYmGQKGPCuOYNT4ZoK8z4GDg/formResponse?"
+    method="post"
     class="form-contact"
     id="contactForm"
     data-toggle="validator"
     novalidate="true"
-    onsubmit="gFormSubmitted=true;"
     target="hidden_iframe"
     enctype="text/plain"
+    name="submit-to-google-sheet"
   >
     <div class="form-group">
       <input
-        name="entry.2005620554"
+        id="form_p_name"
         type="text"
+        name="nume"
         class="form-control"
-        id="entry.2005620554"
         placeholder="Nume Prenume..."
         required=""
       />
@@ -378,8 +388,9 @@
     <div class="form-group">
       <input
         type="email"
+        name="email"
         class="form-control"
-        id="p_email"
+        id="form_p_email"
         placeholder="Email..."
         required=""
       />
@@ -388,18 +399,18 @@
     <div class="form-group">
       <input
         type="text"
+        name="telefon"
+        id="form_p_telefon"
         class="form-control"
         placeholder="Telefon..."
-        id="entry.1166974658"
-        name="entry.1166974658"
         required="required"
       />
       <div class="help-block with-errors"></div>
     </div>
     <div class="form-group">
       <textarea
-        id="entry.839337160"
-        name="entry.839337160"
+        name="cerere"
+        id="form_p_cerere"
         class="form-control"
         rows="6"
         placeholder="Cererea dumneavoastra..."
@@ -417,12 +428,6 @@
       </button>
     </div>
   </form>
-  <iframe
-    id="hidden_iframe"
-    name="hidden_iframe"
-    onload="if(gFormSubmitted) {}"
-    style="display: none"
-  ></iframe>
 </div>
 </div>
 </div>

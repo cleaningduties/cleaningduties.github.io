@@ -344,12 +344,50 @@ $(document).ready(function () {
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
   }
 
-  var gFormSuccessTitle = "<h4>Va multumim pentru interesul acordat!</h4>";
-  var gFormSuccessMessage =
-    "<h6>Va vom contacta in cel mai scurt timp posibil.</h6>";
+  // var gFormSuccessTitle = "<h4>Va multumim pentru interesul acordat!</h4>";
+  // var gFormSuccessMessage =
+  //   "<h6>Va vom contacta in cel mai scurt timp posibil.</h6>";
+  //
+  // $("#contactForm").on("submit", function (e) {
+  //   $("#contactForm *").fadeOut(500);
+  //   $("#contactForm").prepend(gFormSuccessTitle + gFormSuccessMessage);
+  // });
 
-  $("#contactForm").on("submit", function (e) {
-    $("#contactForm *").fadeOut(500);
-    $("#contactForm").prepend(gFormSuccessTitle + gFormSuccessMessage);
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbwmVYNnNrY9b7rajdIhA8VyEcNmmAruKQnHkViEbg-PPqgMQhTs5FRqp7mCQ9m9BToo4w/exec";
+
+  // "https://script.google.com/macros/s/AKfycbwmVYNnNrY9b7rajdIhA8VyEcNmmAruKQnHkViEbg-PPqgMQhTs5FRqp7mCQ9m9BToo4w/exec";
+
+  const form = document.forms["submit-to-google-sheet"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(form),
+      mode: "no-cors",
+    })
+      .then((response) => console.log("Success!", response))
+      .catch((error) => console.error("Error!", error.message));
+
+    /*const formData = {
+      timestamp: new Date(),
+      nume: document.getElementById("form_p_name").value,
+      email: document.getElementById("form_p_email").value,
+      telefon: document.getElementById("form_p_telefon").value,
+      cerere: document.getElementById("form_p_cerere").value,
+    };
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: formData,
+      mode: "no-cors",
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    })
+      .then((response) => console.log("Success!", response))
+      .catch((error) => console.error("Error!", error.message));*/
   });
 });
