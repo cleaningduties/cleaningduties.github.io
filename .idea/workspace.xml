@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/-res/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/-res/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/-res/images/favicon/cropped-icon-browser-180x180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/-res/images/favicon/cropped-icon-browser-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/-res/images/favicon/cropped-icon-browser-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/-res/images/favicon/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/-res/images/favicon/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +33,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/-res/images/favicon" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/../visual-search-app/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/-res/images/favicon" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/-res/js" />
       <recent name="$PROJECT_DIR$/-res" />
