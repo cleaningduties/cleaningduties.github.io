@@ -1,0 +1,18 @@
+<!-- BANNER -->
+<div class="section banner-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="title-page">
+          {% if page.id != 'homepage_p' %} {{ page.title }} {% endif %}
+        </div>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          {% if page.id != 'homepage_p' %}
+            <li class="active">{{ page.title }}</li>
+          {% endif %}
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

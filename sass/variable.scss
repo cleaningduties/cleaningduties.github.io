@@ -1,0 +1,35 @@
+$font_1 : 'Poppins', sans-serif;
+$font_2 : 'Open Sans', sans-serif;
+$font_icon: FontAwesome;
+
+$black_1: #666666;
+$black_2: #999999;
+$black_3: #333333; // body
+$blue_1: #2e96db;
+$blue_2: #0a80be;
+$blue_3: #e9f1ee;
+$yellow: #fde428;
+$white: #ffffff;
+
+// Global
+$color_1: $blue_1;
+$color_2: $blue_2;
+$color_3: $yellow;
+$color_4: $blue_3;
+
+// Fonts
+$font__body-color: $black_3;
+$font__topbar-color: $white;
+$font__topbar-nav-color: $white;
+$font__topbar-nav-hover-color: $blue_2;
+$font__navbar-color: $black_3;
+$font__navbar-hover-color: $blue_1;
+
+// Background
+$bg__topbar: $blue_1;
+
+.bolder{
+	font-weight: 600;
+}
+
+@import "mixin.scss";

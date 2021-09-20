@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8" />
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+   Servicii &#8211;  Cleaning
+  Duties
+</title>
+
+<!-- ==============================================
+    Favicons
+    =============================================== -->
+<link rel="shortcut icon" href="-res/images/favicon.ico" />
+<link rel="apple-touch-icon" href="-res/images/apple-touch-icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="72x72"
+  href="-res/images/apple-touch-icon-72x72.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="114x114"
+  href="-res/images/apple-touch-icon-114x114.png"
+/>
+
+<!-- ==============================================
+    CSS VENDOR
+    =============================================== -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/bootstrap.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/simple-line-icons.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/owl.theme.default.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/magnific-popup.css"
+/>
+
+<!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+<link rel="stylesheet" type="text/css" href="-res/css/style.css" />
+<link rel="stylesheet" type="text/css" href="-res/css/custom.css" />
+
+<script type="text/javascript" src="-res/js/vendor/modernizr.min.js"></script>
+<script type="text/javascript" src="-res/js/vendor/jquery.min.js"></script>
+<script src="-res/js/cookies.js"></script>
+<script type="text/javascript">
+  var cookieFlag = "_c_duties_no",
+    returningVisitor = "isReturningVisitor";
+
+  function enableGa() {
+    if (!cookieStash.isset(cookieFlag)) {
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://"
+            : "http://www.") + "googletagmanager.com/gtag/js?id=UA-97550725-1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+
+        if (cookieStash.isset(cookieFlag)) {
+          window["gat-disable-UA-97550725-1"] = true;
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-97550725-1");
+      })();
+    } else {
+      disableGa();
+    }
+  }
+
+  function disableGa() {
+    if (cookieStash.isset(cookieFlag)) {
+      cookieStash.erase("_ga");
+      cookieStash.erase("_gat_gtag_UA_97550725_1");
+      cookieStash.erase("_gid");
+    }
+  }
+
+  enableGa();
+
+  (function ($) {
+    $(document).ready(function () {
+      $(".accept-cookies-btn").on("click", function () {
+        cookieStash.set(returningVisitor, 1);
+        cookieStash.erase(cookieFlag);
+        $(".cookie-notice").hide();
+        enableGa();
+      });
+
+      if (
+        cookieStash.isset(cookieFlag) ||
+        cookieStash.isset(returningVisitor)
+      ) {
+        $(".cookie-notice").addClass("hidden");
+      }
+    });
+  })(jQuery);
+
+  var gFormSubmitted = false;
+</script>
+
+  </head>
+
+  <body id="servicii_p">
+    <p class="cookie-notice">
+  <strong>Site-ul nostru utilizează cookie-uri.</strong>
+  Poți alege tipurile de cookie-uri pe care ești de acord să le folosim.
+  <a href="cookies">Modifica status cookieuri</a>
+  <span id="nk-cookie-alert-confirm">
+    <a class="accept-cookies-btn">Accept cookieuri</a>
+  </span>
+</p>
+
+<!-- Load page -->
+<div class="animationload">
+  <div class="loader"></div>
+</div>
+
+    <!-- HEADER -->
+<div class="header">
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-5">
+          <div class="topbar-left">
+            <div class="welcome-text"></div>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-7">
+          <div class="topbar-right">
+            <ul class="topbar-menu">
+              <li>
+                <i class="icon-phone icons"></i> Contactati-ne: 0731 351 599
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR SECTION -->
+  <div class="navbar navbar-main">
+    <div class="container container-nav">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">
+          <img class="logo-img-wrapper" src="-res/images/logo1.png" alt="" />
+        </a>
+      </div>
+
+      <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              data-hover="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Servicii <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="produse.html">Produse</a></li>
+              <li>
+                <a href="curatenie-birouri-si-spatii-comerciale"
+                  >Curatenie birouri si spatii comerciale</a
+                >
+              </li>
+              <li>
+                <a href="curatenie-rezidentiala">Curatenie rezidentiala</a>
+              </li>
+              <li>
+                <a href="curatienie-dupa-constructor"
+                  >Curatenie dupa constructor</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="preturi">Preturi</a></li>
+          <li><a href="parteneri">Partenerii nostri</a></li>
+          <li><a href="about">Despre noi</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bookmenu">
+      <a href="contact"><i class="icons icon-calendar"></i></a>
+    </div>
+  </div>
+</div>
+
+    <!-- BANNER -->
+<div class="section banner-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="title-page">
+           Servicii 
+        </div>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          
+            <li class="active">Servicii</li>
+          
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <p style="text-align: justify;">Venim in ajutorul clientilor nostri cu <strong>servicii de curatenie profesionale</strong> pentru ca acestia sa poata beneficia de timpul liber si confortul dorit in propria locuinta sau in spatiul de lucru.</p>
+<p style="text-align: justify;">Mai jos gasiti pachetele noastre (click pe poze pentru detalii):</p>
+<p><a href="curatenie-cladiri-de-birouri.html" rel="noopener" target="_blank"><img class="birouri wp-image-144 size-full aligncenter" height="150" sizes="(max-width: 600px) 100vw, 600px" src="-res/img/birouri-2.png" srcset="-res/img/birouri-2.png 600w, -res/img/birouri-2-300x75.png 300w, -res/img/birouri-2-230x58.png 230w, -res/img/birouri-2-350x88.png 350w, -res/img/birouri-2-480x120.png 480w" width="600"></a><br>
+<a href="curatenie-generala.html" rel="noopener" target="_blank"><img class="domiciliu wp-image-145 size-full aligncenter" height="150" sizes="(max-width: 600px) 100vw, 600px" src="-res/img/domiciuliu-2.png" srcset="-res/img/domiciuliu-2.png 600w, -res/img/domiciuliu-2-300x75.png 300w, -res/img/domiciuliu-2-230x58.png 230w, -res/img/domiciuliu-2-350x88.png 350w, -res/img/domiciuliu-2-480x120.png 480w" width="600"></a><br>
+<a href="curatenie-dupa-constructor.html" rel="noopener" target="_blank"><img class="constructor aligncenter wp-image-146 size-full" height="150" sizes="(max-width: 600px) 100vw, 600px" src="-res/img/constructor-2.png" srcset="-res/img/constructor-2.png 600w, -res/img/constructor-2-300x75.png 300w, -res/img/constructor-2-230x58.png 230w, -res/img/constructor-2-350x88.png 350w, -res/img/constructor-2-480x120.png 480w" width="600"></a></p>
+<p style="text-align: justify;">In prezent, Cleaning Duties dispune de cele mai avansate utilaje si accesorii pentru curatenie, folosind detergenti, solutii si sisteme profesionale pentru curatenie destinate oricarui tip de suprafata. In functie de necesitatile clientilor nostri, putem furniza si consumabile pentru igiena: hartie igienica, prosoape hartie, sapun lichid, odorizante camera etc.</p>
+<p style="text-align: justify;">In plus, pentru ca tinem la mediul inconjurator si dorim sa contribuim la reducerea impactului negativ pe care il au anumite produse asupra mediului, <strong>Cleaning Duties foloseste si produse eco-friendly.</strong></p>
+<p style="text-align: justify;"><img alt="ecofriendly" class="aligncenter wp-image-89" height="388" sizes="(max-width: 700px) 100vw, 700px" src="-res/img/ecofriendly-1024x567.jpg" srcset="-res/img/ecofriendly-1024x567.jpg 1024w, -res/img/ecofriendly-300x166.jpg 300w, -res/img/ecofriendly-768x425.jpg 768w, -res/img/ecofriendly-830x460.jpg 830w, -res/img/ecofriendly-230x127.jpg 230w, -res/img/ecofriendly-350x194.jpg 350w, -res/img/ecofriendly-480x266.jpg 480w, -res/img/ecofriendly.jpg 1278w" width="700"></p>
+
+
+    <!-- FOOTER SECTION -->
+<div class="footer">
+  <div class="fcopy">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 col-md-2">
+          <p class="ftex">&copy; 2021 Cleaning Duties</p>
+        </div>
+
+        <div class="col-sm-8 col-md-8">
+          <ul class="footer_menu">
+            <li><a href="cookies">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS VENDOR -->
+
+<script type="text/javascript" src="-res/js/vendor/bootstrap.min.js"></script>
+<script
+  type="text/javascript"
+  src="-res/js/vendor/jquery.superslides.js"
+></script>
+<script type="text/javascript" src="-res/js/vendor/owl.carousel.js"></script>
+<script
+  type="text/javascript"
+  src="-res/js/vendor/bootstrap-hover-dropdown.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="-res/js/vendor/jquery.magnific-popup.min.js"
+></script>
+
+<!-- sendmail -->
+<script type="text/javascript" src="-res/js/vendor/validator.min.js"></script>
+<script type="text/javascript" src="-res/js/vendor/form-scripts.js"></script>
+
+<script
+  type="text/javascript"
+  src="https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5"
+></script>
+
+<script type="text/javascript" src="-res/js/script.js"></script>
+
+  </body>
+</html>

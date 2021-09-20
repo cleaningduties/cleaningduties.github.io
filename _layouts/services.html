@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    {% include header.html %}
+  </head>
+
+  <body id="{{ page.id }}">
+    {% include precontent.html %}
+    {% include navbar.html %}
+    {% include breadcrumbs.html %}
+
+    <!-- ABOUT FEATURE -->
+    <div class="section pad padWithPadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            {% include services_left_navigation.html %}
+          </div>
+
+          <div class="col-sm-9 col-md-9">
+            <div class="single-page">{{ content }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8" />
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+   Curățenie generală &#8211;  Cleaning
+  Duties
+</title>
+
+<!-- ==============================================
+    Favicons
+    =============================================== -->
+<link rel="shortcut icon" href="-res/images/favicon.ico" />
+<link rel="apple-touch-icon" href="-res/images/apple-touch-icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="72x72"
+  href="-res/images/apple-touch-icon-72x72.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="114x114"
+  href="-res/images/apple-touch-icon-114x114.png"
+/>
+
+<!-- ==============================================
+    CSS VENDOR
+    =============================================== -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/bootstrap.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/simple-line-icons.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/owl.theme.default.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/magnific-popup.css"
+/>
+
+<!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+<link rel="stylesheet" type="text/css" href="-res/css/style.css" />
+<link rel="stylesheet" type="text/css" href="-res/css/custom.css" />
+
+<script type="text/javascript" src="-res/js/vendor/modernizr.min.js"></script>
+<script type="text/javascript" src="-res/js/vendor/jquery.min.js"></script>
+<script src="-res/js/cookies.js"></script>
+<script type="text/javascript">
+  var cookieFlag = "_c_duties_no",
+    returningVisitor = "isReturningVisitor";
+
+  function enableGa() {
+    if (!cookieStash.isset(cookieFlag)) {
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://"
+            : "http://www.") + "googletagmanager.com/gtag/js?id=UA-97550725-1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+
+        if (cookieStash.isset(cookieFlag)) {
+          window["gat-disable-UA-97550725-1"] = true;
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-97550725-1");
+      })();
+    } else {
+      disableGa();
+    }
+  }
+
+  function disableGa() {
+    if (cookieStash.isset(cookieFlag)) {
+      cookieStash.erase("_ga");
+      cookieStash.erase("_gat_gtag_UA_97550725_1");
+      cookieStash.erase("_gid");
+    }
+  }
+
+  enableGa();
+
+  (function ($) {
+    $(document).ready(function () {
+      $(".accept-cookies-btn").on("click", function () {
+        cookieStash.set(returningVisitor, 1);
+        cookieStash.erase(cookieFlag);
+        $(".cookie-notice").hide();
+        enableGa();
+      });
+
+      if (
+        cookieStash.isset(cookieFlag) ||
+        cookieStash.isset(returningVisitor)
+      ) {
+        $(".cookie-notice").addClass("hidden");
+      }
+    });
+  })(jQuery);
+</script>
+
+  </head>
+
+  <body id="generala_p">
+    <p class="cookie-notice">
+  <strong>Site-ul nostru utilizează cookie-uri.</strong>
+  Poți alege tipurile de cookie-uri pe care ești de acord să le folosim.
+  <a href="cookies">Modifica status cookieuri</a>
+  <span id="nk-cookie-alert-confirm">
+    <a class="accept-cookies-btn">Accept cookieuri</a>
+  </span>
+</p>
+
+<!-- Load page -->
+<div class="animationload">
+  <div class="loader"></div>
+</div>
+
+    <!-- HEADER -->
+<div class="header">
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-5">
+          <div class="topbar-left">
+            <div class="welcome-text"></div>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-7">
+          <div class="topbar-right">
+            <ul class="topbar-menu">
+              <li>
+                <i class="icon-phone icons"></i> Contactati-ne: 0731 351 599
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR SECTION -->
+  <div class="navbar navbar-main">
+    <div class="container container-nav">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">
+          <img class="logo-img-wrapper" src="-res/images/logo1.png" alt="" />
+        </a>
+      </div>
+
+      <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              data-hover="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Servicii <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="produse.html">Produse</a></li>
+              <li>
+                <a href="curatenie-birouri-si-spatii-comerciale"
+                  >Curatenie birouri si spatii comerciale</a
+                >
+              </li>
+              <li>
+                <a href="curatenie-rezidentiala">Curatenie rezidentiala</a>
+              </li>
+              <li>
+                <a href="curatienie-dupa-constructor"
+                  >Curatenie dupa constructor</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="preturi">Preturi</a></li>
+          <li><a href="parteneri">Partenerii nostri</a></li>
+          <li><a href="about">Despre noi</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bookmenu">
+      <a href="contact"><i class="icons icon-calendar"></i></a>
+    </div>
+  </div>
+</div>
+
+    <!-- BANNER -->
+<div class="section banner-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="title-page">
+           Curățenie generală 
+        </div>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          
+            <li class="active">Curățenie generală</li>
+          
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <p style="text-align: justify;">O curățenie generală este de asemenea o idee bună dacă vă mutați, pregătiți pentru sărbători sau planificați un eveniment special. Și nu este nevoie să ridicați un deget &#8211; angajați profesionisti care să se ocupe de confortul dumneavoastra. Personalul nostru de curățenie și personalul administrativ sunt bucuroși să lucreze cu dvs., ajutându-vă cu toate nevoile dvs. de curățenie și oferind o atenție individuală pentru a vă satisface cerințele particulare.</p>
+<p style="text-align: justify;"></p>
+<h6 style="text-align: justify;"><span style="color: #000000;"><strong>Servicile de curatenie generala includ:</strong></span></h6>
+<ul style="text-align: justify;">
+    <li>Aspirarea peretilor;</li>
+    <li>Spalarea gresiei, faiantei, oglinzilor, chiuvetelor si a bateriilor;</li>
+    <li>Dezinfectarea si odorizarea grupurilor sanitare, igienizarea cu jet de abur;</li>
+    <li>Tratarea mobilei si a schipamentelor de birou cu solutie antistatica;</li>
+    <li>Stergerea prafului de pe jaluzele, pervaze, balustrade etc.;</li>
+    <li>Dușurile/cada curățate și dezinfectate: Cabinei si cazii de duș li se acordă o atenție deosebită;</li>
+    <li>Curatarea obiectelor electrocasnice;</li>
+    <li>Curatarea zonelor greu accesibile (include mutarea mobilierului);</li>
+    <li>Curatarea obiectelor de decor;</li>
+    <li>Spalarea geamurilor si tocurilor;</li>
+    <li>Curatrea corpurilor de iluminat;</li>
+    <li>Curatarea caloriferelor si a aparatelor de aer conditionat ;</li>
+    <li>Degajarea gunoiului menajer;</li>
+    <li>Aspirarea si spalarea pardoselilor;</li>
+    <li>Aspirarea panzelor de paianjeni;</li>
+    <li>Completarea dispenserelor cu hartie igienica, servetele de hartie, sapun lichid/solid (doar la cerere)</li>
+    <li>Aerisirea si odorizarea incaperilor;</li>
+    <li>Aspirarea si spalarea prin injectie-extractie sau monodisc cu spuma uscata a covoarelor, a mochetelor si a tapiteriilor (doar la cerere);</li>
+</ul>
+<p style="text-align: justify;">*Servicile de curatenie se presteaza cu un nivel ridicat de atentie la detalii.</p>
+
+
+    <!-- FOOTER SECTION -->
+<div class="footer">
+  <div class="fcopy">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 col-md-2">
+          <p class="ftex">&copy; 2021 Cleaning Duties</p>
+        </div>
+
+        <div class="col-sm-8 col-md-8">
+          <ul class="footer_menu">
+            <li><a href="cookies">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS VENDOR -->
+
+<script type="text/javascript" src="-res/js/vendor/bootstrap.min.js"></script>
+<script
+  type="text/javascript"
+  src="-res/js/vendor/jquery.superslides.js"
+></script>
+<script type="text/javascript" src="-res/js/vendor/owl.carousel.js"></script>
+<script
+  type="text/javascript"
+  src="-res/js/vendor/bootstrap-hover-dropdown.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="-res/js/vendor/jquery.magnific-popup.min.js"
+></script>
+
+<!-- sendmail -->
+<script type="text/javascript" src="-res/js/vendor/validator.min.js"></script>
+<script type="text/javascript" src="-res/js/vendor/form-scripts.js"></script>
+
+<script
+  type="text/javascript"
+  src="https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5"
+></script>
+
+<script type="text/javascript" src="-res/js/script.js"></script>
+
+  </body>
+</html>

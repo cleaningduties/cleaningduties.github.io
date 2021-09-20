@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="{{ page.id }}">
+      {% include header.html %}
+
+      {% if page.id == "homepage_p" %}
+        {% include slider_hero.html %}
+      {% else %}
+        {% include pages_hero.html %}
+      {% endif %}
+
+
+      <div class="page-wrap" id="content">
+          <div class="container content-wrapper">
+              <div class="row">
+                  <div class="content-area col-md-9" id="primary">
+                      <main class="post-wrap" id="main" role="main">
+                          <article class="post-5 page type-page status-publish hentry" id="post-5">
+                              <header class="entry-header">
+                                  <h1 class="title-post entry-title">{{ page.heading }}</h1>
+                              </header><!-- .entry-header -->
+                              <div class="entry-content">
+                                {{ content }}
+                              </div><!-- .entry-content -->
+                          </article><!-- #post-## -->
+                      </main><!-- #main -->
+                  </div><!-- #primary -->
+                  {% if page.id != 'cookies_p' %}
+                  {% include sidebar_form.html %}
+                  {% endif %}
+              </div>
+          </div>
+      </div><!-- #content -->
+
+      {% include footer.html %}
+  </body>
+</html>

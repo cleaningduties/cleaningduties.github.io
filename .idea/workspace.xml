@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/-res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/-res/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/-res/js/vendor/form-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/-res/js/vendor/form-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/get_free_quote_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/get_free_quote_contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_mumu/-res/js/vendor/form-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/_mumu/-res/js/vendor/form-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/-res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/-res/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/-res/js/vendor/form-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/-res/js/vendor/form-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/-res/js/contact.scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/-res/js/contact.scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/cookies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/curatenie-cladiri-de-birouri.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/curatenie-cladiri-de-birouri.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/curatenie-dupa-constructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/curatenie-dupa-constructor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/curatenie-generala.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/curatenie-generala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/portofoliu-clienti.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/portofoliu-clienti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/preturi-servicii-profesionale-curatenie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/preturi-servicii-profesionale-curatenie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/servicii-curatenie-profesionale.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/servicii-curatenie-profesionale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/bkp/va-multumim.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/bkp/va-multumim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/cookies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/curatenie-birouri-si-spatii-comerciale.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatenie-birouri-si-spatii-comerciale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/curatenie-rezidentiala.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatenie-rezidentiala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/curatienie-dupa-constructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatienie-dupa-constructor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/parteneri.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/parteneri.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/preturi.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/preturi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/produse.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/produse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkp/-res/js/contact.scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/bkp/-res/js/contact.scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xfkTs3UjW99S0Avyr7tThuMWxC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/../visual-search-app/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/-res/js" />
+      <recent name="$PROJECT_DIR$/-res" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

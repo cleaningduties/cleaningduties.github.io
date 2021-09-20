@@ -1,68 +1,133 @@
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8" />
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+  {% if page.id != 'homepage_p' %} {{ page.title }} &#8211; {% endif %} Cleaning
+  Duties
+</title>
 
-  <p class="cookie-notice">
-    <strong>Site-ul nostru utilizează cookie-uri.</strong>
-    Poți alege tipurile de cookie-uri pe care ești de acord să le folosim.
-    <a href="cookies.html">Modifica status cookieuri</a>
-      <span id="nk-cookie-alert-confirm">
-        <a class="accept-cookies-btn">Accept cookieuri</a>
-      </span>
-  </p>
+<!-- ==============================================
+    Favicons
+    =============================================== -->
+<link rel="shortcut icon" href="-res/images/favicon.ico" />
+<link rel="apple-touch-icon" href="-res/images/apple-touch-icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="72x72"
+  href="-res/images/apple-touch-icon-72x72.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="114x114"
+  href="-res/images/apple-touch-icon-114x114.png"
+/>
 
+<!-- ==============================================
+    CSS VENDOR
+    =============================================== -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/bootstrap.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/simple-line-icons.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/owl.theme.default.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="-res/css/vendor/magnific-popup.css"
+/>
 
+<!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+<link rel="stylesheet" type="text/css" href="-res/css/style.css" />
+<link rel="stylesheet" type="text/css" href="-res/css/custom.css" />
 
-<div class="preloader">
-  <div class="spinner">
-      <div class="pre-bounce1"></div>
-      <div class="pre-bounce2"></div>
-  </div>
-</div>
-<div class="hfeed site" id="page">
-  <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-  <header class="site-header" id="masthead" role="banner">
-      <div class="header-wrap">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4 col-sm-8 col-xs-12">
-                      <a href="https://cleaningduties.ro/" title="Cleaning Duties">
-                        <img alt="Cleaning Duties" class="site-logo" src="./-res/img/logo.png">
-                      </a>
-                  </div>
-                  <div class="col-md-8 col-sm-4 col-xs-12">
-                      <div class="btn-menu"></div>
-                      <nav class="mainnav" id="mainnav" role="navigation">
-                          <div class="menu-menu-1-container">
-                              <ul class="menu" id="menu-menu-1">
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22" id="menu-item-22">
-                                      <a href="index.html">Acasa</a>
-                                  </li>
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-23" id="menu-item-23">
-                                      <a href="servicii-curatenie-profesionale.html">Servicii</a>
-                                      <ul class="sub-menu">
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-288 current_page_item menu-item-291" id="menu-item-291">
-                                              <a href="curatenie-dupa-constructor.html">Curățenie dupa constructor</a>
-                                          </li>
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-313" id="menu-item-313">
-                                              <a href="curatenie-cladiri-de-birouri.html">Curățenie clădiri de birouri</a>
-                                          </li>
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306" id="menu-item-306">
-                                              <a href="curatenie-generala.html">Curățenie generală</a>
-                                          </li>
-                                      </ul>
-                                  </li>
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199" id="menu-item-199">
-                                      <a href="preturi-servicii-profesionale-curatenie.html">Preturi</a>
-                                  </li>
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157" id="menu-item-157">
-                                      <a href="portofoliu-clienti.html">Portofoliu clienti</a>
-                                  </li>
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21" id="menu-item-21">
-                                      <a href="contact.html">Contact</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </nav><!-- #site-navigation -->
-                  </div>
-              </div>
-          </div>
-      </div>
-  </header><!-- #masthead -->
+<script type="text/javascript" src="-res/js/vendor/modernizr.min.js"></script>
+<script type="text/javascript" src="-res/js/vendor/jquery.min.js"></script>
+<script src="-res/js/cookies.js"></script>
+<script type="text/javascript">
+  var cookieFlag = "_c_duties_no",
+    returningVisitor = "isReturningVisitor";
+
+  function enableGa() {
+    if (!cookieStash.isset(cookieFlag)) {
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://"
+            : "http://www.") + "googletagmanager.com/gtag/js?id=UA-97550725-1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+
+        if (cookieStash.isset(cookieFlag)) {
+          window["gat-disable-UA-97550725-1"] = true;
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-97550725-1");
+      })();
+    } else {
+      disableGa();
+    }
+  }
+
+  function disableGa() {
+    if (cookieStash.isset(cookieFlag)) {
+      cookieStash.erase("_ga");
+      cookieStash.erase("_gat_gtag_UA_97550725_1");
+      cookieStash.erase("_gid");
+    }
+  }
+
+  enableGa();
+
+  (function ($) {
+    $(document).ready(function () {
+      $(".accept-cookies-btn").on("click", function () {
+        cookieStash.set(returningVisitor, 1);
+        cookieStash.erase(cookieFlag);
+        $(".cookie-notice").hide();
+        enableGa();
+      });
+
+      if (
+        cookieStash.isset(cookieFlag) ||
+        cookieStash.isset(returningVisitor)
+      ) {
+        $(".cookie-notice").addClass("hidden");
+      }
+    });
+  })(jQuery);
+
+  var gFormSubmitted = false;
+</script>
