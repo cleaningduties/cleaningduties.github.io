@@ -131,6 +131,8 @@
       }
     });
   })(jQuery);
+
+  var gFormSubmitted = false;
 </script>
 
   </head>
@@ -353,17 +355,21 @@
   <div class="col-sm-7 col-md-7"><div class="free-quote">
   <h2 class="section-heading-2 color_white">Solicita oferta</h2>
   <form
-    action="#"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSej3nWN4_iL6QBx7KYRdD9G5NGYmGQKGPCuOYNT4ZoK8z4GDg/formResponse?"
     class="form-contact"
     id="contactForm"
     data-toggle="validator"
     novalidate="true"
+    onsubmit="gFormSubmitted=true;"
+    target="hidden_iframe"
+    enctype="text/plain"
   >
     <div class="form-group">
       <input
+        name="entry.2005620554"
         type="text"
         class="form-control"
-        id="p_name"
+        id="entry.2005620554"
         placeholder="Nume Prenume..."
         required=""
       />
@@ -383,14 +389,17 @@
       <input
         type="text"
         class="form-control"
-        id="p_address"
         placeholder="Telefon..."
+        id="entry.1166974658"
+        name="entry.1166974658"
+        required="required"
       />
       <div class="help-block with-errors"></div>
     </div>
     <div class="form-group">
       <textarea
-        id="p_message"
+        id="entry.839337160"
+        name="entry.839337160"
         class="form-control"
         rows="6"
         placeholder="Cererea dumneavoastra..."
@@ -399,9 +408,21 @@
     </div>
     <div class="form-group">
       <div id="success"></div>
-      <button type="submit" class="btn btn-secondary">Solicita Oferta</button>
+      <button
+        type="submit"
+        class="btn btn-secondary disabled"
+        style="pointer-events: all; cursor: pointer"
+      >
+        SOLICITA OFERTA
+      </button>
     </div>
   </form>
+  <iframe
+    id="hidden_iframe"
+    name="hidden_iframe"
+    onload="if(gFormSubmitted) {}"
+    style="display: none"
+  ></iframe>
 </div>
 </div>
 </div>
