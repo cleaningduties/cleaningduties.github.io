@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="" />
+    <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/-res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/-res/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
