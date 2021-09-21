@@ -1,0 +1,67 @@
+<div class="free-quote">
+  <h2 class="section-heading-2 color_white">Solicita oferta</h2>
+  <form
+    method="post"
+    class="form-contact"
+    id="contactForm"
+    data-toggle="validator"
+    novalidate="true"
+    target="hidden_iframe"
+    enctype="text/plain"
+    name="submit-to-google-sheet"
+  >
+    <div class="form-group">
+      <input
+        id="form_p_name"
+        type="text"
+        name="nume"
+        class="form-control"
+        placeholder="Nume Prenume..."
+        required=""
+      />
+      <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        id="form_p_email"
+        placeholder="Email..."
+        required=""
+      />
+      <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        name="telefon"
+        id="form_p_telefon"
+        class="form-control"
+        placeholder="Telefon..."
+        required="required"
+      />
+      <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+      <textarea
+        name="cerere"
+        id="form_p_cerere"
+        class="form-control"
+        rows="6"
+        placeholder="Cererea dumneavoastra..."
+      ></textarea>
+      <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+      <div id="success"></div>
+      <button
+        type="submit"
+        class="btn btn-secondary disabled"
+        style="pointer-events: all; cursor: pointer"
+      >
+        SOLICITA OFERTA
+      </button>
+    </div>
+  </form>
+</div>
