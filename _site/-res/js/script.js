@@ -344,16 +344,6 @@ $(document).ready(function () {
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
   }
 
-  //
-  // $("#contactForm").on("submit", function (e) {
-
-  // });
-
-  // const scriptURL =
-  //   "https://script.google.com/macros/s/AKfycbwmVYNnNrY9b7rajdIhA8VyEcNmmAruKQnHkViEbg-PPqgMQhTs5FRqp7mCQ9m9BToo4w/exec";
-  //
-  // // "https://script.google.com/macros/s/AKfycbwmVYNnNrY9b7rajdIhA8VyEcNmmAruKQnHkViEbg-PPqgMQhTs5FRqp7mCQ9m9BToo4w/exec";
-
   const scriptURL = "https://contact.cleaningduties.ro/";
   const form = document.forms["submit-to-google-sheet"];
 
@@ -374,24 +364,5 @@ $(document).ready(function () {
         $("#contactForm").prepend(gFormSuccessTitle + gFormSuccessMessage);
       })
       .catch((error) => console.error("Error!", error.message));
-
-    /*const formData = {
-      timestamp: new Date(),
-      nume: document.getElementById("form_p_name").value,
-      email: document.getElementById("form_p_email").value,
-      telefon: document.getElementById("form_p_telefon").value,
-      cerere: document.getElementById("form_p_cerere").value,
-    };
-
-    fetch(scriptURL, {
-      method: "POST",
-      body: formData,
-      mode: "no-cors",
-      headers: {
-        "content-type": "multipart/form-data",
-      },
-    })
-      .then((response) => console.log("Success!", response))
-      .catch((error) => console.error("Error!", error.message));*/
   });
 });
