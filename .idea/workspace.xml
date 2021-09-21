@@ -4,10 +4,7 @@
     <list default="true" id="4fcc9e27-2a71-44ff-9887-a94ae14abad4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/-res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/-res/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/curatenie-birouri-si-spatii-comerciale.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatenie-birouri-si-spatii-comerciale.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/curatenie-rezidentiala.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatenie-rezidentiala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/curatienie-dupa-constructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/curatienie-dupa-constructor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/-res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/-res/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

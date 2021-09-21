@@ -344,13 +344,9 @@ $(document).ready(function () {
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
   }
 
-  // var gFormSuccessTitle = "<h4>Va multumim pentru interesul acordat!</h4>";
-  // var gFormSuccessMessage =
-  //   "<h6>Va vom contacta in cel mai scurt timp posibil.</h6>";
   //
   // $("#contactForm").on("submit", function (e) {
-  //   $("#contactForm *").fadeOut(500);
-  //   $("#contactForm").prepend(gFormSuccessTitle + gFormSuccessMessage);
+
   // });
 
   // const scriptURL =
@@ -369,7 +365,14 @@ $(document).ready(function () {
       body: new FormData(form),
       mode: "no-cors",
     })
-      .then((response) => console.log("Success!", response))
+      .then((response) => {
+        let gFormSuccessTitle =
+          "<h4>Va multumim pentru interesul acordat!</h4>";
+        let gFormSuccessMessage =
+          "<h6>Va vom contacta in cel mai scurt timp posibil.</h6>";
+        $("#contactForm *").fadeOut(500);
+        $("#contactForm").prepend(gFormSuccessTitle + gFormSuccessMessage);
+      })
       .catch((error) => console.error("Error!", error.message));
 
     /*const formData = {
