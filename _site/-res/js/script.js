@@ -354,7 +354,7 @@ $(document).ready(function () {
   //
   // // "https://script.google.com/macros/s/AKfycbwmVYNnNrY9b7rajdIhA8VyEcNmmAruKQnHkViEbg-PPqgMQhTs5FRqp7mCQ9m9BToo4w/exec";
 
-  const scriptURL = "http://contact.cleaningduties.ro/index.php";
+  const scriptURL = "https://contact.cleaningduties.ro/index.php";
   const form = document.forms["submit-to-google-sheet"];
 
   form.addEventListener("submit", (e) => {
