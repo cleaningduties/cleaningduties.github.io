@@ -1,3 +1,7 @@
+.noMargin {
+  margin: 0;
+}
+
 .box-icon-2 .icon {
   width: 150px;
   height: 150px;
@@ -30,8 +34,8 @@
   }
 
   .navbar-main .navbar-brand > img {
-    width: 110px !important;
-    height: 70px !important;
+    width: 120px !important;
+    height: 80px !important;
     margin: -10px 0 0 0;
   }
 }
@@ -187,4 +191,23 @@ blockquote,
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.scrisMareHpg {
+  font-size: 22px;
+}
+
+.hpgSlides .scrisMareHpg {
+  color: #006cff;
+}
+
+.navbar-toggle .icon-bar {
+  width: 35px;
+  height: 5px;
+  margin: 0 auto;
+}
+
+.meniuTextMare {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
 }
