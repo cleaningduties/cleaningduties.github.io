@@ -84,27 +84,13 @@
   function enableGa() {
     if (!cookieStash.isset(cookieFlag)) {
       (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://"
-            : "http://www.") + "googletagmanager.com/gtag/js?id=UA-97550725-1";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-
-        if (cookieStash.isset(cookieFlag)) {
-          window["gat-disable-UA-97550725-1"] = true;
-        }
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "UA-97550725-1");
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TZXCQ4C');</script>
+        <!-- End Google Tag Manager -->
       })();
     } else {
       disableGa();
