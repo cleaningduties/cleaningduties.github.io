@@ -343,12 +343,28 @@ $(document).ready(function () {
     //insert the zoom div on the top left of the map
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
   }
+  
+	function validateEmail(email) {
+	  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	  return emailRegex.test(email);
+	}
 
   const scriptURL = "https://contact.cleaningduties.ro/";
   const form = document.forms["submit-to-google-sheet"];
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+	
+	var name = $("#form_p_name").val();
+    var email = $("#form_p_email").val();
+    var phone = $("#form_p_telefon").val();
+    var message = $("#form_p_cerere").val();
+	
+	if(name === '' || !validateEmail(email) || phone === '') {
+		alert ('Va rugam completati formularul');
+		return false;
+	}
+
 
     fetch(scriptURL, {
       method: "POST",
