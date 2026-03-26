@@ -177,6 +177,8 @@
             <a href="about.html"
                 class="hover:text-brand dark:hover:text-white transition-colors ">Despre
                 Noi</a>
+            <a href="contact.html"
+                class="hover:text-brand dark:hover:text-white transition-colors ">Contact</a>
         </div>
 
         <div class="flex items-center gap-4">
@@ -184,10 +186,12 @@
                 class="p-2.5 rounded-full bg-black/5 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:text-brand dark:hover:text-white transition-colors">
                 <i id="theme-toggle-icon" data-lucide="moon" size="18"></i>
             </button>
-            <a href="contact.html"
-                class="hidden sm:inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[10px] bg-brand text-white shadow-[0_0_20px_-5px_rgba(5,128,191,0.5)] hover:bg-brand-dark hover:shadow-brand/40 px-6 py-3 rounded-full">
-                <i data-lucide="calendar" size="16"></i>
-                Programare
+            <a href="tel:+40731351599"
+                class="sm:inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[10px] bg-brand text-white shadow-[0_0_20px_-5px_rgba(5,128,191,0.5)] hover:bg-brand-dark hover:shadow-brand/40 px-6 py-3 rounded-full">
+                <div class="flex items-center gap-3 text-md md:text-lg">
+                    <i data-lucide="phone" size="12" class="text-white shrink-0 sm:w-4 sm:h-4"></i>
+                    <span class="whitespace-nowrap">0731 351 599</span>
+                </div>
             </a>
 
             <!-- Mobile Menu Toggle -->
@@ -302,212 +306,217 @@
     </div>
 </div>
 
-        <main class="pt-20">
-        <!-- Hero Section for Service -->
-        <section class="relative py-24 px-6 overflow-hidden">
+    <main class="pt-20">
+    <!-- Hero Section for Service -->
+    <section class="relative py-24 px-6 overflow-hidden">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand/10 rounded-full blur-[120px] pointer-events-none">
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-fade-in relative z-10">
+            <div class="space-y-8 text-center lg:text-left">
+                <p class="text-[10px] text-brand font-black uppercase tracking-[0.4em]">Servicii pentru Acasă</p>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                    Curățenie <br> <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-light dark:from-white dark:to-zinc-500 text-5xl md:text-6xl lg:text-7xl font-semibold font-heading">Rezidențială</span>
+                </h1>
+                <p
+                    class="text-zinc-500 text-lg md:text-xl lg:text-2xl font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Redescoperă confortul propriei locuințe. Oferim servicii profesionale de curățenie adaptate
+                    ritmului tău de viață, pentru un cămin mereu proaspăt și primitor.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-zinc-900 dark:bg-white text-white dark:text-black hover:bg-zinc-800 dark:hover:bg-zinc-200 px-10 py-5 rounded-full">
+                        Solicită Oferta
+                    </a>
+                    <a href="preturi.html"
+                        class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 border border-black/5 dark:border-white/5 hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:text-brand dark:hover:text-white px-10 py-5 rounded-full">
+                        Vezi Prețuri
+                    </a>
+                </div>
+            </div>
             <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand/10 rounded-full blur-[120px] pointer-events-none">
+                class="aspect-video lg:aspect-square bg-black/5 dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] overflow-hidden">
+                <img src="./-res/images/home.png" alt="Curățenie Rezidențială" class="w-full h-full object-cover">
             </div>
+        </div>
+    </section>
 
-            <div
-                class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-fade-in relative z-10">
-                <div class="space-y-8 text-center lg:text-left">
-                    <p class="text-[10px] text-brand font-black uppercase tracking-[0.4em]">Servicii pentru Acasă</p>
-                    <h1
-                        class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
-                        Curățenie <br> <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-light dark:from-white dark:to-zinc-500 text-5xl md:text-6xl lg:text-7xl font-semibold font-heading">Rezidențială</span>
-                    </h1>
-                    <p
-                        class="text-zinc-500 text-lg md:text-xl lg:text-2xl font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Redescoperă confortul propriei locuințe. Oferim servicii profesionale de curățenie adaptate
-                        ritmului tău de viață, pentru un cămin mereu proaspăt și primitor.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="contact.html"
-                            class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-zinc-900 dark:bg-white text-white dark:text-black hover:bg-zinc-800 dark:hover:bg-zinc-200 px-10 py-5 rounded-full">
-                            Solicită Oferta
-                        </a>
-                        <a href="preturi.html"
-                            class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 border border-black/5 dark:border-white/5 hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:text-brand dark:hover:text-white px-10 py-5 rounded-full">
-                            Vezi Prețuri
-                        </a>
+    <!-- Content & Sidebar -->
+    <section class="max-w-7xl mx-auto px-6 py-16 space-y-12">
+        <!-- Secondary Navigation -->
+        <div
+            class="bg-black/[0.02] dark:bg-surface-card/50 border border-black/5 dark:border-white/5 rounded-[2.5rem] p-4 animate-fade-in">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <p
+                    class="text-[10px] text-zinc-500 font-black uppercase tracking-[0.3em] shrink-0 md:border-r md:border-black/5 md:dark:border-white/5 md:pr-8">
+                    Alte Servicii</p>
+                <nav class="flex flex-wrap items-center justify-center gap-2">
+                    <a href="curatenie-birouri-si-spatii-comerciale.html"
+                        class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">Curățenie
+                        Birouri</a>
+                    <a href="curatenie-rezidentiala.html"
+                        class="px-6 py-3 bg-brand/10 text-brand rounded-2xl border border-brand/20 font-semibold text-sm">Curățenie
+                        Rezidențială</a>
+                    <a href="curatenie-dupa-constructor.html"
+                        class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">După
+                        Constructor</a>
+                    <a href="produse.html"
+                        class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">Produse</a>
+                </nav>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+            <!-- Sidebar -->
+            <aside class="space-y-12">
+                <div class="bg-accent-lime rounded-[2.5rem] p-8 text-center space-y-6">
+                    <i data-lucide="sparkles" size="32" class="mx-auto text-black"></i>
+                    <h4 class="text-lg md:text-xl font-semibold text-black font-heading">Timp pentru tine</h4>
+                    <p class="text-black/60 text-sm">Lasă curățenia în seama noastră și bucură-te de momentele
+                        frumoase cu familia.</p>
+                    <a href="tel:+40731351599"
+                        class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[12px] bg-black text-white shadow-[0_0_20px_-5px_rgba(5,128,191,0.5)] hover:bg-brand-dark hover:shadow-brand/40 px-6 py-3 rounded-full">
+                        <div class="flex items-center gap-3 text-md">
+                            <i data-lucide="phone" size="18" class="text-white shrink-0"></i>
+                            <span class="whitespace-nowrap">0731 351 599</span>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- Detailed Checklists -->
+            <div class="lg:col-span-3 space-y-16">
+                <!-- Camere -->
+                <div class="space-y-12">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center text-brand">
+                            <i data-lucide="layout" size="24"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight font-heading">Camere & Living
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">
+                                Aspirat / curățat podele și covoare</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Șters praf mobilier, rafturi,
+                                decor</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat oglinzi și suprafețe
+                                sticlă</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Șters praf calorifere și corpuri
+                                iluminat</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat geamuri, uși și
+                                tocuri</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Lustruit mobilă și schimbat
+                                lenjerie</span>
+                        </div>
                     </div>
                 </div>
-                <div
-                    class="aspect-video lg:aspect-square bg-black/5 dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] overflow-hidden">
-                    <img src="./-res/images/home.png" alt="Curățenie Rezidențială" class="w-full h-full object-cover">
+
+                <!-- Bucatarie -->
+                <div class="space-y-12">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center text-brand">
+                            <i data-lucide="utensils" size="24"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight font-heading">Bucătărie</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat exterior/interior aparate
+                                casnice</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat fronturi și interior
+                                dulapuri</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Igienizat interior/exterior
+                                frigider</span>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat blat, chiuvetă și
+                                faianță</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Content & Sidebar -->
-        <section class="max-w-7xl mx-auto px-6 py-16 space-y-12">
-            <!-- Secondary Navigation -->
-            <div
-                class="bg-black/[0.02] dark:bg-surface-card/50 border border-black/5 dark:border-white/5 rounded-[2.5rem] p-4 animate-fade-in">
-                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                    <p
-                        class="text-[10px] text-zinc-500 font-black uppercase tracking-[0.3em] shrink-0 md:border-r md:border-black/5 md:dark:border-white/5 md:pr-8">
-                        Alte Servicii</p>
-                    <nav class="flex flex-wrap items-center justify-center gap-2">
-                        <a href="curatenie-birouri-si-spatii-comerciale.html"
-                            class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">Curățenie
-                            Birouri</a>
-                        <a href="curatenie-rezidentiala.html"
-                            class="px-6 py-3 bg-brand/10 text-brand rounded-2xl border border-brand/20 font-semibold text-sm">Curățenie
-                            Rezidențială</a>
-                        <a href="curatenie-dupa-constructor.html"
-                            class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">După
-                            Constructor</a>
-                        <a href="produse.html"
-                            class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">Produse</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
-                <!-- Sidebar -->
-                <aside class="space-y-12">
-                    <div class="bg-accent-lime rounded-[2.5rem] p-8 text-center space-y-6">
-                        <i data-lucide="sparkles" size="32" class="mx-auto text-black"></i>
-                        <h4 class="text-lg md:text-xl font-semibold text-black font-heading">Timp pentru tine</h4>
-                        <p class="text-black/60 text-sm">Lasă curățenia în seama noastră și bucură-te de momentele
-                            frumoase cu familia.</p>
-                        <a href="contact.html"
-                            class="block bg-black text-white font-bold py-4 rounded-2xl hover:bg-zinc-900 transition-colors uppercase tracking-widest text-xs">Află
-                            Mai Multe</a>
+                <!-- Baie -->
+                <div class="space-y-12">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400">
+                            <i data-lucide="droplets" size="24"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight font-heading">Baie</h2>
                     </div>
-                </aside>
-
-                <!-- Detailed Checklists -->
-                <div class="lg:col-span-3 space-y-16">
-                    <!-- Camere -->
-                    <div class="space-y-12">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center text-brand">
-                                <i data-lucide="layout" size="24"></i>
-                            </div>
-                            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight font-heading">Camere & Living
-                            </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Igienizat duș, cadă și corpuri
+                                sanitare</span>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">
-                                    Aspirat / curățat podele și covoare</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Șters praf mobilier, rafturi,
-                                    decor</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat oglinzi și suprafețe
-                                    sticlă</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Șters praf calorifere și corpuri
-                                    iluminat</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat geamuri, uși și
-                                    tocuri</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Lustruit mobilă și schimbat
-                                    lenjerie</span>
-                            </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat și lustruit
+                                oglinzi</span>
                         </div>
-                    </div>
-
-                    <!-- Bucatarie -->
-                    <div class="space-y-12">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center text-brand">
-                                <i data-lucide="utensils" size="24"></i>
-                            </div>
-                            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight font-heading">Bucătărie</h2>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat exterior/interior aparate
-                                    casnice</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat fronturi și interior
-                                    dulapuri</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Igienizat interior/exterior
-                                    frigider</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat blat, chiuvetă și
-                                    faianță</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Baie -->
-                    <div class="space-y-12">
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400">
-                                <i data-lucide="droplets" size="24"></i>
-                            </div>
-                            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight font-heading">Baie</h2>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Igienizat duș, cadă și corpuri
-                                    sanitare</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat și lustruit
-                                    oglinzi</span>
-                            </div>
-                            <div
-                                class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                                <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                                <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat și igienizat faianță /
-                                    rosturi</span>
-                            </div>
+                        <div
+                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
+                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățat și igienizat faianță /
+                                rosturi</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="max-w-7xl mx-auto px-6 py-16">
+    <section class="max-w-7xl mx-auto px-6 py-16">
     <div
         class="bg-black/[0.02] dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] p-12 md:p-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div class="space-y-8">
             <h2
                 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
                 Transformă-ți <br> <span class='text-brand'>Căminul</span></h2>
-            <p class="text-zinc-500 text-lg">De la curățenie generală la întreținere periodică, echipa noastră asigură un standard impecabil în fiecare colț al casei tale. Spune-ne cum te putem ajuta.</p>
+            <p class="text-zinc-500 text-lg">De la curățenie generală la întreținere periodică, echipa noastră asigură un standard impecabil în
+    fiecare colț al casei tale. Spune-ne cum te putem ajuta.</p>
         </div>
         <form id="contactForm" class="space-y-6">
             <input type="text" name="name" placeholder="Nume Prenume"
@@ -534,8 +543,7 @@
     </div>
 </section>
 
-    </main>
-
+</main>
 
     <!-- Footer -->
 <footer class="border-t border-black/5 dark:border-white/5 pt-16 pb-12">
@@ -557,7 +565,7 @@
                 <ul class="space-y-4 text-zinc-500 text-sm">
                     <li class="flex items-center gap-3 text-lg">
                         <i data-lucide="phone" size="18" class="text-brand shrink-0"></i>
-                        <span class="whitespace-nowrap">0731 351 599</span>
+                        <a href="tel:+40731351599"><span class="whitespace-nowrap">0731 351 599</span></a>
                     </li>
                     <li class="flex items-start gap-3 text-lg">
                         <i data-lucide="mail" size="18" class="text-brand shrink-0 mt-1"></i>
