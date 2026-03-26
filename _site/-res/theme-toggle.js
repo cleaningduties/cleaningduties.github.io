@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 await fetch(scriptURL, {
                     method: 'POST',
-                    body: new FormData(payload),
+                    body: new FormData(e.target),
                     mode: 'no-cors',
                 });
 
