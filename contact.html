@@ -1,48 +1,131 @@
 ---
 layout: default
 title: Contact
-id: about_p
-heading: Contact
 ---
+<main class="pt-20">
+    <!-- Page Header -->
+    <section class="relative py-24 px-6 overflow-hidden text-center">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand/10 rounded-full blur-[120px] pointer-events-none">
+        </div>
 
-<!-- ABOUT FEATURE -->
-<div class="section pad padWithPadding">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 col-md-4">
-        <div class="widget">
-          <h4 class="lead">
-            Ne puteti contacta oricand prin formularul alaturat sau folosind
-            datele de contact de mai jos.
-          </h4>
+        <div class="max-w-7xl mx-auto space-y-6 animate-fade-in relative z-10">
+            <p class="text-[10px] text-brand font-black uppercase tracking-[0.4em]">Contactează-ne</p>
+            <h1
+                class="text-5xl md:text-6xl lg:text-7xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                Hai să <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 dark:from-white to-zinc-500">Vorbim</span>
+            </h1>
+            <p class="text-zinc-500 text-lg md:text-xl lg:text-2xl font-normal leading-relaxed max-w-3xl mx-auto">
+                Suntem aici să răspundem oricărei întrebări și să îți oferim soluția perfectă pentru spațiul tău.
+            </p>
         </div>
-        <div class="widget contact-info-sidebar">
-          <div class="widget-title">Contact Info</div>
-          <ul class="list-info">
-            <li>
-              <div class="info-icon">
-                <span class="fa fa-phone"></span>
-              </div>
-              <div class="info-text scrisMareHpg">Telefon: <a href="tel:+40731351599">0731 351 599</a></div>
-            </li>
-            <li>
-              <div class="info-icon">
-                <span class="fa fa-envelope"></span>
-              </div>
-              <div class="info-text scrisMareHpg">office@cleaningduties.ro</div>
-            </li>
-            <li>
-              <div class="info-icon">
-                <span class="fa fa-clock-o"></span>
-              </div>
-              <div class="info-text scrisMareHpg">Luni - Vineri 09:00 - 18:00</div>
-            </li>
-          </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <!-- Contact Info -->
+            <div class="space-y-12">
+                <div class="space-y-6">
+                    <h3
+                        class="text-xl md:text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
+                        Informații Contact
+                    </h3>
+                    <p class="text-zinc-500">Ne poți contacta oricând prin formularul alăturat sau folosind datele
+                        de mai jos.</p>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-start gap-6 group">
+                        <div
+                            class="w-12 h-12 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl flex items-center justify-center text-brand group-hover:bg-brand/10 group-hover:border-brand/30 transition-all">
+                            <i data-lucide="phone" size="20"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <p
+                                class="text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
+                                Telefon</p>
+                            <a href="tel:+40731351599"
+                                class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white font-heading hover:text-brand transition-colors">0731
+                                351 599</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-6 group">
+                        <div
+                            class="w-12 h-12 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl flex items-center justify-center text-brand group-hover:bg-brand/10 group-hover:border-brand/30 transition-all">
+                            <i data-lucide="mail" size="20"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <p
+                                class="text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
+                                Email</p>
+                            <a href="mailto:office@cleaningduties.ro"
+                                class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white font-heading hover:text-brand transition-colors">office@cleaningduties.ro</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-6 group">
+                        <div
+                            class="w-12 h-12 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl flex items-center justify-center text-brand group-hover:bg-brand/10 group-hover:border-brand/30 transition-all">
+                            <i data-lucide="clock" size="20"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <p
+                                class="text-[10px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-600">
+                                Program</p>
+                            <p class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white font-heading">
+                                Luni - Vineri: 09:00 -
+                                18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-2">
+                <div
+                    class="bg-black/[0.02] dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] p-8 md:p-12">
+                    <form id="contactForm" class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black uppercase tracking-widest text-zinc-500 px-4">Nume
+                                    Prenume</label>
+                                <input name="name" type="text" placeholder="John Doe"
+                                    class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors">
+                                <p id="name-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] font-black uppercase tracking-widest text-zinc-500 px-4">Email</label>
+                                <input name="email" type="email" placeholder="john@example.com"
+                                    class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors">
+                                <p id="email-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] font-black uppercase tracking-widest text-zinc-500 px-4">Telefon</label>
+                            <input name="phone" type="text" placeholder="07xx xxx xxx"
+                                class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors">
+                            <p id="phone-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-zinc-500 px-4">Mesaj
+                                / Cerere</label>
+                            <textarea name="message" rows="6" placeholder="Spune-ne mai multe despre nevoile tale..."
+                                class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors resize-none"></textarea>
+                            <p id="message-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+                        </div>
+                        <button type="submit"
+                            class="w-full inline-flex items-center justify-center gap-3 font-bold transition-all duration-300 active:scale-[0.98] uppercase tracking-widest text-[11px] bg-brand text-white px-12 py-6 rounded-full shadow-xl shadow-brand/20 hover:bg-brand-dark hover:shadow-brand/40">
+                            Trimite Mesajul <i data-lucide="send" size="18"></i>
+                        </button>
+                        <p id="submit-message" class="hidden text-center text-sm font-semibold mt-6"></p>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-8 col-md-8">
-        {% include get_free_quote_contact.html %}
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
+</main>

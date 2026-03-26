@@ -1,0 +1,33 @@
+<section class="max-w-7xl mx-auto px-6 py-16">
+    <div
+        class="bg-black/[0.02] dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] p-12 md:p-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+            <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                {{ include.title }}</h2>
+            <p class="text-zinc-500 text-lg">{{ include.description }}</p>
+        </div>
+        <form id="contactForm" class="space-y-6">
+            <input type="text" name="name" placeholder="{{ include.name_placeholder | default: 'Nume Prenume' }}"
+                class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors">
+            <p id="name-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+            
+            <input type="email" name="email" placeholder="Email"
+                class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors">
+            <p id="email-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+            
+            <input type="text" name="phone" placeholder="Telefon"
+                class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors">
+            <p id="phone-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+            
+            <textarea rows="4" name="message" placeholder="{{ include.message_placeholder }}"
+                class="w-full bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 text-zinc-900 dark:text-white focus:outline-none focus:border-brand/50 transition-colors resize-none"></textarea>
+            <p id="message-error" class="hidden text-red-500 text-xs px-4 mt-1"></p>
+            
+            <button type="submit"
+                class="w-full inline-flex items-center justify-center gap-3 font-bold transition-all duration-300 active:scale-[0.98] uppercase tracking-widest text-[11px] bg-brand text-white px-12 py-6 rounded-full shadow-xl shadow-brand/20 hover:bg-brand-dark hover:shadow-brand/40">
+                {{ include.button_text | default: 'Cere Ofertă' }} <i data-lucide="send" size="18"></i>
+            </button>
+        </form>
+    </div>
+</section>

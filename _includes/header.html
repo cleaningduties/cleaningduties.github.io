@@ -1,127 +1,174 @@
-<!-- Basic Page Needs
-    ================================================== -->
-<meta charset="utf-8" />
-<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- ==============================================
-    Favicons
-    =============================================== -->
-<link rel="canonical" href="https://cleaningduties.ro/" />
-<link rel='shortlink' href='https://cleaningduties.ro/' />
-<link rel="icon" href="-res/images/favicon/cropped-icon-browser-32x32.png" sizes="32x32" />
-<link rel="icon" href="-res/images/favicon/cropped-icon-browser-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="-res/images/favicon/cropped-icon-browser-180x180.png" />
-<link rel="manifest" href="-res/images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="-res/images/favicon//ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+{% assign current_url = page.url %}
+{% assign is_service = false %}
+{% if current_url contains 'produse' or current_url contains 'curatenie' %}
+{% assign is_service = true %}
+{% endif %}
 
+<!-- Navbar -->
+<nav
+    class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="./-res/images/logo.png" alt="Cleaning Duties"
+                class="h-10 w-auto filter brightness-110 dark:brightness-100">
 
+        </a>
 
-<title>
-  {% if page.id != 'homepage_p' %} {{ page.title }} &#8211; {% endif %} Cleaning
-  Duties
-</title>
+        <div
+            class="hidden md:flex items-center gap-8 text-[14px] font-black uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+            <a href="index.html"
+                class="hover:text-brand dark:hover:text-white transition-colors {% if current_url == '/' or current_url == '/index.html' %}text-brand border-b border-brand pb-1{% endif %}">Home</a>
+            <div class="relative group">
+                <button
+                    class="hover:text-brand dark:hover:text-white transition-colors flex items-center gap-1 {% if is_service %}text-brand border-b border-brand pb-1{% endif %}">
+                    Servicii <i data-lucide="chevron-down" size="14"></i>
+                </button>
+                <div
+                    class="absolute top-full left-0 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all">
+                    <div
+                        class="bg-white dark:bg-surface-card border border-black/10 dark:border-white/10 rounded-2xl p-4 w-64 shadow-2xl">
+                        <a href="produse.html"
+                            class="block p-3 {% if current_url contains 'produse' %}bg-black/5 text-brand{% else %}hover:bg-black/5 dark:hover:bg-white/5{% endif %} rounded-xl transition-colors">Produse</a>
+                        <a href="curatenie-birouri-si-spatii-comerciale.html"
+                            class="block p-3 {% if current_url contains 'curatenie-birouri-si-spatii-comerciale' %}bg-black/5 text-brand{% else %}hover:bg-black/5 dark:hover:bg-white/5{% endif %} rounded-xl transition-colors">Curățenie
+                            Birouri</a>
+                        <a href="curatenie-rezidentiala.html"
+                            class="block p-3 {% if current_url contains 'curatenie-rezidentiala' %}bg-black/5 text-brand{% else %}hover:bg-black/5 dark:hover:bg-white/5{% endif %} rounded-xl transition-colors">Curățenie
+                            Rezidențială</a>
+                        <a href="curatenie-dupa-constructor.html"
+                            class="block p-3 {% if current_url contains 'curatenie-dupa-constructor' %}bg-black/5 text-brand{% else %}hover:bg-black/5 dark:hover:bg-white/5{% endif %} rounded-xl transition-colors">După
+                            Constructor</a>
+                    </div>
+                </div>
+            </div>
+            <a href="preturi.html"
+                class="hover:text-brand dark:hover:text-white transition-colors {% if current_url contains 'preturi' %}text-brand border-b border-brand pb-1{% endif %}">Prețuri</a>
+            <a href="parteneri.html"
+                class="hover:text-brand dark:hover:text-white transition-colors {% if current_url contains 'parteneri' %}text-brand border-b border-brand pb-1{% endif %}">Parteneri</a>
+            <a href="about.html"
+                class="hover:text-brand dark:hover:text-white transition-colors {% if current_url contains 'about' %}text-brand border-b border-brand pb-1{% endif %}">Despre
+                Noi</a>
+        </div>
 
-<link
-  rel="apple-touch-icon"
-  sizes="72x72"
-  href="-res/images/apple-touch-icon-72x72.png"
-/>
-<link
-  rel="apple-touch-icon"
-  sizes="114x114"
-  href="-res/images/apple-touch-icon-114x114.png"
-/>
+        <div class="flex items-center gap-4">
+            <button id="theme-toggle-btn"
+                class="p-2.5 rounded-full bg-black/5 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:text-brand dark:hover:text-white transition-colors">
+                <i id="theme-toggle-icon" data-lucide="moon" size="18"></i>
+            </button>
+            <a href="contact.html"
+                class="hidden sm:inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[10px] bg-brand text-white shadow-[0_0_20px_-5px_rgba(5,128,191,0.5)] hover:bg-brand-dark hover:shadow-brand/40 px-6 py-3 rounded-full">
+                <i data-lucide="calendar" size="16"></i>
+                Programare
+            </a>
 
-<!-- ==============================================
-    CSS VENDOR
-    =============================================== -->
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="-res/css/vendor/bootstrap.min.css"
-/>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="-res/css/vendor/font-awesome.min.css"
-/>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="-res/css/vendor/simple-line-icons.css"
-/>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="-res/css/vendor/owl.carousel.min.css"
-/>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="-res/css/vendor/owl.theme.default.min.css"
-/>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="-res/css/vendor/magnific-popup.css"
-/>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" aria-label="Toggle menu"
+                class="md:hidden p-3 rounded-full bg-black/5 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:text-brand dark:hover:text-white transition-all active:scale-90 relative z-[100] border border-transparent">
+                <div id="hamburger-icon"
+                    class="w-5 h-5 flex flex-col justify-center items-center gap-1.5 transition-all duration-300">
+                    <span class="block w-5 h-0.5 bg-current rounded-full transition-all duration-300 origin-center"
+                        id="line1"></span>
+                    <span class="block w-5 h-0.5 bg-current rounded-full transition-all duration-300 origin-center"
+                        id="line2"></span>
+                </div>
+            </button>
+        </div>
+    </div>
+</nav>
 
-<!-- ==============================================
-    Custom Stylesheet
-    =============================================== -->
-<link rel="stylesheet" type="text/css" href="-res/css/style.css" />
-<link rel="stylesheet" type="text/css" href="-res/css/custom.css" />
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu"
+    class="fixed inset-0 z-[60] bg-white/98 dark:bg-zinc-900/98 backdrop-blur-3xl md:hidden opacity-0 pointer-events-none transition-all duration-500 flex flex-col pt-12 px-8 overflow-y-auto">
+    <!-- Close Button inside the menu -->
+    <button id="mobile-menu-close" aria-label="Close menu"
+        class="fixed top-4 right-6 p-3 rounded-full bg-black/5 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:text-brand dark:hover:text-white transition-all active:scale-90 z-[110] border border-black/5 dark:border-white/10 w-[48px] h-[48px] flex items-center justify-center">
+        <div class="w-5 h-5 flex flex-col justify-center items-center gap-1.5 transition-all duration-300">
+            <span
+                class="block w-5 h-0.5 bg-current rounded-full transition-all duration-300 origin-center rotate-45 translate-y-[4px]"></span>
+            <span
+                class="block w-5 h-0.5 bg-current rounded-full transition-all duration-300 origin-center -rotate-45 -translate-y-[4px]"></span>
+        </div>
+    </button>
 
-<script type="text/javascript" src="-res/js/vendor/modernizr.min.js"></script>
-<script type="text/javascript" src="-res/js/vendor/jquery.min.js"></script>
-<script src="-res/js/cookies.js"></script>
-<script type="text/javascript">
-  var cookieFlag = "_c_duties_no",
-    returningVisitor = "isReturningVisitor";
+    <!-- Mobile Menu Contact -->
+    <div class="pt-2 w-full mx-auto">
+        <div class="flex items-center justify-center gap-10 mb-10">
+            <a href="tel:0731351599"
+                class="p-5 rounded-full bg-black/5 dark:bg-white/5 text-brand transition-all active:scale-90 hover:bg-brand/10"><i
+                    data-lucide="phone" size="24"></i></a>
+            <a href="mailto:contact@cleaningduties.ro"
+                class="p-5 rounded-full bg-black/5 dark:bg-white/5 text-brand transition-all active:scale-90 hover:bg-brand/10"><i
+                    data-lucide="mail" size="24"></i></a>
+        </div>
+        <a href="contact.html"
+            class="w-full inline-flex items-center justify-center gap-3 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-sm bg-brand text-white shadow-2xl hover:bg-brand-dark px-8 py-6 rounded-2xl mb-10">
+            <i data-lucide="calendar" size="20"></i>
+            Programare Online
+        </a>
 
-  function enableGa() {
-    if (!cookieStash.isset(cookieFlag)) {
-      (function () {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TZXCQ4C');
-      })();
-    } else {
-      disableGa();
-    }
-  }
+    </div>
 
-  function disableGa() {
-    if (cookieStash.isset(cookieFlag)) {
-      cookieStash.erase("_ga");
-      cookieStash.erase("_gat_gtag_UA_97550725_1");
-      cookieStash.erase("_gid");
-    }
-  }
+    <div class="flex flex-col gap-1 w-full max-w-lg mx-auto">
+        <a href="index.html"
+            class="mobile-nav-link text-4xl font-heading font-bold tracking-tight py-5 border-b border-black/5 dark:border-white/10 flex items-center justify-between group active:translate-x-2 transition-transform duration-200 {% if current_url == '/' or current_url == '/index.html' %}text-brand{% endif %}">
+            Home
+            <i data-lucide="arrow-right" size="24"
+                class="opacity-20 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+        </a>
 
-  enableGa();
+        <!-- Mobile Submenu: Servicii -->
+        <div class="border-b border-black/5 dark:border-white/10 py-5">
+            <button id="mobile-submenu-toggle"
+                class="w-full text-4xl font-heading font-bold tracking-tight flex items-center justify-between group active:translate-x-2 transition-transform duration-200 {% if is_service %}text-brand{% endif %}">
+                Servicii
+                <i data-lucide="chevron-down" size="28" id="submenu-chevron"
+                    class="transition-transform duration-300 opacity-20"></i>
+            </button>
+            <div id="mobile-submenu" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+                <div class="flex flex-col gap-6 py-8 pl-5 border-l-2 border-brand/20 ml-1">
+                    <a href="produse.html"
+                        class="mobile-submenu-link text-2xl font-medium {% if current_url contains 'produse' %}text-brand{% else %}text-zinc-500 hover:text-brand dark:hover:text-white{% endif %} transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        Produse
+                    </a>
+                    <a href="curatenie-birouri-si-spatii-comerciale.html"
+                        class="mobile-submenu-link text-2xl font-medium {% if current_url contains 'curatenie-birouri-si-spatii-comerciale' %}text-brand{% else %}text-zinc-500 hover:text-brand dark:hover:text-white{% endif %} transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        Curățenie Birouri
+                    </a>
+                    <a href="curatenie-rezidentiala.html"
+                        class="mobile-submenu-link text-2xl font-medium {% if current_url contains 'curatenie-rezidentiala' %}text-brand{% else %}text-zinc-500 hover:text-brand dark:hover:text-white{% endif %} transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        Curățenie Rezidențială
+                    </a>
+                    <a href="curatenie-dupa-constructor.html"
+                        class="mobile-submenu-link text-2xl font-medium {% if current_url contains 'curatenie-dupa-constructor' %}text-brand{% else %}text-zinc-500 hover:text-brand dark:hover:text-white{% endif %} transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        După Constructor
+                    </a>
+                </div>
+            </div>
+        </div>
 
-  (function ($) {
-    $(document).ready(function () {
-      $(".accept-cookies-btn").on("click", function () {
-        cookieStash.set(returningVisitor, 1);
-        cookieStash.erase(cookieFlag);
-        $(".cookie-notice").hide();
-        enableGa();
-      });
-
-      if (
-        cookieStash.isset(cookieFlag) ||
-        cookieStash.isset(returningVisitor)
-      ) {
-        $(".cookie-notice").addClass("hidden");
-      }
-    });
-  })(jQuery);
-
-  var gFormSubmitted = false;
-</script>
+        <a href="preturi.html"
+            class="mobile-nav-link text-4xl font-heading font-bold tracking-tight py-5 border-b border-black/5 dark:border-white/10 flex items-center justify-between group active:translate-x-2 transition-transform duration-200 {% if current_url contains 'preturi' %}text-brand{% endif %}">
+            Prețuri
+            <i data-lucide="arrow-right" size="24"
+                class="opacity-20 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+        </a>
+        <a href="parteneri.html"
+            class="mobile-nav-link text-4xl font-heading font-bold tracking-tight py-5 border-b border-black/5 dark:border-white/10 flex items-center justify-between group active:translate-x-2 transition-transform duration-200 {% if current_url contains 'parteneri' %}text-brand{% endif %}">
+            Parteneri
+            <i data-lucide="arrow-right" size="24"
+                class="opacity-20 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+        </a>
+        <a href="about.html"
+            class="mobile-nav-link text-4xl font-heading font-bold tracking-tight py-5 border-b border-black/5 dark:border-white/10 flex items-center justify-between group active:translate-x-2 transition-transform duration-200 {% if current_url contains 'about' %}text-brand{% endif %}">
+            Despre Noi
+            <i data-lucide="arrow-right" size="24"
+                class="opacity-20 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+        </a>
+        <a href="contact.html"
+            class="mobile-nav-link text-4xl font-heading font-bold tracking-tight py-5 flex items-center justify-between group active:translate-x-2 transition-transform duration-200 {% if current_url contains 'contact' %}text-brand{% endif %}">
+            Contact
+            <i data-lucide="arrow-right" size="24"
+                class="opacity-20 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+        </a>
+    </div>
+</div>

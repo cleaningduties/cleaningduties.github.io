@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
-  <head>
+<html lang="ro">
+{% include head.html %}
+<body
+    class="bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white font-body selection:bg-brand/30 selection:text-white antialiased transition-colors duration-300">
     {% include header.html %}
-  </head>
-
-  <body id="{{ page.id }}">
-    {% include precontent.html %}
-    {% include navbar.html %}
-    {% include breadcrumbs.html %}
 
     {{ content }}
 
     {% include footer.html %}
-  </body>
+</body>
 </html>
