@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curățenie Birouri și Spații Comerciale • Cleaning Duties</title>
+    <meta name="description" content="Servicii Profesionale de Curățenie">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/curatenie-birouri-si-spatii-comerciale.html">
+    <meta property="og:title" content="Curățenie Birouri și Spații Comerciale • Cleaning Duties">
+    <meta property="og:description" content="Servicii Profesionale de Curățenie">
+    <meta property="og:image" content="https://www.cleaningduties.ro/-res/images/special.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://localhost:4000/curatenie-birouri-si-spatii-comerciale.html">
+    <meta name="twitter:title" content="Curățenie Birouri și Spații Comerciale • Cleaning Duties">
+    <meta name="twitter:description" content="Servicii Profesionale de Curățenie">
+    <meta name="twitter:image" content="https://www.cleaningduties.ro/-res/images/special.jpg">
 
     <!-- Global Cookie Helpers -->
     <script>
@@ -49,10 +64,17 @@
                         },
                         'surface-card': '#27272a',
                         'accent-lime': '#d9f99d',
+                        'premium-gold': '#c9a84c',
+                        'premium-gold-light': '#e8c97a',
+                        'premium-charcoal': '#121212',
+                        'premium-olive': '#1b1f15',
+                        'premium-navy': '#0a1622',
                     },
                     fontFamily: {
-                        heading: ['Poppins', 'sans-serif'],
-                        body: ['Open Sans', 'sans-serif'],
+                        // heading: ['Poppins', 'sans-serif'],
+                        // body: ['Open Sans', 'sans-serif'],
+                        heading: ['Playfair Display, Georgia', 'serif'],
+                        body: ['DM Sans, system-ui', 'sans-serif'],
                     },
                     animation: {
                         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -260,7 +282,7 @@
             <div id="mobile-submenu" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
                 <div class="flex flex-col gap-6 py-8 pl-5 border-l-2 border-brand/20 ml-1">
                     <a href="produse.html"
-                        class="mobile-submenu-link text-2xl font-medium text-zinc-500 hover:text-brand dark:hover:text-white transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        class="mobile-submenu-link text-2xl font-medium text-white-800 hover:text-brand dark:hover:text-white transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
                         Produse
                     </a>
                     <a href="curatenie-birouri-si-spatii-comerciale.html"
@@ -268,11 +290,11 @@
                         Curățenie Birouri
                     </a>
                     <a href="curatenie-rezidentiala.html"
-                        class="mobile-submenu-link text-2xl font-medium text-zinc-500 hover:text-brand dark:hover:text-white transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        class="mobile-submenu-link text-2xl font-medium text-white-800 hover:text-brand dark:hover:text-white transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
                         Curățenie Rezidențială
                     </a>
                     <a href="curatenie-dupa-constructor.html"
-                        class="mobile-submenu-link text-2xl font-medium text-zinc-500 hover:text-brand dark:hover:text-white transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
+                        class="mobile-submenu-link text-2xl font-medium text-white-800 hover:text-brand dark:hover:text-white transition-colors flex items-center gap-3 active:translate-x-1 duration-200">
                         După Constructor
                     </a>
                 </div>
@@ -308,25 +330,44 @@
 
     <main class="pt-20">
     <!-- Hero Section for Service -->
-    <section class="relative py-24 px-6 overflow-hidden">
+    <section class="relative py-12 px-6 overflow-hidden">
         <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand/10 rounded-full blur-[120px] pointer-events-none">
         </div>
 
         <div
             class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-fade-in relative z-10">
-            <div class="space-y-8 text-center lg:text-left">
+            <div class="space-y-8 text-center lg:text-left order-2 lg:order-1">
                 <p class="text-[10px] text-brand font-black uppercase tracking-[0.4em]">Servicii Business</p>
                 <h1
                     class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
-                    Curățenie <br> <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 dark:from-white to-zinc-500 text-5xl md:text-6xl lg:text-7xl font-semibold font-heading">Birouri</span>
+                    Birouri <em>Impecabile</em>,<br /><span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 dark:from-white to-zinc-500 font-semibold font-heading">Fără
+                        Întreruperi</span>
                 </h1>
                 <p
                     class="text-zinc-500 text-lg md:text-xl lg:text-2xl font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
-                    Maximizează productivitatea echipei tale într-un spațiu de lucru impecabil. Ne ocupăm de toate
-                    detaliile curățeniei, oferindu-ți libertatea de a te concentra pe creșterea afacerii.
+                    Ne asigurăm că echipa ta lucrează în cel mai curat mediu posibil. Contract flexibil, fără surprize.
                 </p>
+
+                <ul class="space-y-4 mb-10">
+                    <li
+                        class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 font-medium justify-center lg:justify-start">
+                        <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                        <span>Contract zilnic, săptămânal sau lunar</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 font-medium justify-center lg:justify-start">
+                        <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                        <span>Echipă stabilă dedicată spațiului tău</span>
+                    </li>
+                    <li
+                        class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 font-medium justify-center lg:justify-start">
+                        <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
+                        <span>Raport lunar de activitate</span>
+                    </li>
+                </ul>
+
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="contact.html"
                         class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-zinc-900 dark:bg-white text-white dark:text-black hover:bg-zinc-800 dark:hover:bg-zinc-200 px-10 py-5 rounded-full">
@@ -339,182 +380,531 @@
                 </div>
             </div>
             <div
-                class="aspect-video lg:aspect-square bg-black/[0.02] dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] overflow-hidden">
+                class="aspect-video lg:aspect-square bg-black/[0.02] dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] overflow-hidden order-1 lg:order-2">
                 <img src="./-res/images/special.jpg" alt="Curățenie Birouri" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
 
-    <!-- Content & Sidebar -->
-    <section class="max-w-7xl mx-auto px-6 py-16 space-y-16">
-        <!-- Secondary Navigation -->
-        <div
-            class="bg-black/[0.02] dark:bg-surface-card/50 border border-black/5 dark:border-white/5 rounded-[2.5rem] p-4 animate-fade-in">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                <p
-                    class="text-[10px] text-zinc-500 font-black uppercase tracking-[0.3em] shrink-0 md:border-r md:border-black/5 md:dark:border-white/5 md:pr-8">
-                    Alte Servicii</p>
-                <nav class="flex flex-wrap items-center justify-center gap-2">
-                    <a href="curatenie-birouri-si-spatii-comerciale.html"
-                        class="px-6 py-3 bg-brand/10 text-brand rounded-2xl border border-brand/20 font-semibold text-sm">Curățenie
-                        Birouri</a>
-                    <a href="curatenie-rezidentiala.html"
-                        class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">Curățenie
-                        Rezidențială</a>
-                    <a href="curatenie-dupa-constructor.html"
-                        class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">După
-                        Constructor</a>
-                    <a href="produse.html"
-                        class="px-6 py-3 hover:bg-black/5 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-brand dark:hover:text-white rounded-2xl transition-all text-sm font-medium">Produse</a>
-                </nav>
+    <!-- Section: Tipuri de Contract (Pricing) -->
+    <section class=" py-12 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-4 mb-16 text-center lg:text-left animate-fade-in">
+                <div class="flex items-center justify-center lg:justify-start gap-4">
+                    <div class="w-12 h-[1px] bg-brand/50"></div>
+                    <p class="text-[11px] text-brand font-bold uppercase tracking-[0.4em]">Tipuri de contract</p>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                    Alege <em class="text-brand italic">frecvența</em> <br />potrivită afacerii tale
+                </h2>
             </div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
-            <!-- Sidebar -->
-            <aside class="space-y-12">
-                <div class="bg-accent-lime rounded-[2.5rem] p-8 text-center space-y-6">
-                    <i data-lucide="phone-call" size="32" class="mx-auto text-black"></i>
-                    <h4 class="text-xl font-medium text-black">Ai nevoie de ajutor?</h4>
-                    <p class="text-black/60 text-sm">Sună-ne acum pentru o evaluare gratuită la sediul tău.</p>
-                    <a href="tel:+40731351599"
-                        class="inline-flex items-center justify-center gap-2.5 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[12px] bg-black text-white shadow-[0_0_20px_-5px_rgba(5,128,191,0.5)] hover:bg-brand-dark hover:shadow-brand/40 px-6 py-3 rounded-full">
-                        <div class="flex items-center gap-3 text-md">
-                            <i data-lucide="phone" size="18" class="text-white shrink-0"></i>
-                            <span class="whitespace-nowrap">0731 351 599</span>
-                        </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10 dark:border-white/10 rounded-[2.5rem] overflow-hidden">
+                <!-- Card 1: Lunar -->
+                <div
+                    class="p-12 space-y-8 hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors border-b md:border-b-0 md:border-r border-black/10 dark:border-white/10">
+                    <div class="space-y-4">
+                        <p class="text-[11px] text-brand font-bold uppercase tracking-widest">Lunar</p>
+                        <h3 class="text-3xl font-semibold text-zinc-900 dark:text-white font-heading">Curățenie Generală
+                        </h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            O intervenție profundă pe lună. Ideală pentru birouri cu trafic redus sau ca serviciu
+                            complementar.
+                        </p>
+                    </div>
+
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-xs text-zinc-500 uppercase tracking-widest">DE LA</span>
+                        <span class="text-6xl font-black text-zinc-900 dark:text-white font-heading">10</span>
+                        <span class="text-sm text-zinc-500">RON/mp</span>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Curățenie generală completă</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Igienizare toalete și bucătărie</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Curățat geamuri interioare</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Aspirat și mopuit suprafețe</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact.html"
+                        class="inline-flex w-full items-center justify-center py-4 border border-brand/30 rounded-xl text-[11px] font-bold uppercase tracking-widest text-brand hover:bg-brand/10 transition-all active:scale-[0.98]">
+                        Solicită Ofertă
                     </a>
                 </div>
-            </aside>
 
-            <!-- Detailed Checklist -->
-            <div class="lg:col-span-3 space-y-16">
-                <div class="space-y-8">
-                    <h2
-                        class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                        Standarde
-                        Riguroase de Igienă</h2>
-                    <p class="text-zinc-500 text-lg leading-relaxed">
-                        Livrăm servicii premium pentru spații comerciale diverse, construind parteneriate bazate pe
-                        încredere și rezultate vizibile. Iată cum asigurăm curățenia în sediul tău:
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-                    <!-- Left Column -->
-                    <div class="space-y-4">
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Îndepărtarea prafului de pe
-                                aparatură și mobilier</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Tratarea mobilierului cu soluții
-                                antistatice</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Întreținere suprafețe inox și
-                                lemn</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățarea unităților de AC și
-                                încălzire</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Spălarea veselei de
-                                protocol</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Udarea și curățarea
-                                plantelor</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Tratare canapele și fotolii
-                                (piele/ecologică)</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Curățarea scărilor și a
-                                liftului</span>
-                        </div>
-                    </div>
-                    <!-- Right Column -->
-                    <div class="space-y-4">
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Spălarea geamurilor
-                                accesibile</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Aspirarea pânzelor de
-                                păianjen</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Aspirarea și spălarea
-                                pardoselilor</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Dezinfectarea grupurilor sanitare
-                                cu abur</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Spălarea covoarelor prin
-                                injecție-extracție</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Completarea dispenserelor de
-                                săpun și hârtie</span>
-                        </div>
-                        <div
-                            class="flex items-start gap-4 p-4 bg-black/[0.02] dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/5 hover:border-brand/30 transition-all">
-                            <i data-lucide="check-circle-2" class="text-brand shrink-0" size="20"></i>
-                            <span class="text-zinc-600 dark:text-zinc-400 text-sm">Evacuarea gunoiului
-                                menajer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Info -->
+                <!-- Card 2: Săptămânal (Featured) -->
                 <div
-                    class="bg-black/[0.02] dark:bg-surface-card/30 rounded-[3rem] p-12 border border-black/5 dark:border-white/5 space-y-6">
-                    <h3
-                        class="text-xl md:text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                        Eficiență Fără Compromisuri</h3>
-                    <p class="text-zinc-500 leading-relaxed">
-                        Folosim tehnologie de ultimă generație și soluții profesionale adaptate fiecărui tip de
-                        material. Pentru spații cu trafic intens, implementăm protocoale avansate de igienizare care
-                        mențin un mediu sănătos pe termen lung.
-                    </p>
+                    class="p-12 space-y-8 bg-brand/5 dark:bg-premium-navy/40 relative border-b md:border-b-0 md:border-r border-black/10 dark:border-white/10">
+                    <div class="absolute top-8 left-1/2 -translate-x-1/2">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand rounded-full text-[10px] font-bold uppercase tracking-widest text-white">
+                            <i data-lucide="star" size="12" fill="currentColor"></i>
+                            RECOMANDAT
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-10">
+                        <p class="text-[11px] text-brand font-bold uppercase tracking-widest">Săptămânal</p>
+                        <h3 class="text-3xl font-semibold text-zinc-900 dark:text-white font-heading">Întreținere
+                            Săptămânală</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            Cel mai ales tip de contract. Echipa vine o dată sau de două ori pe săptămână, seara sau în
+                            weekend.
+                        </p>
+                    </div>
+
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-xs text-zinc-500 uppercase tracking-widest">DE LA</span>
+                        <span class="text-6xl font-black text-brand font-heading">7</span>
+                        <span class="text-sm text-zinc-500">RON/mp</span>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-300 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Program fix adaptat orarului firmei</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-300 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Echipă stabilă dedicată</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-300 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Curățenie completă + întreținere</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-300 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Raport de activitate lunar</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact.html"
+                        class="inline-flex w-full items-center justify-center py-5 bg-brand rounded-xl text-[11px] font-bold uppercase tracking-widest text-white hover:bg-brand-light transition-all shadow-xl shadow-brand/20 active:scale-[0.98]">
+                        Rezervă Acum
+                    </a>
+                </div>
+
+                <!-- Card 3: Zilnic -->
+                <div class="p-12 space-y-8 hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors">
+                    <div class="space-y-4">
+                        <p class="text-[11px] text-brand font-bold uppercase tracking-widest">Zilnic</p>
+                        <h3 class="text-3xl font-semibold text-zinc-900 dark:text-white font-heading">Întreținere
+                            Zilnică</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            Pentru spații cu trafic intens: restaurante, showroom-uri, clădiri de birouri cu multiple
+                            etaje.
+                        </p>
+                    </div>
+
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-xs text-zinc-500 uppercase tracking-widest">DE LA</span>
+                        <span class="text-6xl font-black text-zinc-900 dark:text-white font-heading">5</span>
+                        <span class="text-sm text-zinc-500">RON/mp/zi</span>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Prezență zilnică, 5–7 zile/săptămână</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Curățenie + aprovizionare consumabile</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Supraveghetor dedicat</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 text-sm">
+                            <i data-lucide="check" class="text-brand" size="18"></i>
+                            <span>Raport săptămânal de activitate</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact.html"
+                        class="inline-flex w-full items-center justify-center py-4 border border-brand/30 rounded-xl text-[11px] font-bold uppercase tracking-widest text-brand hover:bg-brand/10 transition-all active:scale-[0.98]">
+                        Solicită Ofertă
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Form CTA -->
+    <!-- Section: Ce Includem -->
+    <section class="py-12 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-4 mb-20">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-[1px] bg-brand/50"></div>
+                    <p class="text-[11px] text-brand font-bold uppercase tracking-[0.4em]">Ce includem</p>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-7xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                    Serviciu <em class="text-brand italic">complet</em>,<br />de la intrare la arhivă
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+                <!-- Left: Grouped Services -->
+                <div class="space-y-16">
+                    <!-- Group 1 -->
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-4 border-b border-black/10 dark:border-white/10 pb-6">
+                            <span class="text-3xl text-zinc-400"><i data-lucide="building-2" size="24"></i></span>
+                            <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white font-heading">Zone de lucru
+                                & open space</h3>
+                        </div>
+                        <ul class="grid grid-cols-1 gap-4">
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Ștergerea prafului de pe birouri, calculatoare, echipamente</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Dezinfectat suprafețe de contact frecvent</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Aspirat mochete, covoare, scaune de birou</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Mopuit pardoseli dure</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Curățat tablouri, jaluzele, plante artificiale</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Group 2 -->
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-4 border-b border-black/10 dark:border-white/10 pb-6">
+                            <span class="text-3xl text-zinc-400"><i data-lucide="toilet" size="24"></i></span>
+                            <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white font-heading">Grupuri
+                                sanitare</h3>
+                        </div>
+                        <ul class="grid grid-cols-1 gap-4">
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Dezinfecție completă WC, chiuvete, robineți</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Descalcifiere oglinzi și suprafețe ceramice</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Aprovizionare săpun, hârtie igienică, prosoape (la cerere)</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Golire coșuri de gunoi + dezinfectare</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Group 3 -->
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-4 border-b border-black/10 dark:border-white/10 pb-6">
+                            <span class="text-3xl text-zinc-400"><i data-lucide="utensils" size="24"></i></span>
+                            <h3 class="text-2xl font-semibold text-zinc-900 dark:text-white font-heading">Bucătărie &
+                                zona de pauze</h3>
+                        </div>
+                        <ul class="grid grid-cols-1 gap-4">
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Curățat și dezinfectat suprafețe de lucru</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Igienizat chiuvetă, robineți, electrocasnice</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Curățat interior microunde și cafetieră</span>
+                            </li>
+                            <li
+                                class="flex items-start gap-3 text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                <span class="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>
+                                <span>Golire și dezinfectat gunoi</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Stats Card -->
+                <div class="lg:sticky lg:top-32">
+                    <div
+                        class="bg-black/[0.02] dark:bg-premium-navy border border-black/5 dark:border-white/5 rounded-[3rem] p-12 space-y-12">
+                        <h3 class="text-3xl font-semibold text-zinc-900 dark:text-white font-heading">De ce ne aleg
+                            firmele</h3>
+
+                        <div class="space-y-8">
+                            <div
+                                class="flex items-center justify-between border-b border-black/5 dark:border-white/5 pb-6">
+                                <span class="text-zinc-600 dark:text-zinc-400 font-light">Clienți corporativi
+                                    activi</span>
+                                <span
+                                    class="text-2xl font-semibold text-zinc-900 dark:text-white font-heading">60+</span>
+                            </div>
+                            <div
+                                class="flex items-center justify-between border-b border-black/5 dark:border-white/5 pb-6">
+                                <span class="text-zinc-600 dark:text-zinc-400 font-light">Ani experiență
+                                    comercial</span>
+                                <span
+                                    class="text-2xl font-semibold text-zinc-900 dark:text-white font-heading">11</span>
+                            </div>
+                            <div
+                                class="flex items-center justify-between border-b border-black/5 dark:border-white/5 pb-6">
+                                <span class="text-zinc-600 dark:text-zinc-400 font-light">Suprafață gestionată
+                                    lunar</span>
+                                <span
+                                    class="text-2xl font-semibold text-brand font-heading uppercase tracking-tighter">40k
+                                    mp</span>
+                            </div>
+                            <div
+                                class="flex items-center justify-between border-b border-black/5 dark:border-white/5 pb-6">
+                                <span class="text-zinc-600 dark:text-zinc-400 font-light">Timp răspuns reclamații</span>
+                                <span
+                                    class="text-2xl font-semibold text-zinc-900 dark:text-white font-heading tracking-tighter">&lt;
+                                    24h</span>
+                            </div>
+                        </div>
+
+                        <a href="contact.html"
+                            class="inline-flex w-full items-center justify-center gap-3 py-6 bg-brand rounded-2xl text-[11px] font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-light transition-all shadow-xl shadow-brand/10 active:scale-[0.98]">
+                            Solicită Ofertă Personalizată <i data-lucide="arrow-right" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section: FAQ -->
+    <section class=" py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-4 mb-20">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-[1px] bg-brand/50"></div>
+                    <p class="text-[11px] text-brand font-bold uppercase tracking-[0.4em]">Întrebări frecvente
+                    </p>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-7xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                    Răspunsuri pentru <br /><em class="text-brand italic">manageri</em> și HR
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <!-- Left: Accordion -->
+                <div class="space-y-6">
+                    <div class="border-b border-black/10 dark:border-white/10 pb-6 group">
+                        <button class="flex items-center justify-between w-full text-left faq-header py-4"
+                            onclick="toggleFaq(this)">
+                            <h4
+                                class="text-lg font-medium text-zinc-900 dark:text-white group-hover:text-brand transition-colors">
+                                Cum gestionați accesul la spațiu?</h4>
+                            <div
+                                class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center shrink-0 transition-all faq-icon">
+                                <i data-lucide="plus" size="16" class="text-zinc-500"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out opacity-0">
+                            <p class="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed pt-2 pb-4">
+                                Putem prelua cheile/codurile de acces sub un proces verbal de predare-primire și un
+                                contract de confidențialitate riguros. Alternativ, intervenția poate avea loc în
+                                prezența personalului dvs. de pază.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-b border-black/10 dark:border-white/10 pb-6 group">
+                        <button class="flex items-center justify-between w-full text-left faq-header py-4"
+                            onclick="toggleFaq(this)">
+                            <h4
+                                class="text-lg font-medium text-zinc-900 dark:text-white group-hover:text-brand transition-colors">
+                                Oferiți contract cu SLA și KPI-uri?</h4>
+                            <div
+                                class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center shrink-0 transition-all faq-icon">
+                                <i data-lucide="plus" size="16" class="text-zinc-500"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out opacity-0">
+                            <p class="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed pt-2 pb-4">
+                                Da, pentru parteneriatele pe termen lung stabilim indicatori de performanță (KPI) clari
+                                și un Service Level Agreement (SLA) care garantează calitatea și termenele de
+                                intervenție.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-b border-black/10 dark:border-white/10 pb-6 group">
+                        <button class="flex items-center justify-between w-full text-left faq-header py-4"
+                            onclick="toggleFaq(this)">
+                            <h4
+                                class="text-lg font-medium text-zinc-900 dark:text-white group-hover:text-brand transition-colors">
+                                Voi asigurați produsele de curățenie?</h4>
+                            <div
+                                class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center shrink-0 transition-all faq-icon">
+                                <i data-lucide="plus" size="16" class="text-zinc-500"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out opacity-0">
+                            <p class="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed pt-2 pb-4">
+                                Absolut. Venim cu toate echipamentele și soluțiile necesare (profesionale, certificate).
+                                Opțional, putem prelua și aprovizionarea cu consumabile pentru băi și bucătărie (săpun,
+                                hârtie, cafea).
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-b border-black/10 dark:border-white/10 pb-6 group">
+                        <button class="flex items-center justify-between w-full text-left faq-header py-4"
+                            onclick="toggleFaq(this)">
+                            <h4
+                                class="text-lg font-medium text-zinc-900 dark:text-white group-hover:text-brand transition-colors">
+                                Care este durata minimă a contractului?</h4>
+                            <div
+                                class="w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center shrink-0 transition-all faq-icon">
+                                <i data-lucide="plus" size="16" class="text-zinc-500"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out opacity-0">
+                            <p class="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed pt-2 pb-4">
+                                Pentru abonamentele de întreținere, perioada standard este de 12 luni, cu posibilitate
+                                de reziliere unilaterală cu un preaviz de 30 de zile. Suntem flexibili în funcție de
+                                nevoile dvs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: CTA Card -->
+                <div class="lg:sticky lg:top-32">
+                    <div
+                        class="bg-black/[0.02] dark:bg-premium-navy border border-black/5 dark:border-white/5 rounded-[3rem] p-12 space-y-12">
+                        <div class="space-y-6">
+                            <h3 class="text-4xl font-semibold text-zinc-900 dark:text-white font-heading">Solicită o
+                                întâlnire</h3>
+                            <p class="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">
+                                Venim la sediul dumneavoastră pentru o evaluare completă și o ofertă personalizată.
+                                Gratuit, fără obligații.
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <a href="tel:+40731351599"
+                                class="block mb-4 text-4xl md:text-5xl font-black text-brand font-heading hover:text-brand transition-colors">
+                                0731 351 599
+                            </a>
+                            <a href="contact.html"
+                                class="inline-flex items-center justify-center gap-3 py-6 px-10 mt-4 bg-brand rounded-2xl text-[11px] font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-light transition-all shadow-xl shadow-brand/10 active:scale-[0.98]">
+                                Programează Întâlnire <i data-lucide="arrow-right" size="16"></i>
+                            </a>
+                        </div>
+
+                        <div class="pt-8 border-t border-black/5 dark:border-white/5 space-y-6">
+                            <p class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest leading-loose">
+                                Parteneri de încredere</p>
+                            <div class="text-zinc-600 dark:text-zinc-400 text-sm font-light leading-relaxed">
+                                Starbucks · Hard Rock · Agricover <br />
+                                All Beauty · Bulrom · Centrele Ideal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const iconContainer = button.querySelector('.faq-icon');
+            const icon = iconContainer.querySelector('i');
+            const title = button.querySelector('h4');
+            const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-content').forEach(otherContent => {
+                if (otherContent !== content) {
+                    otherContent.style.maxHeight = '0px';
+                    otherContent.style.opacity = '0';
+                    const otherButton = otherContent.previousElementSibling;
+                    const otherIconContainer = otherButton.querySelector('.faq-icon');
+                    otherIconContainer.innerHTML = '<i data-lucide="plus" size="16" class="text-zinc-500"></i>';
+                    otherIconContainer.classList.remove('bg-black/5', 'dark:bg-white/5');
+                    otherButton.querySelector('h4').classList.remove('text-brand');
+                    otherButton.querySelector('h4').classList.add('text-zinc-900', 'dark:text-white');
+                }
+            });
+
+            if (isExpanded) {
+                content.style.maxHeight = '0px';
+                content.style.opacity = '0';
+                iconContainer.innerHTML = '<i data-lucide="plus" size="16" class="text-zinc-500"></i>';
+                iconContainer.classList.remove('bg-black/5', 'dark:bg-white/5');
+                title.classList.remove('text-brand');
+                title.classList.add('text-zinc-900', 'dark:text-white');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.opacity = '1';
+                iconContainer.innerHTML = '<i data-lucide="minus" size="16" class="text-brand"></i>';
+                iconContainer.classList.add('bg-black/5', 'dark:bg-white/5');
+                title.classList.add('text-brand');
+                title.classList.remove('text-zinc-900', 'dark:text-white');
+            }
+            lucide.createIcons();
+        }
+
+        // Initialize first FAQ as open
+        window.addEventListener('load', () => {
+            const firstFaq = document.querySelector('.faq-header');
+            if (firstFaq) {
+                // We'll leave it closed by default to match screenshot or open it if desired
+                // toggleFaq(firstFaq); 
+            }
+        });
+    </script>
+
+    <!-- Form CTA
     <section class="max-w-7xl mx-auto px-6 py-16">
     <div
         class="bg-black/[0.02] dark:bg-surface-card border border-black/5 dark:border-white/5 rounded-[3rem] p-12 md:p-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -549,7 +939,7 @@
         </form>
     </div>
 </section>
-
+ -->
 </main>
 
     <!-- Footer -->
@@ -607,6 +997,16 @@
         </div>
     </div>
 </footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/40731351599?text=Buna%20ziua%2C%20as%20dori%20o%20programare%20pentru%20curatenie."
+    class="fixed bottom-7 right-7 z-[200] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.4)] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-110 active:scale-95 group"
+    target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="#fff" class="w-8 h-8">
+        <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+</a>
 
 <!-- Cookie Consent Banner -->
 <div id="cookie-banner"

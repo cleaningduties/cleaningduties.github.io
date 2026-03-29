@@ -2,353 +2,518 @@
 layout: default
 title: Prețuri Servicii Curățenie
 ---
-    <main class="pt-20">
-        <!-- Page Header -->
-        <section class="relative py-24 px-6 overflow-hidden">
-            <!-- Animated Background Blobs -->
-            <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand/10 rounded-full blur-[120px] pointer-events-none">
+<main class="pt-20 overflow-x-hidden">
+    <!-- Page Header -->
+    <section class="relative py-12 px-6">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-brand/10 rounded-full blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-6 animate-fade-in relative z-10">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-[1px] bg-brand/50"></div>
+                <p class="text-[11px] text-brand font-bold uppercase tracking-[0.4em]">Tarife Complete</p>
+            </div>
+            <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                Alege serviciul<br /><em class="text-brand italic">potrivit</em> <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-light dark:from-white dark:to-zinc-500">pentru
+                    tine</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Tabs + Pricing Tables -->
+    <section class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <!-- Tab Navigation -->
+            <div class="mb-16 overflow-x-auto">
+                <div
+                    class="inline-flex bg-black/5 dark:bg-surface-card/50 border border-black/5 dark:border-white/5 rounded-full p-1.5">
+                    <button onclick="switchTab('rezidential')" id="tab-rezidential"
+                        class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest transition-all bg-zinc-900 dark:bg-white text-white dark:text-black whitespace-nowrap">
+                        <i data-lucide="home" size="14"></i>
+                        Rezidential
+                    </button>
+                    <button onclick="switchTab('birouri')" id="tab-birouri"
+                        class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest transition-all text-zinc-500 hover:text-zinc-900 dark:hover:text-white whitespace-nowrap">
+                        <i data-lucide="building-2" size="14"></i>
+                        Birouri
+                    </button>
+                    <button onclick="switchTab('constructor')" id="tab-constructor"
+                        class="tab-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest transition-all text-zinc-500 hover:text-zinc-900 dark:hover:text-white whitespace-nowrap">
+                        <i data-lucide="hard-hat" size="14"></i>
+                        Dupa Constructor
+                    </button>
+                </div>
             </div>
 
-            <div class="max-w-7xl mx-auto text-center space-y-6 animate-fade-in">
-                <p class="text-[10px] text-brand font-black uppercase tracking-[0.4em]">Transparență Totală</p>
-                <h1
-                    class="text-5xl md:text-6xl lg:text-7xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
-                    Prețuri <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-light dark:from-white dark:to-zinc-500">Servicii</span>
-                </h1>
-                <p class="text-zinc-500 text-lg md:text-xl lg:text-2xl font-normal leading-relaxed max-w-2xl mx-auto">
-                    Oferim soluții de curățenie adaptate nevoilor tale, cu tarife competitive și corecte.
+            <!-- Tab Content: Rezidential -->
+            <div id="content-rezidential" class="tab-content">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                    <!-- Curatenie de Intretinere -->
+                    <div class="space-y-8">
+                        <h3
+                            class="text-2xl md:text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
+                            Curatenie de Intretinere
+                        </h3>
+                        <div class="overflow-hidden">
+                            <!-- Table Header -->
+                            <div
+                                class="flex justify-between items-center py-4 border-b border-black/10 dark:border-white/10">
+                                <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Tip
+                                    Locuinta</span>
+                                <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Pret
+                                    Fix</span>
+                            </div>
+                            <!-- Rows -->
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Garsoniera</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">350
+                                    RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Apartament
+                                    2 camere</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">500
+                                    RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 bg-brand/5 dark:bg-brand/10 border-l-4 border-l-brand px-4">
+                                <span class="text-zinc-900 dark:text-white font-medium">Apartament 3 camere</span>
+                                <span class="font-bold text-brand font-heading text-lg">550 RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Apartament
+                                    4 camere</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">800
+                                    RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Casa
+                                    / Vila</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 1.000
+                                    RON</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Curatenie Generala -->
+                    <div class="space-y-8">
+                        <h3
+                            class="text-2xl md:text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
+                            Curatenie Generala
+                        </h3>
+                        <div class="overflow-hidden">
+                            <!-- Table Header -->
+                            <div
+                                class="flex justify-between items-center py-4 border-b border-black/10 dark:border-white/10">
+                                <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Tip
+                                    Locuinta</span>
+                                <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Pret
+                                    Fix</span>
+                            </div>
+                            <!-- Rows -->
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Garsoniera</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">550
+                                    RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Apartament
+                                    2 camere</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">700
+                                    RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 bg-brand/5 dark:bg-brand/10 border-l-4 border-l-brand px-4">
+                                <span class="text-zinc-900 dark:text-white font-medium">Apartament 3 camere</span>
+                                <span class="font-bold text-brand font-heading text-lg">de la 800 RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Apartament
+                                    4 camere</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 900
+                                    RON</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2">
+                                <span
+                                    class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-light">Casa
+                                    / Vila</span>
+                                <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 1.300
+                                    RON</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-zinc-500 text-sm font-light mt-10 leading-relaxed">
+                    * Deplasare gratuita in Bucuresti. Toate preturile includ manopera, produse si echipament. Pretul
+                    exact se stabileste la evaluarea gratuita.
                 </p>
             </div>
-        </section>
 
-        <!-- Quote Info Section -->
-        <section class="max-w-7xl mx-auto px-6 py-16">
-            <div
-                class="bg-black/5 dark:bg-surface-card/50 backdrop-blur-xl border border-black/5 dark:border-white/5 rounded-[2.5rem] p-10 md:p-16 space-y-8 border-l-brand/30 border-l-4">
-                <div class="space-y-4">
-                    <h2
-                        class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                        Cotație Gratuită</h2>
-                    <p class="text-zinc-500 dark:text-zinc-400 text-lg leading-relaxed max-w-4xl">
-                        Costul serviciilor de curățenie diferă în funcție de mai mulți factori, cum ar fi
+            <!-- Tab Content: Birouri -->
+            <div id="content-birouri" class="tab-content hidden">
+                <div>
+                    <!-- Table Header (desktop only) -->
+                    <div class="hidden md:grid grid-cols-4 gap-4 py-4 border-b border-black/10 dark:border-white/10">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Tip Contract</span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Frecventa</span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Tarif</span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Observatii</span>
+                    </div>
+                    <!-- Rows -->
+                    <div
+                        class="flex flex-col gap-2 md:gap-0 md:flex-row md:grid md:grid-cols-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-start md:items-center">
                         <span
-                            class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white mb-2 font-heading">numărul
-                            de camere, suprafață, numărul de
-                            geamuri, balcon închis/deschis, obiecte de decor, numărul de băi și particularitățile
-                            imobilului.</span>
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Curatenie
+                            Generala</span>
+                        <span class="text-zinc-500 font-light"><span class="md:hidden text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Frecventa: </span>Lunar</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 10
+                            RON/mp</span>
+                        <span class="text-zinc-500 font-light text-sm">O interventie profunda</span>
+                    </div>
+                    <div
+                        class="flex flex-col gap-2 md:gap-0 md:grid md:grid-cols-4 py-5 border-b border-black/5 dark:border-white/5 bg-brand/5 dark:bg-brand/10 border-l-4 border-l-brand px-4 items-start md:items-center">
+                        <span class="text-zinc-900 dark:text-white font-medium">Intretinere Saptamanala</span>
+                        <span class="text-zinc-500 font-light"><span class="md:hidden text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Frecventa: </span>1-2x/saptamana</span>
+                        <span class="font-bold text-brand font-heading text-lg">de la 7 RON/mp</span>
+                        <span class="text-zinc-500 font-light text-sm">Cel mai solicitat</span>
+                    </div>
+                    <div
+                        class="flex flex-col gap-2 md:gap-0 md:grid md:grid-cols-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-start md:items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Intretinere
+                            Zilnica</span>
+                        <span class="text-zinc-500 font-light"><span class="md:hidden text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Frecventa: </span>5-7 zile/saptamana</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 5
+                            RON/mp/zi</span>
+                        <span class="text-zinc-500 font-light text-sm">Spatii cu trafic intens</span>
+                    </div>
+                    <div
+                        class="flex flex-col gap-2 md:gap-0 md:grid md:grid-cols-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-start md:items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Curatenie
+                            cu Probiotice</span>
+                        <span class="text-zinc-500 font-light"><span class="md:hidden text-[10px] uppercase tracking-widest text-zinc-500 font-bold">Frecventa: </span>La cerere</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 12
+                            RON/mp</span>
+                        <span class="text-zinc-500 font-light text-sm">Dezinfectie avansata</span>
+                    </div>
+                </div>
+
+                <p class="text-zinc-500 text-sm font-light mt-10 leading-relaxed">
+                    * Preturile sunt orientative si se calculeaza in functie de suprafata, frecventa si specificul
+                    spatiului. Evaluare gratuita la sediul clientului.
+                </p>
+            </div>
+
+            <!-- Tab Content: Dupa Constructor -->
+            <div id="content-constructor" class="tab-content hidden">
+                <div class="overflow-hidden">
+                    <!-- Table Header -->
+                    <div class="grid grid-cols-3 gap-4 py-4 border-b border-black/10 dark:border-white/10">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Tip Spatiu</span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Suprafata
+                            Estimata</span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">Pret</span>
+                    </div>
+                    <!-- Rows -->
+                    <div
+                        class="grid grid-cols-3 gap-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Garsoniera</span>
+                        <span class="text-zinc-500 font-light">pana la 35 mp</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 700
+                            RON</span>
+                    </div>
+                    <div
+                        class="grid grid-cols-3 gap-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Apartament
+                            2 camere</span>
+                        <span class="text-zinc-500 font-light">35-55 mp</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 800
+                            RON</span>
+                    </div>
+                    <div
+                        class="grid grid-cols-3 gap-4 py-5 border-b border-black/5 dark:border-white/5 bg-brand/5 dark:bg-brand/10 border-l-4 border-l-brand px-4 items-center">
+                        <span class="text-zinc-900 dark:text-white font-medium">Apartament 3 camere</span>
+                        <span class="text-zinc-500 font-light">55-80 mp</span>
+                        <span class="font-bold text-brand font-heading text-lg">de la 1.000 RON</span>
+                    </div>
+                    <div
+                        class="grid grid-cols-3 gap-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Apartament
+                            4 camere</span>
+                        <span class="text-zinc-500 font-light">80-110 mp</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 1.300
+                            RON</span>
+                    </div>
+                    <div
+                        class="grid grid-cols-3 gap-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Casa
+                            / Vila</span>
+                        <span class="text-zinc-500 font-light">peste 110 mp</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">de la 1.500
+                            RON</span>
+                    </div>
+                    <div
+                        class="grid grid-cols-3 gap-4 py-5 border-b border-black/5 dark:border-white/5 group hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors px-2 items-center">
+                        <span
+                            class="text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors font-medium">Spatiu
+                            comercial</span>
+                        <span class="text-zinc-500 font-light">variabil</span>
+                        <span class="font-bold text-zinc-900 dark:text-white font-heading text-lg">oferta
+                            personalizata</span>
+                    </div>
+                </div>
+
+                <p class="text-zinc-500 text-sm font-light mt-10 leading-relaxed">
+                    * Pretul final poate varia in functie de gradul de murdarie, tipul de finisaje si accesorii
+                    solicitate. Oferta ferma dupa evaluare fotografica gratuita.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicii Aditionale -->
+    <section class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-4 mb-16">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-[1px] bg-brand/50"></div>
+                    <p class="text-[11px] text-brand font-bold uppercase tracking-[0.4em]">Servicii Aditionale</p>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                    Completeaza<br />cu servicii <em class="text-brand italic">extra</em>
+                </h2>
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/10 dark:border-white/10 rounded-[2.5rem] overflow-hidden">
+                <!-- Card 1: Textile & Covoare -->
+                <div
+                    class="p-10 space-y-6 hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors border-b md:border-b-0 md:border-r border-black/10 dark:border-white/10">
+                    <div class="space-y-4">
+                        <span class="text-2xl"><i data-lucide="sofa" size="24" class="text-brand"></i></span>
+                        <h3 class="text-xl font-semibold text-zinc-900 dark:text-white font-heading">Textile &
+                            Covoare</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Canapea 2 locuri (abur)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 170 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Canapea 3 locuri (abur)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 220 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Covoare
+                                (injectie/extractie)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 7 RON/mp</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Mochete
+                                (injectie/extractie)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 7 RON/mp</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Fotoliu (abur)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 80 RON</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Bucatarie Intensiva -->
+                <div
+                    class="p-10 space-y-6 hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors border-b md:border-b-0 md:border-r border-black/10 dark:border-white/10">
+                    <div class="space-y-4">
+                        <span class="text-2xl"><i data-lucide="cooking-pot" size="24" class="text-brand"></i></span>
+                        <h3 class="text-xl font-semibold text-zinc-900 dark:text-white font-heading">Bucatarie
+                            Intensiva</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Curatat frigider interior</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">30-45 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Curatat cuptor interior</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">30-45 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Curatat aragaz complet</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">25 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Spalat vase
+                                (operatiune)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 15 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Curatat hota</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">35 RON</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Gospodarie & Textile -->
+                <div class="p-10 space-y-6 hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors">
+                    <div class="space-y-4">
+                        <span class="text-2xl"><i data-lucide="shirt" size="24" class="text-brand"></i></span>
+                        <h3 class="text-xl font-semibold text-zinc-900 dark:text-white font-heading">Gospodarie &
+                            Textile</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Calcat (operatiune)</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">50 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Schimbat lenjerie pat</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">10 RON/set</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Montat/demontat draperii</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">15 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Curatat jaluzele</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">de la 20 RON</span>
+                        </li>
+                        <li class="flex justify-between items-start gap-4">
+                            <span class="text-zinc-600 dark:text-zinc-400 font-light">Organizat dulap</span>
+                            <span class="text-brand font-bold text-right whitespace-nowrap">la cerere</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantiile Noastre -->
+    <section class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-4 mb-16">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-[1px] bg-brand/50"></div>
+                    <p class="text-[11px] text-brand font-bold uppercase tracking-[0.4em]">Garantiile Noastre</p>
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl lg:text-6xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading leading-tight">
+                    De ce sa ai<br /><em class="text-brand italic">incredere</em> in noi
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="text-center space-y-4">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="badge-dollar-sign" size="24" class="text-brand"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-zinc-900 dark:text-white font-heading">Pret Fix</h4>
+                    <p class="text-zinc-500 text-sm font-light leading-relaxed">
+                        Pretul comunicat inainte de interventie este pretul final. Niciun cost ascuns, nicio surpriza.
                     </p>
                 </div>
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                    <div
-                        class="flex items-center gap-3 px-4 py-2 bg-brand/10 text-brand border border-brand/20 rounded-full text-[10px] font-black uppercase tracking-widest">
-                        <i data-lucide="info" size="14"></i>
-                        Deplasare Gratuită
+                <div class="text-center space-y-4">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="shield-check" size="24" class="text-brand"></i>
                     </div>
+                    <h4 class="text-lg font-semibold text-zinc-900 dark:text-white font-heading">100% Satisfactie</h4>
+                    <p class="text-zinc-500 text-sm font-light leading-relaxed">
+                        Daca ceva nu este perfect, revenim si reglam gratuit in 24h. Platesti doar cand esti multumit.
+                    </p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="shield" size="24" class="text-brand"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-zinc-900 dark:text-white font-heading">Asigurare Completa
+                    </h4>
+                    <p class="text-zinc-500 text-sm font-light leading-relaxed">
+                        Fiecare interventie este acoperita de asigurare. Orice incident este rezolvat rapid si
+                        transparent.
+                    </p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="truck" size="24" class="text-brand"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold text-zinc-900 dark:text-white font-heading">Deplasare Gratuita
+                    </h4>
+                    <p class="text-zinc-500 text-sm font-light leading-relaxed">
+                        Nu percepem costuri de deplasare in Bucuresti. Evaluarea la domiciliu este, de asemenea,
+                        gratuita.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Pricing Grid -->
-        <section class="max-w-7xl mx-auto px-6 py-16 space-y-12">
-            <!-- Row 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Spatii Birouri -->
-                <div class="space-y-8">
-                    <div class="space-y-2">
-                        <p class="text-[10px] text-brand dark:text-brand-light font-black uppercase tracking-[0.3em]">
-                            Business</p>
-                        <h3
-                            class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                            Spații de Birouri
-                        </h3>
-                    </div>
-                    <div
-                        class="bg-black/5 dark:bg-surface-card/40 border border-black/5 dark:border-white/5 rounded-[2rem] overflow-hidden divide-y divide-black/5 dark:divide-white/5">
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Curățenie
-                                Generală</span>
-                            <span class="font-heading font-bold text-brand">de la 10 RON/mp</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Curățenie
-                                de
-                                Întreținere Săptămânală</span>
-                            <span class="font-heading font-bold text-brand">de la 7 RON/mp</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Curățenie
-                                de
-                                Întreținere Zilnică</span>
-                            <span class="font-heading font-bold text-brand">de la 5 RON/mp</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Curățenie
-                                cu Produse
-                                Probiotice</span>
-                            <span class="font-heading font-bold text-brand">de la 12 RON/mp</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dupa Constructor -->
-                <div class="space-y-8">
-                    <div class="space-y-2">
-                        <p class="text-[10px] text-brand dark:text-accent-lime font-black uppercase tracking-[0.3em]">
-                            Special</p>
-                        <h3
-                            class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                            După Constructor
-                        </h3>
-                    </div>
-                    <div
-                        class="bg-black/5 dark:bg-surface-card/40 border border-black/5 dark:border-white/5 rounded-[2rem] overflow-hidden divide-y divide-black/5 dark:divide-white/5">
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Garsonieră</span>
-                            <span class="font-heading font-bold text-brand">de la 700 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                2
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">de la 800 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                3
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">de la 1000 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                4
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">de la 1300 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Casă
-                                / Vilă</span>
-                            <span class="font-heading font-bold text-brand">de la 1500 RON</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Intretinere -->
-                <div class="space-y-8">
-                    <div class="space-y-2">
-                        <p class="text-[10px] text-zinc-500 font-black uppercase tracking-[0.3em]">Rezidențial</p>
-                        <h3
-                            class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                            Întreținere</h3>
-                    </div>
-                    <div
-                        class="bg-black/5 dark:bg-surface-card/40 border border-black/5 dark:border-white/5 rounded-[2rem] overflow-hidden divide-y divide-black/5 dark:divide-white/5">
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Garsonieră</span>
-                            <span class="font-heading font-bold text-brand">350 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                2
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">500 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                3
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">550 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                4
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">800 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Casă
-                                / Vilă</span>
-                            <span class="font-heading font-bold text-brand">1000 RON</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Generala -->
-                <div class="space-y-8">
-                    <div class="space-y-2">
-                        <p class="text-[10px] text-zinc-500 font-black uppercase tracking-[0.3em]">Rezidențial</p>
-                        <h3
-                            class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                            Generală</h3>
-                    </div>
-                    <div
-                        class="bg-black/5 dark:bg-surface-card/40 border border-black/5 dark:border-white/5 rounded-[2rem] overflow-hidden divide-y divide-black/5 dark:divide-white/5">
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Garsonieră</span>
-                            <span class="font-heading font-bold text-brand">550 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                2
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">700 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                3
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">de la 800 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Apartament
-                                4
-                                camere</span>
-                            <span class="font-heading font-bold text-brand">de la 900 RON</span>
-                        </div>
-                        <div
-                            class="p-6 flex justify-between items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                            <span
-                                class="text-zinc-600 dark:text-zinc-400 group-hover:text-brand dark:group-hover:text-white transition-colors">Casă
-                                / Vilă</span>
-                            <span class="font-heading font-bold text-brand">de la 1300 RON</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 3 - Other Services -->
-            <div class="space-y-8">
-                <div class="space-y-2">
-                    <p class="text-[10px] text-brand font-black uppercase tracking-[0.3em]">Extra</p>
-                    <h3
-                        class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight font-heading">
-                        Alte Servicii</h3>
-                </div>
-                <div
-                    class="bg-black/5 dark:bg-surface-card/40 border border-black/5 dark:border-white/5 rounded-[2.5rem] overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black/5 dark:divide-white/5">
-                    <div class="p-8 space-y-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                        <h4 class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white mb-2 font-heading">
-                            Textile & Covoare</h4>
-                        <ul class="space-y-4 text-sm">
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Curățat canapele (2 locuri) cu
-                                    abur</span>
-                                <span class="text-brand font-bold text-right">de la 170 RON</span>
-                            </li>
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Spălat covoare
-                                    (injecție/extracție)</span>
-                                <span class="text-brand font-bold text-right">de la 7 RON/mp</span>
-                            </li>
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Spălat mochete
-                                    (injecție/extracție)</span>
-                                <span class="text-brand font-bold text-right">de la 7 RON/mp</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-8 space-y-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                        <h4 class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white mb-2 font-heading">
-                            Bucătărie</h4>
-                        <ul class="space-y-4 text-sm">
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Spălat vase</span>
-                                <span class="text-brand font-bold text-right">de la 15 RON</span>
-                            </li>
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Curățat frigider/cuptor interior</span>
-                                <span class="text-brand font-bold text-right">30-45 RON</span>
-                            </li>
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Curățat aragaz</span>
-                                <span class="text-brand font-bold text-right">25 RON</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-8 space-y-4 hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                        <h4 class="text-lg md:text-xl font-semibold text-zinc-900 dark:text-white mb-2 font-heading">
-                            Gospodărie</h4>
-                        <ul class="space-y-4 text-sm">
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Călcat (operațiune)</span>
-                                <span class="text-brand font-bold text-right">50 RON</span>
-                            </li>
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Schimbat lenjerie</span>
-                                <span class="text-brand font-bold text-right">10 RON</span>
-                            </li>
-                            <li class="flex justify-between items-start gap-4">
-                                <span class="text-zinc-600 dark:text-zinc-500">Montat/Demontat draperii & perdele</span>
-                                <span class="text-brand font-bold text-right">15 RON</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="max-w-7xl mx-auto px-6 py-16">
+    <!-- CTA Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="relative bg-brand rounded-[3rem] p-12 md:p-20 overflow-hidden shadow-2xl shadow-brand/20">
             <div
-                class="relative bg-brand rounded-[3rem] p-12 md:p-24 overflow-hidden text-center space-y-8 shadow-2xl shadow-brand/20">
-                <!-- Decorative Elements -->
-                <div
-                    class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
-                </div>
-
-                <h2
-                    class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight font-heading leading-tight relative z-10">
-                    Pregătit pentru un spațiu <br> cu adevărat curat?
-                </h2>
-                <p class="text-white/70 text-lg md:text-xl max-w-xl mx-auto relative z-10">
-                    Contactează-ne astăzi pentru o ofertă personalizată sau pentru a programa o evaluare gratuită.
-                </p>
-                <div class="pt-4 relative z-10">
-                    <a href="contact.html"
-                        class="inline-flex items-center justify-center gap-3 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-white text-brand px-12 py-6 rounded-full shadow-xl hover:shadow-2xl">
-                        Solicită Oferta <i data-lucide="arrow-right" size="18"></i>
-                    </a>
-                </div>
+                class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
             </div>
-        </section>
-    </main>
+
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 relative z-10">
+                <div class="space-y-4">
+                    <h2
+                        class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight font-heading leading-tight">
+                        Nu stii ce serviciu<br />ti se potriveste?
+                    </h2>
+                    <p class="text-white/70 text-lg max-w-xl">
+                        Suna-ne si iti facem o recomandare gratuita in functie de nevoile tale.
+                    </p>
+                </div>
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center gap-3 font-bold transition-all duration-300 active:scale-95 uppercase tracking-widest text-[11px] bg-white text-brand px-10 py-5 rounded-full shadow-xl hover:shadow-2xl shrink-0">
+                    Solicita Evaluare Gratuita <i data-lucide="arrow-right" size="16"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function switchTab(tabName) {
+            // Hide all content
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            // Reset all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-zinc-900', 'dark:bg-white', 'text-white', 'dark:text-black');
+                btn.classList.add('text-zinc-500');
+            });
+
+            // Show selected content
+            document.getElementById('content-' + tabName).classList.remove('hidden');
+            // Activate selected tab
+            const activeTab = document.getElementById('tab-' + tabName);
+            activeTab.classList.add('bg-zinc-900', 'dark:bg-white', 'text-white', 'dark:text-black');
+            activeTab.classList.remove('text-zinc-500');
+
+            lucide.createIcons();
+        }
+    </script>
+</main>

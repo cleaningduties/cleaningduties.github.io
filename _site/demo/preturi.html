@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prețuri Curățenie București — Cleaning Duties</title>
+<meta name="description" content="Tarife transparente pentru curățenie rezidențială, birouri și după constructor în București. Prețuri fixe, fără surprize. Evaluare gratuită.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d1b2a;--navy-mid:#1a2e42;--navy-light:#243b55;--cream:#f5f0e8;--cream-mid:#ede8de;--white:#fff;--gold:#c9a84c;--gold-light:#e8c97a;--gold-pale:#f7edd5;--text-dark:#0d1b2a;--text-mid:#3a4a5c;--text-light:#7a8a9a;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--cream);color:var(--text-dark);overflow-x:hidden;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(13,27,42,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);}
+  .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .nav-logo-mark{width:36px;height:36px;background:var(--gold);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);}
+  .nav-logo-text{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--white);letter-spacing:0.02em;}
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+  .nav-links a{font-size:13px;font-weight:400;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold-light);}
+  .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:10px 24px;border-radius:6px;font-weight:500!important;}
+  .nav-hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;}
+  .section-label{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .section-label::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
+  .section-title{font-family:var(--serif);font-size:clamp(32px,3.5vw,50px);font-weight:700;line-height:1.1;color:var(--text-dark);max-width:600px;margin-bottom:48px;}
+  .section-title em{font-style:italic;color:var(--navy-light);}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s var(--ease-out),transform 0.7s var(--ease-out);}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--navy);font-family:var(--sans);font-size:14px;font-weight:500;padding:16px 32px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;transition:all 0.25s;}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);}
+  .btn-dark{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:var(--white);font-family:var(--sans);font-size:14px;font-weight:500;padding:16px 32px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;white-space:nowrap;transition:all 0.25s;}
+  .btn-dark:hover{background:var(--navy-mid);transform:translateY(-2px);}
+
+  .page-hero{background:var(--navy);padding:140px 80px 80px;position:relative;overflow:hidden;}
+  .hero-bg-dots{position:absolute;inset:0;opacity:0.03;background-image:radial-gradient(rgba(201,168,76,0.8) 1px,transparent 1px);background-size:40px 40px;}
+  .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:24px;}
+  .breadcrumb a{color:rgba(255,255,255,0.35);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--gold-light);}
+  .breadcrumb span{color:rgba(201,168,76,0.5);}
+  .page-hero-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:900;line-height:1.05;color:var(--white);max-width:700px;margin-bottom:20px;}
+  .page-hero-title em{font-style:italic;color:var(--gold-light);}
+  .page-hero-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.7;max-width:560px;}
+
+  /* TABS */
+  .pricing-tabs{padding:80px 80px;background:var(--white);}
+  .tab-nav{display:flex;gap:2px;margin-bottom:48px;background:var(--cream);padding:4px;border-radius:10px;width:fit-content;}
+  .tab-btn{background:none;border:none;padding:12px 28px;font-family:var(--sans);font-size:13px;font-weight:500;color:var(--text-light);cursor:pointer;border-radius:8px;transition:all 0.25s;letter-spacing:0.04em;}
+  .tab-btn.active{background:var(--white);color:var(--navy);box-shadow:0 2px 8px rgba(13,27,42,0.1);}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;}
+
+  /* PRICING TABLE */
+  .price-table{width:100%;border-collapse:collapse;}
+  .price-table th{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-light);padding:12px 20px;text-align:left;border-bottom:2px solid var(--cream-mid);}
+  .price-table td{padding:16px 20px;font-size:14px;color:var(--text-mid);font-weight:300;border-bottom:1px solid var(--cream);}
+  .price-table tr:hover td{background:var(--cream);}
+  .price-table .price-cell{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--navy);}
+  .price-table .label-cell{font-weight:500;color:var(--text-dark);font-size:14px;}
+  .price-highlight{background:var(--gold-pale)!important;}
+  .price-highlight td{background:var(--gold-pale)!important;}
+  .price-highlight .price-cell{color:var(--gold);}
+
+  /* EXTRAS */
+  .extras{padding:80px;background:var(--cream);}
+  .extras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:16px;}
+  .extra-card{background:var(--white);padding:32px;transition:all 0.3s;}
+  .extra-card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(13,27,42,0.06);}
+  .extra-icon{font-size:24px;margin-bottom:12px;}
+  .extra-title{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--text-dark);margin-bottom:16px;}
+  .extra-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .extra-list li{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;padding-bottom:10px;border-bottom:1px solid var(--cream);}
+  .extra-list li:last-child{border-bottom:none;padding-bottom:0;}
+  .extra-list .item-name{color:var(--text-mid);font-weight:300;}
+  .extra-list .item-price{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--navy);white-space:nowrap;margin-left:8px;}
+
+  /* GUARANTEES */
+  .guarantees{padding:80px;background:var(--navy);}
+  .guarantees-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:48px;}
+  .g-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);padding:32px 24px;text-align:center;}
+  .g-icon{font-size:32px;margin-bottom:16px;}
+  .g-title{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px;}
+  .g-desc{font-size:13px;color:rgba(255,255,255,0.45);font-weight:300;line-height:1.6;}
+
+  .cta-banner{background:var(--gold);padding:80px;display:flex;align-items:center;justify-content:space-between;gap:40px;}
+  .cta-banner h2{font-family:var(--serif);font-size:clamp(28px,3vw,44px);font-weight:700;color:var(--navy);line-height:1.15;}
+  .cta-banner p{font-size:15px;color:rgba(13,27,42,0.6);margin-top:10px;}
+  footer{background:#080f18;padding:64px 80px 40px;border-top:1px solid rgba(201,168,76,0.1);}
+  .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+  .footer-brand p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.35);line-height:1.7;margin-top:16px;max-width:280px;}
+  .footer-col h4{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:16px;}
+  .footer-col ul{list-style:none;}
+  .footer-col ul li{margin-bottom:10px;}
+  .footer-col ul li a{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
+  .footer-col ul li a:hover{color:var(--gold-light);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;border-top:1px solid rgba(255,255,255,0.06);}
+  .footer-copy{font-size:12px;color:rgba(255,255,255,0.2);}
+  .footer-phone{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--gold);text-decoration:none;}
+  .wa-btn{position:fixed;bottom:28px;right:28px;z-index:200;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,0.4);text-decoration:none;transition:all 0.3s;}
+  .wa-btn:hover{transform:scale(1.1);}
+  .wa-btn svg{width:28px;height:28px;}
+  @media(max-width:900px){
+    nav{padding:0 24px;}.nav-links{display:none;}.nav-hamburger{display:flex;}
+    .page-hero,.pricing-tabs,.extras,.guarantees,.cta-banner,footer{padding-left:24px;padding-right:24px;}
+    .extras-grid,.guarantees-grid{grid-template-columns:1fr 1fr;}
+    .footer-top{grid-template-columns:1fr 1fr;gap:32px;}
+    .cta-banner{flex-direction:column;align-items:flex-start;}
+    .tab-nav{flex-wrap:wrap;}
+    .price-table th,.price-table td{padding:12px;}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">CD</div><span class="nav-logo-text">Cleaning Duties</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="curatenie-rezidentiala.html">Rezidențial</a></li>
+    <li><a href="curatenie-birouri.html">Birouri</a></li>
+    <li><a href="curatenie-dupa-constructor.html">Constructor</a></li>
+    <li><a href="preturi.html" class="active">Prețuri</a></li>
+    <li><a href="despre-noi.html">Despre Noi</a></li>
+    <li><a href="contact.html" class="nav-cta">Programare</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-bg-dots"></div>
+  <div class="breadcrumb"><a href="index.html">Acasă</a><span>›</span><span style="color:rgba(201,168,76,0.7)">Prețuri</span></div>
+  <div class="section-label">Transparență Totală</div>
+  <h1 class="page-hero-title">Prețuri <em>Clare</em>,<br>Fără Surprize</h1>
+  <p class="page-hero-sub">Tarife fixe comunicate înainte de orice intervenție. Evaluare gratuită la domiciliu sau online. Plătești doar când ești 100% mulțumit.</p>
+</section>
+
+<section class="pricing-tabs">
+  <div class="section-label">Tarife Complete</div>
+  <h2 class="section-title reveal">Alege serviciul<br>potrivit pentru tine</h2>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('rezidential',this)">🏠 Rezidențial</button>
+    <button class="tab-btn" onclick="switchTab('birouri',this)">🏢 Birouri</button>
+    <button class="tab-btn" onclick="switchTab('constructor',this)">🔨 După Constructor</button>
+  </div>
+
+  <div id="tab-rezidential" class="tab-panel active">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:20px;">Curățenie de Întreținere</h3>
+        <table class="price-table">
+          <thead><tr><th>Tip Locuință</th><th>Preț Fix</th></tr></thead>
+          <tbody>
+            <tr><td class="label-cell">Garsonieră</td><td class="price-cell">350 RON</td></tr>
+            <tr><td class="label-cell">Apartament 2 camere</td><td class="price-cell">500 RON</td></tr>
+            <tr class="price-highlight"><td class="label-cell">Apartament 3 camere</td><td class="price-cell">550 RON</td></tr>
+            <tr><td class="label-cell">Apartament 4 camere</td><td class="price-cell">800 RON</td></tr>
+            <tr><td class="label-cell">Casă / Vilă</td><td class="price-cell">de la 1.000 RON</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3 style="font-family:var(--serif);font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:20px;">Curățenie Generală</h3>
+        <table class="price-table">
+          <thead><tr><th>Tip Locuință</th><th>Preț Fix</th></tr></thead>
+          <tbody>
+            <tr><td class="label-cell">Garsonieră</td><td class="price-cell">550 RON</td></tr>
+            <tr><td class="label-cell">Apartament 2 camere</td><td class="price-cell">700 RON</td></tr>
+            <tr class="price-highlight"><td class="label-cell">Apartament 3 camere</td><td class="price-cell">de la 800 RON</td></tr>
+            <tr><td class="label-cell">Apartament 4 camere</td><td class="price-cell">de la 900 RON</td></tr>
+            <tr><td class="label-cell">Casă / Vilă</td><td class="price-cell">de la 1.300 RON</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p style="margin-top:20px;font-size:13px;color:var(--text-light);font-weight:300;">* Deplasare gratuită în București. Toate prețurile includ manoperă, produse și echipament. Prețul exact se stabilește la evaluarea gratuită.</p>
+  </div>
+
+  <div id="tab-birouri" class="tab-panel">
+    <table class="price-table">
+      <thead><tr><th>Tip Contract</th><th>Frecvență</th><th>Tarif</th><th>Observații</th></tr></thead>
+      <tbody>
+        <tr><td class="label-cell">Curățenie Generală</td><td>Lunar</td><td class="price-cell">de la 10 RON/mp</td><td style="font-size:12px;color:var(--text-light)">O intervenție profundă</td></tr>
+        <tr class="price-highlight"><td class="label-cell">Întreținere Săptămânală</td><td>1–2x/săptămână</td><td class="price-cell">de la 7 RON/mp</td><td style="font-size:12px;">Cel mai solicitat</td></tr>
+        <tr><td class="label-cell">Întreținere Zilnică</td><td>5–7 zile/săptămână</td><td class="price-cell">de la 5 RON/mp/zi</td><td style="font-size:12px;color:var(--text-light)">Spații cu trafic intens</td></tr>
+        <tr><td class="label-cell">Curățenie cu Probiotice</td><td>La cerere</td><td class="price-cell">de la 12 RON/mp</td><td style="font-size:12px;color:var(--text-light)">Dezinfecție avansată</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:20px;font-size:13px;color:var(--text-light);font-weight:300;">* Prețurile sunt orientative și se calculează în funcție de suprafață, frecvență și specificul spațiului. Evaluare gratuită la sediul clientului.</p>
+  </div>
+
+  <div id="tab-constructor" class="tab-panel">
+    <table class="price-table">
+      <thead><tr><th>Tip Spațiu</th><th>Suprafață estimată</th><th>Preț</th></tr></thead>
+      <tbody>
+        <tr><td class="label-cell">Garsonieră</td><td>până la 35 mp</td><td class="price-cell">de la 700 RON</td></tr>
+        <tr><td class="label-cell">Apartament 2 camere</td><td>35–55 mp</td><td class="price-cell">de la 800 RON</td></tr>
+        <tr class="price-highlight"><td class="label-cell">Apartament 3 camere</td><td>55–80 mp</td><td class="price-cell">de la 1.000 RON</td></tr>
+        <tr><td class="label-cell">Apartament 4 camere</td><td>80–110 mp</td><td class="price-cell">de la 1.300 RON</td></tr>
+        <tr><td class="label-cell">Casă / Vilă</td><td>peste 110 mp</td><td class="price-cell">de la 1.500 RON</td></tr>
+        <tr><td class="label-cell">Spațiu comercial</td><td>variabil</td><td class="price-cell">ofertă personalizată</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:20px;font-size:13px;color:var(--text-light);font-weight:300;">* Prețul final poate varia în funcție de gradul de murdărie, tipul de finisaje și accesorii solicitate. Ofertă fermă după evaluare fotografică gratuită.</p>
+  </div>
+</section>
+
+<!-- EXTRAS -->
+<section class="extras">
+  <div class="section-label">Servicii Adiționale</div>
+  <h2 class="section-title reveal">Completează<br>cu servicii <em>extra</em></h2>
+  <div class="extras-grid">
+    <div class="extra-card reveal">
+      <div class="extra-icon">🛋️</div>
+      <div class="extra-title">Textile & Covoare</div>
+      <ul class="extra-list">
+        <li><span class="item-name">Canapea 2 locuri (abur)</span><span class="item-price">de la 170 RON</span></li>
+        <li><span class="item-name">Canapea 3 locuri (abur)</span><span class="item-price">de la 220 RON</span></li>
+        <li><span class="item-name">Covoare (injecție/extracție)</span><span class="item-price">de la 7 RON/mp</span></li>
+        <li><span class="item-name">Mochete (injecție/extracție)</span><span class="item-price">de la 7 RON/mp</span></li>
+        <li><span class="item-name">Fotoliu (abur)</span><span class="item-price">de la 80 RON</span></li>
+      </ul>
+    </div>
+    <div class="extra-card reveal" style="transition-delay:0.1s">
+      <div class="extra-icon">🍳</div>
+      <div class="extra-title">Bucătărie Intensivă</div>
+      <ul class="extra-list">
+        <li><span class="item-name">Curățat frigider interior</span><span class="item-price">30–45 RON</span></li>
+        <li><span class="item-name">Curățat cuptor interior</span><span class="item-price">30–45 RON</span></li>
+        <li><span class="item-name">Curățat aragaz complet</span><span class="item-price">25 RON</span></li>
+        <li><span class="item-name">Spălat vase (operațiune)</span><span class="item-price">de la 15 RON</span></li>
+        <li><span class="item-name">Curățat hotă</span><span class="item-price">35 RON</span></li>
+      </ul>
+    </div>
+    <div class="extra-card reveal" style="transition-delay:0.2s">
+      <div class="extra-icon">👕</div>
+      <div class="extra-title">Gospodărie & Textile</div>
+      <ul class="extra-list">
+        <li><span class="item-name">Călcat (operațiune)</span><span class="item-price">50 RON</span></li>
+        <li><span class="item-name">Schimbat lenjerie pat</span><span class="item-price">10 RON/set</span></li>
+        <li><span class="item-name">Montat/demontat draperii</span><span class="item-price">15 RON</span></li>
+        <li><span class="item-name">Curățat jaluzele</span><span class="item-price">de la 20 RON</span></li>
+        <li><span class="item-name">Organizat dulap</span><span class="item-price">la cerere</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEES -->
+<section class="guarantees">
+  <div class="section-label">Garanțiile Noastre</div>
+  <h2 class="section-title reveal" style="color:var(--white)">De ce să ai<br><em style="color:rgba(255,255,255,0.35)">încredere</em> în noi</h2>
+  <div class="guarantees-grid">
+    <div class="g-card reveal">
+      <div class="g-icon">💰</div>
+      <div class="g-title">Preț Fix</div>
+      <p class="g-desc">Prețul comunicat înainte de intervenție este prețul final. Niciun cost ascuns, nicio surpriză.</p>
+    </div>
+    <div class="g-card reveal" style="transition-delay:0.1s">
+      <div class="g-icon">✅</div>
+      <div class="g-title">100% Satisfacție</div>
+      <p class="g-desc">Dacă ceva nu este perfect, revenim și reglăm gratuit în 24h. Plătești doar când ești mulțumit.</p>
+    </div>
+    <div class="g-card reveal" style="transition-delay:0.2s">
+      <div class="g-icon">🛡</div>
+      <div class="g-title">Asigurare Completă</div>
+      <p class="g-desc">Fiecare intervenție este acoperită de asigurare. Orice incident este rezolvat rapid și transparent.</p>
+    </div>
+    <div class="g-card reveal" style="transition-delay:0.3s">
+      <div class="g-icon">🚗</div>
+      <div class="g-title">Deplasare Gratuită</div>
+      <p class="g-desc">Nu percepem costuri de deplasare în București. Evaluarea la domiciliu este, de asemenea, gratuită.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div><h2>Nu știi ce serviciu<br>ți se potrivește?</h2><p>Sună-ne și îți facem o recomandare gratuită în funcție de nevoile tale.</p></div>
+  <a href="contact.html" class="btn-dark">Solicită Evaluare Gratuită →</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">CD</div><span class="nav-logo-text">Cleaning Duties</span></a><p>Din 2015, ajutăm peste 1.300 de case și birouri din București să rămână impecabile.</p></div>
+    <div class="footer-col"><h4>Servicii</h4><ul><li><a href="curatenie-rezidentiala.html">Curățenie Rezidențială</a></li><li><a href="curatenie-birouri.html">Curățenie Birouri</a></li><li><a href="curatenie-dupa-constructor.html">După Constructor</a></li><li><a href="preturi.html">Toate Prețurile</a></li></ul></div>
+    <div class="footer-col"><h4>Companie</h4><ul><li><a href="despre-noi.html">Despre Noi</a></li><li><a href="parteneri.html">Parteneri</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:0731351599">0731 351 599</a></li><li><a href="mailto:office@cleaningduties.ro">office@cleaningduties.ro</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-copy">© 2026 Cleaning Duties · București</span><a href="tel:0731351599" class="footer-phone">0731 351 599</a></div>
+</footer>
+
+<a href="https://wa.me/40731351599?text=Buna%20ziua%2C%20as%20dori%20o%20oferta%20de%20pret." class="wa-btn" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>
+function switchTab(id,btn){document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.getElementById('tab-'+id).classList.add('active');btn.classList.add('active');}
+function toggleMenu(){const nl=document.querySelector('.nav-links');nl.style.display=nl.style.display==='flex'?'none':'flex';}
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>

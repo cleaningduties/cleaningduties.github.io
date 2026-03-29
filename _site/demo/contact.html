@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Programare — Cleaning Duties București</title>
+<meta name="description" content="Contactează Cleaning Duties pentru o evaluare gratuită. Telefon, email, programare online. Suntem în București, disponibili Luni–Duminică.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d1b2a;--navy-mid:#1a2e42;--navy-light:#243b55;--cream:#f5f0e8;--cream-mid:#ede8de;--white:#fff;--gold:#c9a84c;--gold-light:#e8c97a;--gold-pale:#f7edd5;--text-dark:#0d1b2a;--text-mid:#3a4a5c;--text-light:#7a8a9a;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--cream);color:var(--text-dark);overflow-x:hidden;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(13,27,42,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);}
+  .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .nav-logo-mark{width:36px;height:36px;background:var(--gold);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);}
+  .nav-logo-text{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--white);letter-spacing:0.02em;}
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+  .nav-links a{font-size:13px;font-weight:400;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold-light);}
+  .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:10px 24px;border-radius:6px;font-weight:500!important;}
+  .nav-hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;}
+  .section-label{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .section-label::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s var(--ease-out),transform 0.7s var(--ease-out);}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* PAGE HERO */
+  .page-hero{background:var(--navy);padding:140px 80px 80px;position:relative;overflow:hidden;}
+  .hero-bg-dots{position:absolute;inset:0;opacity:0.03;background-image:radial-gradient(rgba(201,168,76,0.8) 1px,transparent 1px);background-size:40px 40px;}
+  .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:24px;}
+  .breadcrumb a{color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s;}
+  .breadcrumb a:hover{color:var(--gold-light);}
+  .breadcrumb span{color:rgba(201,168,76,0.5);}
+  .page-hero-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:900;line-height:1.05;color:var(--white);max-width:700px;margin-bottom:20px;}
+  .page-hero-title em{font-style:italic;color:var(--gold-light);}
+  .page-hero-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.7;max-width:560px;margin-bottom:40px;}
+  .hero-quick-contacts{display:flex;gap:20px;flex-wrap:wrap;}
+  .hqc{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 20px;text-decoration:none;transition:all 0.25s;}
+  .hqc:hover{background:rgba(201,168,76,0.1);border-color:rgba(201,168,76,0.3);}
+  .hqc-icon{font-size:18px;}
+  .hqc-label{font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.06em;display:block;}
+  .hqc-val{font-size:14px;font-weight:500;color:var(--white);}
+
+  /* CONTACT MAIN */
+  .contact-main{padding:0 80px 100px;background:var(--white);margin-top:-1px;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:0;}
+
+  /* INFO SIDE */
+  .contact-info{background:var(--navy);padding:64px 56px;display:flex;flex-direction:column;gap:40px;}
+  .contact-info-title{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--white);line-height:1.2;margin-bottom:4px;}
+  .contact-info-sub{font-size:13px;color:rgba(255,255,255,0.4);font-weight:300;line-height:1.6;}
+  .contact-method{display:flex;align-items:flex-start;gap:16px;}
+  .cm-icon{width:44px;height:44px;background:rgba(201,168,76,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+  .cm-label{font-size:11px;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;}
+  .cm-val{font-size:15px;font-weight:500;color:var(--white);}
+  .cm-val a{color:var(--white);text-decoration:none;}
+  .cm-val a:hover{color:var(--gold-light);}
+  .cm-sub{font-size:12px;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
+  .hours-grid{display:flex;flex-direction:column;gap:8px;}
+  .hours-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;}
+  .hours-day{color:rgba(255,255,255,0.45);font-weight:300;}
+  .hours-time{color:var(--white);font-weight:400;}
+  .hours-time.closed{color:rgba(255,255,255,0.25);}
+  .contact-social{display:flex;gap:10px;}
+  .social-btn{width:40px;height:40px;background:rgba(255,255,255,0.06);border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:16px;transition:all 0.25s;}
+  .social-btn:hover{background:rgba(201,168,76,0.15);}
+
+  /* FORM SIDE */
+  .contact-form-wrap{background:var(--cream);padding:64px 56px;}
+  .form-title{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--text-dark);margin-bottom:8px;}
+  .form-sub{font-size:13px;color:var(--text-light);font-weight:300;margin-bottom:36px;line-height:1.5;}
+  .form-group{margin-bottom:16px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .form-group label{display:block;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-light);margin-bottom:8px;}
+  .form-group input,.form-group select,.form-group textarea{width:100%;background:var(--white);border:1px solid var(--cream-mid);border-radius:8px;padding:13px 16px;color:var(--text-dark);font-family:var(--sans);font-size:14px;outline:none;transition:border-color 0.2s;resize:none;}
+  .form-group input::placeholder,.form-group textarea::placeholder{color:var(--text-light);}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);}
+  .form-group select{cursor:pointer;}
+  .form-submit{width:100%;padding:17px;background:var(--gold);color:var(--navy);border:none;border-radius:8px;font-family:var(--sans);font-size:15px;font-weight:500;cursor:pointer;margin-top:8px;transition:all 0.25s var(--ease-out);}
+  .form-submit:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 32px rgba(201,168,76,0.3);}
+  .form-note{font-size:12px;color:var(--text-light);text-align:center;margin-top:12px;font-weight:300;}
+  .success-msg{display:none;background:var(--cream);border:1px solid rgba(39,80,10,0.15);border-radius:12px;padding:32px;text-align:center;}
+  .success-msg.show{display:block;}
+  .success-icon{font-size:40px;margin-bottom:12px;}
+  .success-msg h3{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--text-dark);margin-bottom:8px;}
+  .success-msg p{font-size:14px;color:var(--text-mid);font-weight:300;}
+
+  /* CONTACT STRIP */
+  .contact-strip{background:var(--gold-pale);border-top:1px solid rgba(201,168,76,0.15);border-bottom:1px solid rgba(201,168,76,0.15);padding:28px 80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  .cs-item{display:flex;align-items:center;gap:12px;}
+  .cs-icon{font-size:20px;}
+  .cs-label{font-size:11px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;}
+  .cs-val{font-size:14px;font-weight:500;color:var(--text-dark);}
+  .cs-val a{color:var(--text-dark);text-decoration:none;}
+  .cs-val a:hover{color:var(--navy);}
+
+  /* MAP */
+  .map-section{padding:80px;background:var(--white);}
+  .map-section .section-label{margin-bottom:8px;}
+  .map-title{font-family:var(--serif);font-size:clamp(28px,3vw,44px);font-weight:700;color:var(--text-dark);line-height:1.1;margin-bottom:40px;}
+  .map-title em{font-style:italic;color:var(--navy-light);}
+  .map-layout{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start;}
+  .map-details{display:flex;flex-direction:column;gap:24px;}
+  .map-detail-card{background:var(--cream);border-radius:12px;padding:24px;}
+  .mdc-title{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+  .mdc-val{font-size:14px;color:var(--text-dark);font-weight:400;line-height:1.6;}
+  .mdc-val a{color:var(--navy);text-decoration:none;}
+  .mdc-val a:hover{color:var(--gold);}
+  .map-embed{border-radius:16px;overflow:hidden;height:440px;position:relative;background:var(--cream);}
+  .map-embed iframe{width:100%;height:100%;border:none;display:block;}
+  .map-open-btn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;color:var(--text-mid);text-decoration:none;font-weight:400;transition:color 0.2s;}
+  .map-open-btn:hover{color:var(--gold);}
+
+  /* FAQ MINI */
+  .faq-mini{padding:80px;background:var(--cream);}
+  .faq-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;}
+  .faq-item{border-bottom:1px solid var(--cream-mid);}
+  .faq-q{width:100%;background:none;border:none;text-align:left;padding:18px 0;font-family:var(--sans);font-size:14px;font-weight:500;color:var(--text-dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color 0.2s;}
+  .faq-q.open{color:var(--gold);}
+  .faq-icon{width:22px;height:22px;flex-shrink:0;border:1px solid var(--cream-mid);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text-light);transition:all 0.3s;}
+  .faq-q.open .faq-icon{background:var(--gold);border-color:var(--gold);color:var(--navy);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease-out);}
+  .faq-a-inner{padding:0 0 18px;font-size:13px;font-weight:300;color:var(--text-mid);line-height:1.75;}
+  .faq-a.open{max-height:200px;}
+
+  /* FOOTER */
+  footer{background:#080f18;padding:64px 80px 40px;border-top:1px solid rgba(201,168,76,0.1);}
+  .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+  .footer-brand p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.35);line-height:1.7;margin-top:16px;max-width:280px;}
+  .footer-col h4{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:16px;}
+  .footer-col ul{list-style:none;}
+  .footer-col ul li{margin-bottom:10px;}
+  .footer-col ul li a{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
+  .footer-col ul li a:hover{color:var(--gold-light);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;border-top:1px solid rgba(255,255,255,0.06);}
+  .footer-copy{font-size:12px;color:rgba(255,255,255,0.2);}
+  .footer-phone{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--gold);text-decoration:none;}
+
+  /* WHATSAPP */
+  .wa-btn{position:fixed;bottom:28px;right:28px;z-index:200;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,0.4);text-decoration:none;transition:all 0.3s var(--ease-out);}
+  .wa-btn:hover{transform:scale(1.1);box-shadow:0 12px 32px rgba(37,211,102,0.5);}
+  .wa-btn svg{width:28px;height:28px;}
+
+  @media(max-width:900px){
+    nav{padding:0 24px;}
+    .nav-links{display:none;}
+    .nav-hamburger{display:flex;}
+    .page-hero{padding-left:24px;padding-right:24px;}
+    .hero-quick-contacts{flex-direction:column;}
+    .contact-main{padding:0 0 60px;}
+    .contact-grid{grid-template-columns:1fr;}
+    .contact-info,.contact-form-wrap{padding:40px 24px;}
+    .contact-strip{padding:24px;flex-direction:column;align-items:flex-start;gap:16px;}
+    .map-section,.faq-mini,footer{padding-left:24px;padding-right:24px;}
+    .map-layout{grid-template-columns:1fr;}
+    .map-embed{height:300px;}
+    .faq-mini-grid{grid-template-columns:1fr;}
+    .form-row{grid-template-columns:1fr;}
+    .footer-top{grid-template-columns:1fr 1fr;gap:32px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">CD</div>
+    <span class="nav-logo-text">Cleaning Duties</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="curatenie-rezidentiala.html">Rezidențial</a></li>
+    <li><a href="curatenie-birouri.html">Birouri</a></li>
+    <li><a href="curatenie-dupa-constructor.html">Constructor</a></li>
+    <li><a href="preturi.html">Prețuri</a></li>
+    <li><a href="despre-noi.html">Despre Noi</a></li>
+    <li><a href="contact.html" class="active nav-cta">Programare</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-bg-dots"></div>
+  <div class="breadcrumb">
+    <a href="index.html">Acasă</a><span>›</span>
+    <span style="color:rgba(201,168,76,0.7)">Contact</span>
+  </div>
+  <div class="section-label">Hai să Vorbim</div>
+  <h1 class="page-hero-title">Programează o<br><em>evaluare gratuită</em><br>astăzi</h1>
+  <p class="page-hero-sub">Suntem disponibili 7 zile din 7. Sună-ne, trimite un email sau completează formularul de mai jos — îți răspundem în maxim 2 ore.</p>
+  <div class="hero-quick-contacts">
+    <a href="tel:0731351599" class="hqc">
+      <div class="hqc-icon">📞</div>
+      <div><span class="hqc-label">Telefon direct</span><span class="hqc-val">0731 351 599</span></div>
+    </a>
+    <a href="https://wa.me/40731351599" class="hqc" target="_blank">
+      <div class="hqc-icon">💬</div>
+      <div><span class="hqc-label">WhatsApp</span><span class="hqc-val">Mesaj instant</span></div>
+    </a>
+    <a href="mailto:office@cleaningduties.ro" class="hqc">
+      <div class="hqc-icon">✉️</div>
+      <div><span class="hqc-label">Email</span><span class="hqc-val">office@cleaningduties.ro</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT MAIN: INFO + FORM -->
+<div class="contact-main">
+  <div class="contact-grid">
+
+    <!-- LEFT: INFO -->
+    <div class="contact-info">
+      <div>
+        <div class="contact-info-title">Suntem aici<br>pentru tine</div>
+        <p class="contact-info-sub" style="margin-top:10px;">Echipa noastră răspunde în maxim 2 ore în zilele lucrătoare și în maxim 4 ore în weekend.</p>
+      </div>
+
+      <div class="contact-method">
+        <div class="cm-icon">📞</div>
+        <div>
+          <div class="cm-label">Telefon</div>
+          <div class="cm-val"><a href="tel:0731351599">0731 351 599</a></div>
+          <div class="cm-sub">Apel sau SMS — răspundem rapid</div>
+        </div>
+      </div>
+
+      <div class="contact-method">
+        <div class="cm-icon">💬</div>
+        <div>
+          <div class="cm-label">WhatsApp</div>
+          <div class="cm-val"><a href="https://wa.me/40731351599" target="_blank">wa.me/40731351599</a></div>
+          <div class="cm-sub">Fotografii, detalii, ofertă — totul pe chat</div>
+        </div>
+      </div>
+
+      <div class="contact-method">
+        <div class="cm-icon">✉️</div>
+        <div>
+          <div class="cm-label">Email</div>
+          <div class="cm-val"><a href="mailto:office@cleaningduties.ro">office@cleaningduties.ro</a></div>
+          <div class="cm-sub">Răspuns în maxim 2 ore lucrătoare</div>
+        </div>
+      </div>
+
+      <div class="contact-method">
+        <div class="cm-icon">📍</div>
+        <div>
+          <div class="cm-label">Zona Deservită</div>
+          <div class="cm-val">București — toate sectoarele</div>
+          <div class="cm-sub">Deplasare gratuită în Capitală</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cm-label" style="color:rgba(255,255,255,0.3);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;">Program de lucru</div>
+        <div class="hours-grid">
+          <div class="hours-row"><span class="hours-day">Luni – Vineri</span><span class="hours-time">08:00 – 20:00</span></div>
+          <div class="hours-row"><span class="hours-day">Sâmbătă</span><span class="hours-time">08:00 – 18:00</span></div>
+          <div class="hours-row"><span class="hours-day">Duminică</span><span class="hours-time">10:00 – 17:00</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cm-label" style="color:rgba(255,255,255,0.3);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;">Social Media</div>
+        <div class="contact-social">
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="Instagram">📷</a>
+          <a href="https://wa.me/40731351599" class="social-btn" title="WhatsApp" target="_blank">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: FORM -->
+    <div class="contact-form-wrap">
+      <div class="form-title">Solicită o ofertă gratuită</div>
+      <p class="form-sub">Completează formularul și te contactăm în maxim 2 ore cu o ofertă personalizată.</p>
+
+      <form id="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nume *</label>
+            <input type="text" name="name" placeholder="Prenume și nume" required>
+          </div>
+          <div class="form-group">
+            <label>Telefon *</label>
+            <input type="tel" name="phone" placeholder="07xx xxx xxx" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="adresa@email.ro">
+        </div>
+        <div class="form-group">
+          <label>Serviciu dorit *</label>
+          <select name="service" required>
+            <option value="">Selectează serviciul...</option>
+            <option>Curățenie Rezidențială — Întreținere</option>
+            <option>Curățenie Rezidențială — Generală</option>
+            <option>Curățenie Birouri / Spații Comerciale</option>
+            <option>Curățenie După Constructor / Renovare</option>
+            <option>Servicii Adiționale (covoare, canapele etc.)</option>
+            <option>Nu știu — vreau o recomandare</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tip locuință / spațiu</label>
+            <select name="type">
+              <option value="">Selectează...</option>
+              <option>Garsonieră</option>
+              <option>Apartament 2 camere</option>
+              <option>Apartament 3 camere</option>
+              <option>Apartament 4+ camere</option>
+              <option>Casă / Vilă</option>
+              <option>Birou / Spațiu comercial</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Data preferată</label>
+            <input type="date" name="date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Sector / Zonă București</label>
+          <select name="sector">
+            <option value="">Selectează sectorul...</option>
+            <option>Sector 1</option>
+            <option>Sector 2</option>
+            <option>Sector 3</option>
+            <option>Sector 4</option>
+            <option>Sector 5</option>
+            <option>Sector 6</option>
+            <option>Ilfov / Limitrof</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Detalii suplimentare</label>
+          <textarea name="message" rows="4" placeholder="Spune-ne orice detaliu relevant: suprafață, număr camere, stare curățenie actuală, cerințe speciale..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Trimite Solicitarea Gratuită →</button>
+        <p class="form-note">🔒 Datele tale sunt în siguranță și nu vor fi partajate cu terți.</p>
+      </form>
+
+      <div class="success-msg" id="success-msg">
+        <div class="success-icon">✅</div>
+        <h3>Solicitare primită!</h3>
+        <p>Te contactăm în maxim 2 ore cu o ofertă personalizată gratuită.<br>Între timp, ne poți suna oricând la <strong>0731 351 599</strong>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK CONTACT STRIP -->
+<div class="contact-strip">
+  <div class="cs-item">
+    <div class="cs-icon">⚡</div>
+    <div><div class="cs-label">Timp de răspuns</div><div class="cs-val">Maxim 2 ore</div></div>
+  </div>
+  <div class="cs-item">
+    <div class="cs-icon">📍</div>
+    <div><div class="cs-label">Acoperire</div><div class="cs-val">Toată Capitala + Ilfov</div></div>
+  </div>
+  <div class="cs-item">
+    <div class="cs-icon">🚗</div>
+    <div><div class="cs-label">Deplasare</div><div class="cs-val">Gratuită în București</div></div>
+  </div>
+  <div class="cs-item">
+    <div class="cs-icon">📅</div>
+    <div><div class="cs-label">Disponibilitate</div><div class="cs-val">Luni – Duminică</div></div>
+  </div>
+  <div class="cs-item">
+    <div class="cs-icon">📞</div>
+    <div><div class="cs-label">Telefon direct</div><div class="cs-val"><a href="tel:0731351599">0731 351 599</a></div></div>
+  </div>
+</div>
+
+<!-- MAP -->
+<section class="map-section">
+  <div class="section-label">Localizare</div>
+  <h2 class="map-title reveal">Activăm în toată<br><em>Capitala</em> și Ilfov</h2>
+  <div class="map-layout">
+    <div class="map-details reveal">
+      <div class="map-detail-card">
+        <div class="mdc-title">📍 Adresă Corespondență</div>
+        <div class="mdc-val">București, România<br>Zona deservită: toate cele 6 sectoare + județul Ilfov</div>
+      </div>
+      <div class="map-detail-card">
+        <div class="mdc-title">📞 Contact Direct</div>
+        <div class="mdc-val">
+          <a href="tel:0731351599">0731 351 599</a><br>
+          <a href="mailto:office@cleaningduties.ro">office@cleaningduties.ro</a>
+        </div>
+      </div>
+      <div class="map-detail-card">
+        <div class="mdc-title">🕐 Program</div>
+        <div class="mdc-val">Luni – Vineri: 08:00 – 20:00<br>Sâmbătă: 08:00 – 18:00<br>Duminică: 10:00 – 17:00</div>
+      </div>
+      <div class="map-detail-card">
+        <div class="mdc-title">🗺️ Zone Principale</div>
+        <div class="mdc-val">Floreasca · Dorobanți · Aviatorilor<br>Herăstrău · Pipera · Băneasa<br>Militari · Drumul Taberei · Cotroceni<br>și toate celelalte zone din Capitală</div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.15s">
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91394.81539869835!2d25.97380989726562!3d44.43655300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucure%C8%99ti!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Cleaning Duties București — zonă deservită">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Bucuresti,Romania" target="_blank" class="map-open-btn">
+        🗺️ Deschide în Google Maps →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ MINI -->
+<section class="faq-mini">
+  <div class="section-label">Întrebări Rapide</div>
+  <h2 style="font-family:var(--serif);font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--text-dark);max-width:500px;line-height:1.15;margin-bottom:0;" class="reveal">Înainte să ne <em style="font-style:italic;color:var(--navy-light)">suni</em>,<br>poate găsești răspunsul aici</h2>
+  <div class="faq-mini-grid">
+    <div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Cât timp durează o evaluare gratuită?<div class="faq-icon">+</div></button>
+        <div class="faq-a"><div class="faq-a-inner">Evaluarea online (pe baza fotografiilor) durează 15–20 de minute și primești oferta în 2 ore. Evaluarea la domiciliu durează 20–30 de minute și este complet gratuită, fără obligații.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">În cât timp puteți interveni după confirmare?<div class="faq-icon">+</div></button>
+        <div class="faq-a"><div class="faq-a-inner">Timpii standard sunt de 24–48h pentru servicii rezidențiale și 48–72h pentru birouri. Pentru urgențe (ex: curățenie după constructor imediat după recepție), contactați-ne direct — găsim soluții rapide.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Cum plătesc? Acceptați card sau transfer?<div class="faq-icon">+</div></button>
+        <div class="faq-a"><div class="faq-a-inner">Acceptăm plata cash, card bancar sau transfer bancar. Emitem factură fiscală pentru orice serviciu, la cerere. Plata se face după finalizarea serviciului și confirmarea satisfacției.</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Pot programa o curățenie recurentă dintr-un apel?<div class="faq-icon">+</div></button>
+        <div class="faq-a"><div class="faq-a-inner">Da. La primul contact stabilim tot: frecvența, ziua, intervalul orar, tipul de serviciu și prețul. Nu mai trebuie să suni înainte de fiecare vizită — totul se desfășoară automat conform programului agreat.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Serviți și zonele din Ilfov?<div class="faq-icon">+</div></button>
+        <div class="faq-a"><div class="faq-a-inner">Da, acoperim și localitățile din județul Ilfov: Voluntari, Otopeni, Pipera, Berceni, Pantelimon, Popești-Leordeni, Măgurele, Chitila și altele. Costul de deplasare se discută de la caz la caz.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Pot anula sau reprograma o vizită?<div class="faq-icon">+</div></button>
+        <div class="faq-a"><div class="faq-a-inner">Da, acceptăm anulări sau reprogramări cu cel puțin 24h înainte, fără niciun cost. Înțelegem că planurile se schimbă — flexibilitatea face parte din serviciul nostru.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">CD</div>
+        <span class="nav-logo-text">Cleaning Duties</span>
+      </a>
+      <p>Din 2015, ajutăm peste 1.300 de case și birouri din București să rămână impecabile.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Servicii</h4>
+      <ul>
+        <li><a href="curatenie-rezidentiala.html">Curățenie Rezidențială</a></li>
+        <li><a href="curatenie-birouri.html">Curățenie Birouri</a></li>
+        <li><a href="curatenie-dupa-constructor.html">După Constructor</a></li>
+        <li><a href="preturi.html">Toate Prețurile</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Companie</h4>
+      <ul>
+        <li><a href="despre-noi.html">Despre Noi</a></li>
+        <li><a href="parteneri.html">Parteneri</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:0731351599">0731 351 599</a></li>
+        <li><a href="mailto:office@cleaningduties.ro">office@cleaningduties.ro</a></li>
+        <li><a href="https://wa.me/40731351599" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Cleaning Duties · București</span>
+    <a href="tel:0731351599" class="footer-phone">0731 351 599</a>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/40731351599?text=Buna%20ziua%2C%20as%20dori%20o%20programare%20pentru%20curatenie." class="wa-btn" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('success-msg').classList.add('show');
+}
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const ans = item.querySelector('.faq-a');
+  const open = btn.classList.contains('open');
+  document.querySelectorAll('.faq-q.open').forEach(b => {
+    b.classList.remove('open');
+    b.closest('.faq-item').querySelector('.faq-a').classList.remove('open');
+    b.querySelector('.faq-icon').textContent = '+';
+  });
+  if (!open) {
+    btn.classList.add('open');
+    ans.classList.add('open');
+    btn.querySelector('.faq-icon').textContent = '−';
+  }
+}
+function toggleMenu() {
+  const nl = document.querySelector('.nav-links');
+  nl.style.display = nl.style.display === 'flex' ? 'none' : 'flex';
+}
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parteneri — Cleaning Duties București</title>
+<meta name="description" content="Companiile care au ales Cleaning Duties pentru curățenia spațiilor lor: Starbucks, Hard Rock, Agricover și multe altele.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d1b2a;--navy-mid:#1a2e42;--navy-light:#243b55;--cream:#f5f0e8;--cream-mid:#ede8de;--white:#fff;--gold:#c9a84c;--gold-light:#e8c97a;--gold-pale:#f7edd5;--text-dark:#0d1b2a;--text-mid:#3a4a5c;--text-light:#7a8a9a;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--cream);color:var(--text-dark);overflow-x:hidden;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(13,27,42,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);}
+  .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .nav-logo-mark{width:36px;height:36px;background:var(--gold);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);}
+  .nav-logo-text{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--white);letter-spacing:0.02em;}
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+  .nav-links a{font-size:13px;font-weight:400;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--gold-light);}
+  .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:10px 24px;border-radius:6px;font-weight:500!important;}
+  .nav-hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;}
+  .section-label{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+  .section-label::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
+  .section-title{font-family:var(--serif);font-size:clamp(32px,3.5vw,50px);font-weight:700;line-height:1.1;color:var(--text-dark);max-width:560px;margin-bottom:48px;}
+  .section-title em{font-style:italic;color:var(--navy-light);}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s var(--ease-out),transform 0.7s var(--ease-out);}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--navy);font-family:var(--sans);font-size:14px;font-weight:500;padding:16px 32px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;transition:all 0.25s;}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);}
+  .btn-dark{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:var(--white);font-family:var(--sans);font-size:14px;font-weight:500;padding:16px 32px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;white-space:nowrap;transition:all 0.25s;}
+  .btn-dark:hover{background:var(--navy-mid);}
+
+  .page-hero{background:var(--navy);padding:140px 80px 80px;position:relative;overflow:hidden;}
+  .hero-bg-dots{position:absolute;inset:0;opacity:0.03;background-image:radial-gradient(rgba(201,168,76,0.8) 1px,transparent 1px);background-size:40px 40px;}
+  .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.35);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:24px;}
+  .breadcrumb a{color:rgba(255,255,255,0.35);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--gold-light);}
+  .breadcrumb span{color:rgba(201,168,76,0.5);}
+  .page-hero-title{font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:900;line-height:1.05;color:var(--white);max-width:700px;margin-bottom:20px;}
+  .page-hero-title em{font-style:italic;color:var(--gold-light);}
+  .page-hero-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.7;max-width:560px;}
+
+  /* PARTNERS GRID */
+  .partners-section{padding:100px 80px;background:var(--white);}
+  .partners-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:16px;}
+  .partner-card{background:var(--cream);padding:40px;display:flex;flex-direction:column;gap:20px;transition:all 0.3s var(--ease-out);}
+  .partner-card:hover{background:var(--white);transform:translateY(-3px);box-shadow:0 16px 40px rgba(13,27,42,0.08);}
+  .partner-logo-area{height:64px;display:flex;align-items:center;}
+  .partner-logo-text{font-family:var(--serif);font-size:22px;font-weight:900;color:var(--navy);letter-spacing:0.04em;}
+  .partner-industry{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+  .partner-desc{font-size:13px;color:var(--text-mid);font-weight:300;line-height:1.7;flex:1;}
+  .partner-service{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--text-light);letter-spacing:0.06em;text-transform:uppercase;}
+  .partner-service::before{content:'';display:block;width:6px;height:6px;background:var(--gold);border-radius:50%;}
+  .partner-years{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--navy);margin-top:auto;}
+  .partner-years span{font-family:var(--sans);font-size:12px;font-weight:300;color:var(--text-light);display:block;}
+
+  /* TESTIMONIALS */
+  .testimonials{padding:100px 80px;background:var(--navy);}
+  .testimonials .section-title{color:var(--white);}
+  .testimonials .section-title em{color:rgba(255,255,255,0.35);}
+  .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:16px;}
+  .tcard{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:32px;transition:all 0.3s;}
+  .tcard:hover{background:rgba(255,255,255,0.07);}
+  .tcard-stars{display:flex;gap:3px;font-size:14px;color:var(--gold);margin-bottom:16px;}
+  .tcard-text{font-size:14px;color:rgba(255,255,255,0.55);font-weight:300;line-height:1.7;margin-bottom:24px;}
+  .tcard-author{display:flex;align-items:center;gap:12px;}
+  .tcard-avatar{width:40px;height:40px;border-radius:50%;background:rgba(201,168,76,0.15);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--gold);}
+  .tcard-name{font-size:13px;font-weight:500;color:var(--white);}
+  .tcard-role{font-size:12px;color:rgba(255,255,255,0.3);}
+
+  /* BECOME PARTNER */
+  .become-partner{padding:100px 80px;background:var(--cream);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+  .bp-text p{font-size:15px;font-weight:300;color:var(--text-mid);line-height:1.8;margin-bottom:20px;}
+  .bp-benefits{list-style:none;display:flex;flex-direction:column;gap:14px;margin:24px 0 36px;}
+  .bp-benefits li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--text-mid);font-weight:300;line-height:1.5;}
+  .bp-benefits li::before{content:'✓';color:var(--gold);font-weight:500;flex-shrink:0;}
+  .bp-form{background:var(--navy);border-radius:16px;padding:40px;}
+  .bp-form-title{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--white);margin-bottom:24px;}
+  .form-group{margin-bottom:16px;}
+  .form-group label{display:block;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px;}
+  .form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-family:var(--sans);font-size:14px;outline:none;transition:border-color 0.2s;resize:none;}
+  .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.25);}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(201,168,76,0.5);}
+  .form-group select option{background:var(--navy);}
+  .form-submit{width:100%;padding:16px;background:var(--gold);color:var(--navy);border:none;border-radius:8px;font-family:var(--sans);font-size:14px;font-weight:500;cursor:pointer;margin-top:8px;transition:all 0.25s;}
+  .form-submit:hover{background:var(--gold-light);}
+
+  .cta-banner{background:var(--gold);padding:80px;display:flex;align-items:center;justify-content:space-between;gap:40px;}
+  .cta-banner h2{font-family:var(--serif);font-size:clamp(28px,3vw,44px);font-weight:700;color:var(--navy);line-height:1.15;}
+  .cta-banner p{font-size:15px;color:rgba(13,27,42,0.6);margin-top:10px;}
+  footer{background:#080f18;padding:64px 80px 40px;border-top:1px solid rgba(201,168,76,0.1);}
+  .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+  .footer-brand p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.35);line-height:1.7;margin-top:16px;max-width:280px;}
+  .footer-col h4{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:16px;}
+  .footer-col ul{list-style:none;}
+  .footer-col ul li{margin-bottom:10px;}
+  .footer-col ul li a{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
+  .footer-col ul li a:hover{color:var(--gold-light);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;border-top:1px solid rgba(255,255,255,0.06);}
+  .footer-copy{font-size:12px;color:rgba(255,255,255,0.2);}
+  .footer-phone{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--gold);text-decoration:none;}
+  .wa-btn{position:fixed;bottom:28px;right:28px;z-index:200;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,0.4);text-decoration:none;transition:all 0.3s;}
+  .wa-btn:hover{transform:scale(1.1);}
+  .wa-btn svg{width:28px;height:28px;}
+  @media(max-width:900px){
+    nav{padding:0 24px;}.nav-links{display:none;}.nav-hamburger{display:flex;}
+    .page-hero,.partners-section,.testimonials,.become-partner,.cta-banner,footer{padding-left:24px;padding-right:24px;}
+    .partners-grid,.testimonials-grid{grid-template-columns:1fr;}
+    .become-partner{grid-template-columns:1fr;gap:40px;}
+    .footer-top{grid-template-columns:1fr 1fr;gap:32px;}
+    .cta-banner{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">CD</div><span class="nav-logo-text">Cleaning Duties</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="curatenie-rezidentiala.html">Rezidențial</a></li>
+    <li><a href="curatenie-birouri.html">Birouri</a></li>
+    <li><a href="curatenie-dupa-constructor.html">Constructor</a></li>
+    <li><a href="preturi.html">Prețuri</a></li>
+    <li><a href="despre-noi.html">Despre Noi</a></li>
+    <li><a href="contact.html" class="nav-cta">Programare</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-bg-dots"></div>
+  <div class="breadcrumb"><a href="index.html">Acasă</a><span>›</span><span style="color:rgba(201,168,76,0.7)">Parteneri</span></div>
+  <div class="section-label">Parteneri de Încredere</div>
+  <h1 class="page-hero-title">Companii care<br>aleg <em>standardul</em><br>Cleaning Duties</h1>
+  <p class="page-hero-sub">De la lanțuri internaționale de restaurante la companii agricole și centre medicale — partenerii noștri ne aleg pentru consecvență și profesionalism.</p>
+</section>
+
+<section class="partners-section">
+  <div class="section-label">Portofoliu Parteneri</div>
+  <h2 class="section-title reveal">Companiile care<br>ne aleg în <em>fiecare lună</em></h2>
+  <div class="partners-grid">
+    <div class="partner-card reveal">
+      <div class="partner-logo-area"><div class="partner-logo-text">STARBUCKS</div></div>
+      <div>
+        <div class="partner-industry">Food & Beverage</div>
+        <p class="partner-desc">Curățenie zilnică pentru mai multe locații Starbucks din București. Standard internațional respectat la fiecare intervenție.</p>
+        <div class="partner-service">Curățenie Zilnică · Contract Activ</div>
+      </div>
+      <div class="partner-years">5+ ani<span>parteneriat activ</span></div>
+    </div>
+    <div class="partner-card reveal" style="transition-delay:0.1s">
+      <div class="partner-logo-area"><div class="partner-logo-text">HARD ROCK</div></div>
+      <div>
+        <div class="partner-industry">Entertainment & Hospitality</div>
+        <p class="partner-desc">Spații mari, trafic intens, standarde înalte. Curățenie post-eveniment și întreținere regulată pentru Hard Rock București.</p>
+        <div class="partner-service">Întreținere Săptămânală · Contract Activ</div>
+      </div>
+      <div class="partner-years">4+ ani<span>parteneriat activ</span></div>
+    </div>
+    <div class="partner-card reveal" style="transition-delay:0.2s">
+      <div class="partner-logo-area"><div class="partner-logo-text">AGRICOVER</div></div>
+      <div>
+        <div class="partner-industry">Agribusiness</div>
+        <p class="partner-desc">Curățenie pentru sediul central și filialele din București. Servicii de birou adaptate nevoilor specifice ale unei companii mari.</p>
+        <div class="partner-service">Curățenie Birouri · Contract Activ</div>
+      </div>
+      <div class="partner-years">3+ ani<span>parteneriat activ</span></div>
+    </div>
+    <div class="partner-card reveal" style="transition-delay:0.1s">
+      <div class="partner-logo-area"><div class="partner-logo-text">ALL BEAUTY</div></div>
+      <div>
+        <div class="partner-industry">Retail & Beauty</div>
+        <p class="partner-desc">Curățenie zilnică pentru rețeaua de saloane All Beauty. Igiena perfectă în spații unde standardele sunt maxime.</p>
+        <div class="partner-service">Curățenie Zilnică · Contract Activ</div>
+      </div>
+      <div class="partner-years">3+ ani<span>parteneriat activ</span></div>
+    </div>
+    <div class="partner-card reveal" style="transition-delay:0.2s">
+      <div class="partner-logo-area"><div class="partner-logo-text">BULROM</div></div>
+      <div>
+        <div class="partner-industry">Distribuție & Logistică</div>
+        <p class="partner-desc">Curățenie pentru depozite și birouri administrative. Adaptabilitate maximă la programul operațional al clientului.</p>
+        <div class="partner-service">Curățenie Săptămânală · Contract Activ</div>
+      </div>
+      <div class="partner-years">2+ ani<span>parteneriat activ</span></div>
+    </div>
+    <div class="partner-card reveal" style="transition-delay:0.3s">
+      <div class="partner-logo-area"><div class="partner-logo-text">CENTRELE IDEAL</div></div>
+      <div>
+        <div class="partner-industry">Retail & Servicii</div>
+        <p class="partner-desc">Curățenie pentru centrele comerciale și spațiile de servicii din rețeaua Ideal. Protocol strict de igienă respectat zilnic.</p>
+        <div class="partner-service">Curățenie Zilnică · Contract Activ</div>
+      </div>
+      <div class="partner-years">2+ ani<span>parteneriat activ</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="section-label">Ce Spun Partenerii</div>
+  <h2 class="section-title reveal" style="color:var(--white)">Vocea celor care<br>ne <em style="color:rgba(255,255,255,0.35)">cunosc</em> bine</h2>
+  <div class="testimonials-grid">
+    <div class="tcard reveal">
+      <div class="tcard-stars">★★★★★</div>
+      <p class="tcard-text">Colaborăm cu Cleaning Duties de peste 4 ani. Punctualitate, profesionalism și o calitate constantă pe care ne putem baza. Nu am căutat niciodată altă firmă.</p>
+      <div class="tcard-author"><div class="tcard-avatar">MC</div><div><div class="tcard-name">Manager Operațional</div><div class="tcard-role">Partener corporativ, 4 ani</div></div></div>
+    </div>
+    <div class="tcard reveal" style="transition-delay:0.12s">
+      <div class="tcard-stars">★★★★★</div>
+      <p class="tcard-text">Standardele noastre de igienă sunt foarte ridicate și Cleaning Duties le respectă de fiecare dată. Echipa lor este discretă, rapidă și extrem de profesionistă.</p>
+      <div class="tcard-author"><div class="tcard-avatar">AI</div><div><div class="tcard-name">Director Facilități</div><div class="tcard-role">Partener corporativ, 3 ani</div></div></div>
+    </div>
+    <div class="tcard reveal" style="transition-delay:0.24s">
+      <div class="tcard-stars">★★★★★</div>
+      <p class="tcard-text">Am ales Cleaning Duties după ce alte firme ne-au dezamăgit. Diferența este clară: oameni serioși, prețuri corecte și garanția că totul va fi perfect.</p>
+      <div class="tcard-author"><div class="tcard-avatar">RP</div><div><div class="tcard-name">Administrator</div><div class="tcard-role">Partener corporativ, 2 ani</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BECOME PARTNER -->
+<section class="become-partner">
+  <div class="bp-text">
+    <div class="section-label">Devino Partener</div>
+    <h2 class="section-title reveal">Vrei să fii<br>următorul nostru<br><em>partener</em>?</h2>
+    <p>Suntem mereu deschiși la colaborări noi cu companii care apreciază calitatea și profesionalismul. Indiferent de dimensiunea spațiului sau specificul activității, găsim împreună soluția potrivită.</p>
+    <p>Completează formularul alăturat sau sună-ne direct. Facem o evaluare gratuită la sediul tău și îți trimitem o ofertă personalizată în maxim 24h.</p>
+    <ul class="bp-benefits">
+      <li>Contract flexibil — adaptabil la orice orar și buget</li>
+      <li>Echipă dedicată — aceiași oameni la fiecare vizită</li>
+      <li>Rapoarte de activitate — transparență totală</li>
+      <li>Prețuri preferențiale pentru contracte pe termen lung</li>
+      <li>Manager de cont dedicat pentru parteneri corporativi</li>
+    </ul>
+    <a href="tel:0731351599" class="btn-primary">Sună acum: 0731 351 599 →</a>
+  </div>
+  <div class="bp-form reveal">
+    <div class="bp-form-title">Solicită Ofertă Parteneriat</div>
+    <div class="form-group"><label>Companie</label><input type="text" placeholder="Numele companiei"></div>
+    <div class="form-group"><label>Persoană de Contact</label><input type="text" placeholder="Nume și prenume"></div>
+    <div class="form-group"><label>Telefon</label><input type="tel" placeholder="07xx xxx xxx"></div>
+    <div class="form-group"><label>Tip Serviciu Necesar</label>
+      <select>
+        <option value="">Selectează...</option>
+        <option>Curățenie Zilnică</option>
+        <option>Curățenie Săptămânală</option>
+        <option>Curățenie Generală Lunară</option>
+        <option>Combinat</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Suprafață estimată (mp)</label><input type="text" placeholder="ex: 500 mp"></div>
+    <div class="form-group"><label>Mesaj (opțional)</label><textarea rows="3" placeholder="Orice detaliu relevant despre spațiu sau cerințe specifice..."></textarea></div>
+    <button class="form-submit" onclick="handleSubmit(this)">Trimite Solicitarea →</button>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div><h2>Hai să construim<br>un parteneriat de durată</h2><p>Evaluare gratuită la sediu · Ofertă în 24h · Fără obligații</p></div>
+  <a href="contact.html" class="btn-dark">Contactează-ne →</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">CD</div><span class="nav-logo-text">Cleaning Duties</span></a><p>Din 2015, ajutăm peste 1.300 de case și birouri din București să rămână impecabile.</p></div>
+    <div class="footer-col"><h4>Servicii</h4><ul><li><a href="curatenie-rezidentiala.html">Curățenie Rezidențială</a></li><li><a href="curatenie-birouri.html">Curățenie Birouri</a></li><li><a href="curatenie-dupa-constructor.html">După Constructor</a></li><li><a href="preturi.html">Toate Prețurile</a></li></ul></div>
+    <div class="footer-col"><h4>Companie</h4><ul><li><a href="despre-noi.html">Despre Noi</a></li><li><a href="parteneri.html">Parteneri</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:0731351599">0731 351 599</a></li><li><a href="mailto:office@cleaningduties.ro">office@cleaningduties.ro</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-copy">© 2026 Cleaning Duties · București</span><a href="tel:0731351599" class="footer-phone">0731 351 599</a></div>
+</footer>
+<a href="https://wa.me/40731351599" class="wa-btn" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+function handleSubmit(btn){btn.textContent='✓ Solicitare trimisă — te contactăm în 24h!';btn.style.background='#27500a';btn.style.color='#C0DD97';btn.disabled=true;}
+function toggleMenu(){const nl=document.querySelector('.nav-links');nl.style.display=nl.style.display==='flex'?'none':'flex';}
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>

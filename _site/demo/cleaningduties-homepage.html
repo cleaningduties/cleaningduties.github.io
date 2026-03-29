@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleaning Duties — Curățenie Profesională București</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --navy-mid: #1a2e42;
+    --navy-light: #243b55;
+    --cream: #f5f0e8;
+    --cream-mid: #ede8de;
+    --white: #ffffff;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --gold-pale: #f7edd5;
+    --text-dark: #0d1b2a;
+    --text-mid: #3a4a5c;
+    --text-light: #7a8a9a;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 0 48px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(13,27,42,0.92);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    transition: all 0.4s var(--ease-out);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo-mark {
+    width: 36px;
+    height: 36px;
+    background: var(--gold);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .nav-logo-text {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold-light); }
+
+  .nav-cta {
+    background: var(--gold) !important;
+    color: var(--navy) !important;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    transition: background 0.2s, transform 0.2s !important;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold-light) !important;
+    transform: translateY(-1px);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 72px;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 60px,
+        rgba(201,168,76,0.8) 60px,
+        rgba(201,168,76,0.8) 61px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 60px,
+        rgba(201,168,76,0.8) 60px,
+        rgba(201,168,76,0.8) 61px
+      );
+  }
+
+  .hero-diagonal {
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: var(--navy-mid);
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .hero-image-side {
+    position: absolute;
+    top: 72px; right: 0;
+    width: 50%;
+    height: calc(100% - 72px);
+    overflow: hidden;
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .hero-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    filter: grayscale(20%);
+  }
+
+  /* Fallback visual when image fails */
+  .hero-image-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a2e42 0%, #243b55 50%, #1a3a52 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 80px 48px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1 / 2;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.3);
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 100px;
+    width: fit-content;
+    margin-bottom: 32px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s var(--ease-out) 0.2s forwards;
+  }
+
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 5.5vw, 80px);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 12px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.9s var(--ease-out) 0.35s forwards;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+    max-width: 420px;
+    margin-bottom: 48px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.9s var(--ease-out) 0.5s forwards;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.9s var(--ease-out) 0.65s forwards;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s var(--ease-out);
+    letter-spacing: 0.02em;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(201,168,76,0.3);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+
+  .btn-ghost:hover {
+    border-color: rgba(255,255,255,0.35);
+    color: var(--white);
+  }
+
+  .hero-stats {
+    margin-top: 64px;
+    display: flex;
+    gap: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.9s var(--ease-out) 0.8s forwards;
+  }
+
+  .stat {
+    border-left: 2px solid rgba(201,168,76,0.4);
+    padding-left: 16px;
+  }
+
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+  }
+
+  /* Decorative visual in hero right side */
+  .hero-visual-cards {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 0;
+    animation: fadeUp 1s var(--ease-out) 1s forwards;
+  }
+
+  .float-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+  }
+
+  .float-card-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(201,168,76,0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .float-card-text strong {
+    display: block;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .float-card-text span {
+    color: rgba(255,255,255,0.45);
+    font-size: 11px;
+  }
+
+  /* ── TICKER ── */
+  .ticker {
+    background: var(--gold);
+    overflow: hidden;
+    padding: 14px 0;
+    white-space: nowrap;
+  }
+
+  .ticker-track {
+    display: inline-flex;
+    gap: 60px;
+    animation: ticker 30s linear infinite;
+  }
+
+  .ticker-item {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--navy);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ticker-dot {
+    width: 4px; height: 4px;
+    background: var(--navy);
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── SERVICES ── */
+  .services {
+    padding: 120px 80px;
+    background: var(--cream);
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text-dark);
+    max-width: 520px;
+    margin-bottom: 64px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--navy-light);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+
+  .service-card {
+    background: var(--white);
+    padding: 48px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s var(--ease-out);
+    cursor: pointer;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s var(--ease-out);
+  }
+
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px rgba(13,27,42,0.1); }
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-number {
+    font-family: var(--serif);
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--cream-mid);
+    line-height: 1;
+    margin-bottom: 24px;
+    transition: color 0.3s;
+  }
+
+  .service-card:hover .service-number { color: var(--gold-pale); }
+
+  .service-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .service-name {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+  }
+
+  .service-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .service-price {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  .service-price-from {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .service-price-amount {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .service-price-unit {
+    font-size: 12px;
+    color: var(--text-light);
+  }
+
+  .service-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 24px;
+    transition: gap 0.2s;
+  }
+
+  .service-link:hover { gap: 10px; }
+
+  /* ── PROCESS ── */
+  .process {
+    background: var(--navy);
+    padding: 120px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .process .section-label { color: var(--gold); }
+  .process .section-title { color: var(--white); }
+  .process .section-title em { color: rgba(255,255,255,0.4); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+    margin-top: 64px;
+  }
+
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: rgba(201,168,76,0.2);
+  }
+
+  .process-step {
+    padding: 0 32px;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  }
+
+  .process-step.visible { opacity: 1; transform: translateY(0); }
+
+  .step-num {
+    width: 64px; height: 64px;
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 0 auto 28px;
+    position: relative;
+    z-index: 1;
+    background: var(--navy);
+  }
+
+  .step-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+  }
+
+  /* ── TRUST STRIP ── */
+  .trust {
+    background: var(--navy-mid);
+    padding: 48px 80px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    border-top: 1px solid rgba(201,168,76,0.1);
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+    overflow: hidden;
+  }
+
+  .trust-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .trust-logos {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    flex: 1;
+  }
+
+  .trust-logo {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+    white-space: nowrap;
+    cursor: default;
+  }
+
+  .trust-logo:hover { color: rgba(255,255,255,0.6); }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    padding: 120px 80px;
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .testimonial-left .section-title { margin-bottom: 32px; }
+
+  .rating-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .stars {
+    display: flex;
+    gap: 3px;
+  }
+
+  .star {
+    width: 18px; height: 18px;
+    color: var(--gold);
+    font-size: 18px;
+  }
+
+  .rating-text {
+    font-size: 14px;
+    color: var(--text-mid);
+  }
+
+  .rating-text strong { color: var(--text-dark); font-weight: 500; }
+
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tcard {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 28px;
+    position: relative;
+    border: 1px solid var(--cream-mid);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out), box-shadow 0.3s;
+  }
+
+  .tcard.visible { opacity: 1; transform: translateX(0); }
+  .tcard:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(13,27,42,0.08); }
+
+  .tcard-quote {
+    font-size: 28px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 12px;
+    font-family: var(--serif);
+  }
+
+  .tcard-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .tcard-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tcard-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    background: var(--gold-pale);
+    flex-shrink: 0;
+  }
+
+  .tcard-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+
+  .tcard-role {
+    font-size: 12px;
+    color: var(--text-light);
+  }
+
+  .tcard-stars {
+    position: absolute;
+    top: 24px; right: 24px;
+    display: flex;
+    gap: 2px;
+    font-size: 12px;
+    color: var(--gold);
+  }
+
+  /* ── PRICING ── */
+  .pricing {
+    background: var(--white);
+    padding: 120px 80px;
+  }
+
+  .pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 64px;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+
+  .price-card {
+    background: var(--cream);
+    padding: 48px 40px;
+    position: relative;
+    transition: all 0.3s var(--ease-out);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  }
+
+  .price-card.visible { opacity: 1; transform: translateY(0); }
+  .price-card.featured { background: var(--navy); }
+
+  .price-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+
+  .price-type {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+  }
+
+  .price-card.featured .price-type { color: var(--white); }
+
+  .price-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  .price-card.featured .price-desc { color: rgba(255,255,255,0.45); }
+
+  .price-amount {
+    margin-bottom: 32px;
+  }
+
+  .price-from { font-size: 12px; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; }
+  .price-card.featured .price-from { color: rgba(255,255,255,0.4); }
+
+  .price-num {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .price-card.featured .price-num { color: var(--gold); }
+
+  .price-unit { font-size: 14px; color: var(--text-light); }
+  .price-card.featured .price-unit { color: rgba(255,255,255,0.4); }
+
+  .price-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .price-features li {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-mid);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+  }
+
+  .price-card.featured .price-features li { color: rgba(255,255,255,0.65); }
+
+  .price-features li::before {
+    content: '✓';
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .btn-price {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1.5px solid var(--navy);
+    background: transparent;
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: all 0.25s;
+  }
+
+  .btn-price:hover { background: var(--navy); color: var(--white); }
+  .price-card.featured .btn-price { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+  .price-card.featured .btn-price:hover { background: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── BOOKING CTA ── */
+  .booking-cta {
+    background: var(--navy);
+    padding: 100px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .booking-cta::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 65%);
+    border-radius: 50%;
+  }
+
+  .booking-cta .section-title { color: var(--white); margin-bottom: 20px; }
+  .booking-cta .section-title em { color: var(--gold-light); }
+
+  .booking-text {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+
+  .booking-form {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .form-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 8px;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+
+  .form-group input::placeholder { color: rgba(255,255,255,0.25); }
+  .form-group input:focus,
+  .form-group select:focus { border-color: rgba(201,168,76,0.5); }
+
+  .form-group select option { background: var(--navy); color: var(--white); }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .form-submit {
+    width: 100%;
+    padding: 16px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.25s;
+    letter-spacing: 0.04em;
+  }
+
+  .form-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  .form-note {
+    text-align: center;
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+    margin-top: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #080f18;
+    padding: 64px 80px 40px;
+    border-top: 1px solid rgba(201,168,76,0.1);
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.7;
+    margin-top: 16px;
+    max-width: 280px;
+  }
+
+  .footer-col h4 {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 16px;
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-col ul li a:hover { color: var(--gold-light); }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.04em;
+  }
+
+  .footer-phone {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-phone:hover { color: var(--gold-light); }
+
+  /* ── STICKY CTA BAR ── */
+  .sticky-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    z-index: 200;
+    background: var(--navy);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 100px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+    transition: transform 0.5s var(--ease-out), opacity 0.5s;
+    opacity: 0;
+    white-space: nowrap;
+  }
+
+  .sticky-bar.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  .sticky-bar-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .sticky-bar-text strong { color: var(--white); font-weight: 500; }
+
+  .sticky-bar-btn {
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 100px;
+    padding: 10px 24px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .sticky-bar-btn:hover { background: var(--gold-light); }
+
+  .sticky-bar-phone {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 100px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: border-color 0.2s;
+  }
+
+  .sticky-bar-phone:hover { border-color: rgba(255,255,255,0.3); color: var(--white); }
+
+  /* ── KEYFRAMES ── */
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; padding-top: 72px; }
+    .hero-content { padding: 60px 24px; }
+    .hero-image-side { display: none; }
+    .hero-visual-cards { display: none; }
+    .hero-stats { gap: 24px; }
+    .services, .process, .pricing, .booking-cta, footer { padding-left: 24px; padding-right: 24px; }
+    .services-grid, .pricing-grid { grid-template-columns: 1fr; gap: 2px; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .process-steps::before { display: none; }
+    .testimonials { grid-template-columns: 1fr; gap: 40px; }
+    .booking-cta { grid-template-columns: 1fr; gap: 40px; }
+    .trust { padding: 32px 24px; gap: 24px; flex-wrap: wrap; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .pricing-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">CD</div>
+    <span class="nav-logo-text">Cleaning Duties</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Servicii</a></li>
+    <li><a href="#process">Proces</a></li>
+    <li><a href="#pricing">Prețuri</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Programare Online</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-diagonal"></div>
+  <div class="hero-image-side">
+    <div class="hero-image-fallback">
+      <!-- Decorative SVG stands in for a real photo -->
+      <svg width="320" height="320" viewBox="0 0 320 320" fill="none" opacity="0.15">
+        <circle cx="160" cy="160" r="120" stroke="#c9a84c" stroke-width="1"/>
+        <circle cx="160" cy="160" r="80" stroke="#c9a84c" stroke-width="1"/>
+        <circle cx="160" cy="160" r="40" stroke="#c9a84c" stroke-width="1"/>
+        <line x1="40" y1="160" x2="280" y2="160" stroke="#c9a84c" stroke-width="0.5"/>
+        <line x1="160" y1="40" x2="160" y2="280" stroke="#c9a84c" stroke-width="0.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Din 2015 · 1.300+ Clienți Mulțumiți</div>
+
+    <h1 class="hero-title">
+      Casa Ta,<br>
+      <em>Impecabilă</em><br>
+      în 24 de Ore
+    </h1>
+
+    <p class="hero-subtitle">
+      Echipe profesioniste, produse premium și rezultate garantate. Lasă curățenia pe mâini experte și câștigă timp pentru ce contează cu adevărat.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Programare Gratuită
+      </a>
+      <a href="#pricing" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Vezi Tarife
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" id="counter-clients">0</div>
+        <div class="stat-label">Clienți activi</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">11+</div>
+        <div class="stat-label">Ani experiență</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Satisfacție garantată</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating info cards -->
+  <div class="hero-visual-cards">
+    <div class="float-card">
+      <div class="float-card-icon">✓</div>
+      <div class="float-card-text">
+        <strong>Evaluare Gratuită</strong>
+        <span>Fără obligație de achiziție</span>
+      </div>
+    </div>
+    <div class="float-card">
+      <div class="float-card-icon">🌿</div>
+      <div class="float-card-text">
+        <strong>Produse Eco-Friendly</strong>
+        <span>Certificate și sigure pentru familie</span>
+      </div>
+    </div>
+    <div class="float-card">
+      <div class="float-card-icon">🛡</div>
+      <div class="float-card-text">
+        <strong>Asigurare Completă</strong>
+        <span>Acoperire totală la fiecare intervenție</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-item">Curățenie Rezidențială <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Birouri & Spații Comerciale <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Curățenie După Constructor <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Personal Verificat & Instruit <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Produse Premium Eco <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Satisfacție 100% Garantată <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Curățenie Rezidențială <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Birouri & Spații Comerciale <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Curățenie După Constructor <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Personal Verificat & Instruit <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Produse Premium Eco <span class="ticker-dot"></span></div>
+    <div class="ticker-item">Satisfacție 100% Garantată <span class="ticker-dot"></span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-label">Serviciile Noastre</div>
+  <h2 class="section-title reveal">Curățenie <em>adaptată</em><br>perfect spațiului tău</h2>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-number">01</div>
+      <div class="service-icon">🏠</div>
+      <div class="service-name">Curățenie Rezidențială</div>
+      <p class="service-desc">Revino acasă la un spațiu perfect curat. De la dormitoare la bucătărie, fiecare cameră strălucește impecabil. Echipă discretă, punctuală.</p>
+      <div class="service-price">
+        <span class="service-price-from">de la</span>
+        <span class="service-price-amount">350</span>
+        <span class="service-price-unit"> RON</span>
+      </div>
+      <a href="#pricing" class="service-link">
+        Detalii
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-number">02</div>
+      <div class="service-icon">🏢</div>
+      <div class="service-name">Curățenie Birouri</div>
+      <p class="service-desc">Echipa ta merită un birou impecabil. Intervenim seara sau în weekend, fără să întrerupem activitatea zilnică. Contract flexibil.</p>
+      <div class="service-price">
+        <span class="service-price-from">de la</span>
+        <span class="service-price-amount">5</span>
+        <span class="service-price-unit"> RON/mp/zi</span>
+      </div>
+      <a href="#pricing" class="service-link">
+        Detalii
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-number">03</div>
+      <div class="service-icon">🔨</div>
+      <div class="service-name">După Constructor</div>
+      <p class="service-desc">Transformăm praful de șantier într-un spațiu gata de mutat. Echipament industrial, soluții profesionale. Totul dispare în 24–48h.</p>
+      <div class="service-price">
+        <span class="service-price-from">de la</span>
+        <span class="service-price-amount">700</span>
+        <span class="service-price-unit"> RON</span>
+      </div>
+      <a href="#pricing" class="service-link">
+        Detalii
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST LOGOS -->
+<div class="trust">
+  <span class="trust-label">Companii partenere</span>
+  <div class="trust-logos">
+    <span class="trust-logo">STARBUCKS</span>
+    <span class="trust-logo">HARD ROCK</span>
+    <span class="trust-logo">AGRICOVER</span>
+    <span class="trust-logo">ALL BEAUTY</span>
+    <span class="trust-logo">BULROM</span>
+    <span class="trust-logo">CENTRELE IDEAL</span>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="section-label">Cum Funcționează</div>
+  <h2 class="section-title reveal">De la programare la <em>rezultat</em><br>în 4 pași simpli</h2>
+
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Sună sau Programează</div>
+      <p class="step-desc">Evaluare gratuită la tine acasă sau online în 5 minute. Stabilim data și ora potrivită.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Primești Oferta</div>
+      <p class="step-desc">Tarif fix, fără surprize. Știi exact cât plătești înainte să începem lucrul.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Relaxează-te</div>
+      <p class="step-desc">Echipa ajunge punctual cu tot echipamentul necesar. Rămâi acasă sau pleci liniștit.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Verifică și Plătește</div>
+      <p class="step-desc">Inspectezi rezultatul. Dacă ceva nu e perfect, reglăm pe loc. Plătești când ești mulțumit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="testimonial-left">
+    <div class="section-label">Recenzii Clienți</div>
+    <h2 class="section-title reveal">Ce spun<br>clienții <em>noștri</em></h2>
+    <div class="rating-bar">
+      <div class="stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <span class="rating-text"><strong>4.9/5</strong> — 230+ recenzii verificate</span>
+    </div>
+    <p style="font-size:14px;font-weight:300;color:var(--text-mid);line-height:1.7;max-width:360px;">
+      Din 2015, servim peste 1.300 de case și birouri din București. Fiecare client contează — de aceea oferim garanție 100% satisfacție la fiecare intervenție.
+    </p>
+  </div>
+
+  <div class="testimonial-cards">
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <div class="tcard-quote">"</div>
+      <p class="tcard-text">Am comandat curățenia după constructor pentru apartamentul nou. Am fost impresionați de atenția la detalii — până și urmele de adeziv de pe geamuri au dispărut complet.</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar">VC</div>
+        <div>
+          <div class="tcard-name">Valentina Crețu</div>
+          <div class="tcard-role">Proprietar, Sector 2 București</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tcard" style="transition-delay:0.15s">
+      <div class="tcard-stars">★★★★★</div>
+      <div class="tcard-quote">"</div>
+      <p class="tcard-text">Colaborăm cu Cleaning Duties de 2 ani pentru curățenia zilnică a biroului nostru. Profesioniști, discreți, de încredere. Nu am schimbat și nu vom schimba.</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar">AM</div>
+        <div>
+          <div class="tcard-name">Alexandru Moldovan</div>
+          <div class="tcard-role">Director General, Sector 1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tcard" style="transition-delay:0.3s">
+      <div class="tcard-stars">★★★★★</div>
+      <div class="tcard-quote">"</div>
+      <p class="tcard-text">Cel mai rapid răspuns, cel mai corect tarif și cel mai curat rezultat. I-am recomandat deja tuturor prietenilor care renovează.</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar">IP</div>
+        <div>
+          <div class="tcard-name">Ioana Popescu</div>
+          <div class="tcard-role">Rezident, Pipera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="pricing-header">
+    <div>
+      <div class="section-label">Prețuri Transparente</div>
+      <h2 class="section-title reveal" style="margin-bottom:0">Tarife <em>corecte</em>,<br>fără surprize</h2>
+    </div>
+    <p style="font-size:14px;font-weight:300;color:var(--text-mid);max-width:280px;line-height:1.7;">
+      Evaluare gratuită la fața locului. Deplasare gratuită. Plătești doar când ești 100% mulțumit.
+    </p>
+  </div>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-type">Întreținere Rezidențială</div>
+      <p class="price-desc">Curățenie periodică pentru apartamente și case. Tarif fix per sesiune.</p>
+      <div class="price-amount">
+        <div class="price-from">de la</div>
+        <span class="price-num">350</span>
+        <span class="price-unit"> RON/sesiune</span>
+      </div>
+      <ul class="price-features">
+        <li>Garsonieră — 350 RON</li>
+        <li>Apartament 2 camere — 500 RON</li>
+        <li>Apartament 3 camere — 550 RON</li>
+        <li>Apartament 4 camere — 800 RON</li>
+        <li>Casă / Vilă — de la 1.000 RON</li>
+      </ul>
+      <button class="btn-price" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Solicită Ofertă</button>
+    </div>
+
+    <div class="price-card featured">
+      <div class="price-badge">⭐ Cel Mai Popular</div>
+      <div class="price-type">După Constructor</div>
+      <p class="price-desc">Curățenie post-renovare cu echipament industrial. Rezultat garantat în 24–48h.</p>
+      <div class="price-amount">
+        <div class="price-from">de la</div>
+        <span class="price-num" style="color:var(--gold)">700</span>
+        <span class="price-unit"> RON</span>
+      </div>
+      <ul class="price-features">
+        <li>Garsonieră — de la 700 RON</li>
+        <li>Apartament 2 camere — 800 RON</li>
+        <li>Apartament 3 camere — 1.000 RON</li>
+        <li>Apartament 4 camere — 1.300 RON</li>
+        <li>Casă / Vilă — de la 1.500 RON</li>
+      </ul>
+      <button class="btn-price" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rezervă Acum</button>
+    </div>
+
+    <div class="price-card">
+      <div class="price-type">Birouri & Spații Comerciale</div>
+      <p class="price-desc">Contract flexibil: zilnic, săptămânal sau lunar. Fără întreruperea activității.</p>
+      <div class="price-amount">
+        <div class="price-from">de la</div>
+        <span class="price-num">5</span>
+        <span class="price-unit"> RON/mp/zi</span>
+      </div>
+      <ul class="price-features">
+        <li>Curățenie zilnică — 5 RON/mp</li>
+        <li>Curățenie săptămânală — 7 RON/mp</li>
+        <li>Curățenie generală — 10 RON/mp</li>
+        <li>Curățenie cu probiotice — 12 RON/mp</li>
+        <li>Deplasare gratuită</li>
+      </ul>
+      <button class="btn-price" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Solicită Ofertă</button>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<section class="booking-cta" id="contact">
+  <div>
+    <div class="section-label" style="color:var(--gold)">Programare Online</div>
+    <h2 class="section-title reveal">Programează-te<br>acum — <em>gratuit</em></h2>
+    <p class="booking-text">Completează formularul și te contactăm în maxim 2 ore pentru confirmare și evaluare gratuită. Fără obligații, fără surprize.</p>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:8px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:40px;height:40px;background:rgba(201,168,76,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📞</div>
+        <div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2px;">Apel direct</div>
+          <a href="tel:0731351599" style="font-family:var(--serif);font-size:22px;font-weight:700;color:var(--gold);text-decoration:none;">0731 351 599</a>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:40px;height:40px;background:rgba(201,168,76,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">✉</div>
+        <div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2px;">Email</div>
+          <a href="mailto:office@cleaningduties.ro" style="font-size:15px;color:rgba(255,255,255,0.7);text-decoration:none;">office@cleaningduties.ro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="booking-form">
+    <div class="form-title">Solicită Evaluare Gratuită</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Prenume</label>
+        <input type="text" placeholder="Ion">
+      </div>
+      <div class="form-group">
+        <label>Telefon</label>
+        <input type="tel" placeholder="07xx xxx xxx">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Tip Serviciu</label>
+      <select>
+        <option value="">Alege serviciul...</option>
+        <option>Curățenie Rezidențială</option>
+        <option>Curățenie Birouri</option>
+        <option>Curățenie După Constructor</option>
+        <option>Curățenie Covoare & Textile</option>
+        <option>Altele</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Tip Locuință</label>
+        <select>
+          <option value="">Selectează...</option>
+          <option>Garsonieră</option>
+          <option>Apartament 2 camere</option>
+          <option>Apartament 3 camere</option>
+          <option>Apartament 4 camere</option>
+          <option>Casă / Vilă</option>
+          <option>Spațiu comercial</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Data Preferată</label>
+        <input type="date">
+      </div>
+    </div>
+    <button class="form-submit" onclick="handleSubmit(this)">
+      Trimite Solicitarea →
+    </button>
+    <p class="form-note">Îți răspundem în maxim 2 ore · Evaluare gratuită</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="display:inline-flex">
+        <div class="nav-logo-mark">CD</div>
+        <span class="nav-logo-text">Cleaning Duties</span>
+      </a>
+      <p>Din 2015, ajutăm peste 1.300 de case și birouri din București să rămână impecabile. Echipe profesioniste, produse premium, rezultate garantate.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Servicii</h4>
+      <ul>
+        <li><a href="#services">Curățenie Rezidențială</a></li>
+        <li><a href="#services">Curățenie Birouri</a></li>
+        <li><a href="#services">După Constructor</a></li>
+        <li><a href="#pricing">Covoare & Textile</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Companie</h4>
+      <ul>
+        <li><a href="#">Despre Noi</a></li>
+        <li><a href="#">Parteneri</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Termeni & Condiții</a></li>
+        <li><a href="#">Politica Cookie</a></li>
+        <li><a href="#">GDPR</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Cleaning Duties · București, România</span>
+    <a href="tel:0731351599" class="footer-phone">0731 351 599</a>
+  </div>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <span class="sticky-bar-text"><strong>Primul termen disponibil:</strong> Marți, 1 Aprilie</span>
+  <button class="sticky-bar-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Rezervă Acum</button>
+  <a href="tel:0731351599" class="sticky-bar-phone">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16.5v.42z"/></svg>
+    Sună Acum
+  </a>
+</div>
+
+<script>
+  // Counter animation
+  function animateCounter(el, target, suffix) {
+    const duration = 2000;
+    const start = performance.now();
+    function update(now) {
+      const elapsed = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - elapsed, 4);
+      el.textContent = Math.round(ease * target) + (suffix || '');
+      if (elapsed < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  // Intersection Observer for scroll reveals
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        if (entry.target.id === 'counter-clients') {
+          animateCounter(entry.target, 1300, '+');
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .process-step, .tcard, .price-card, #counter-clients').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Process steps staggered delay
+  document.querySelectorAll('.process-step').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.12) + 's';
+  });
+
+  // Sticky bar
+  const stickyBar = document.getElementById('stickyBar');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y > 600) {
+      stickyBar.classList.add('visible');
+    } else {
+      stickyBar.classList.remove('visible');
+    }
+    lastScroll = y;
+  }, { passive: true });
+
+  // Form submit
+  function handleSubmit(btn) {
+    btn.textContent = '✓ Solicitare trimisă — te contactăm în 2 ore!';
+    btn.style.background = '#27500a';
+    btn.style.color = '#C0DD97';
+    btn.disabled = true;
+  }
+
+  // Duplicate ticker for seamless loop
+  const track = document.querySelector('.ticker-track');
+  track.innerHTML += track.innerHTML;
+</script>
+</body>
+</html>

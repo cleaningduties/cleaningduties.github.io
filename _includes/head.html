@@ -2,6 +2,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:image" content="https://www.cleaningduties.ro/-res/images/special.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:image" content="https://www.cleaningduties.ro/-res/images/special.jpg">
 
     <!-- Global Cookie Helpers -->
     <script>
@@ -47,10 +62,17 @@
                         },
                         'surface-card': '#27272a',
                         'accent-lime': '#d9f99d',
+                        'premium-gold': '#c9a84c',
+                        'premium-gold-light': '#e8c97a',
+                        'premium-charcoal': '#121212',
+                        'premium-olive': '#1b1f15',
+                        'premium-navy': '#0a1622',
                     },
                     fontFamily: {
-                        heading: ['Poppins', 'sans-serif'],
-                        body: ['Open Sans', 'sans-serif'],
+                        // heading: ['Poppins', 'sans-serif'],
+                        // body: ['Open Sans', 'sans-serif'],
+                        heading: ['Playfair Display, Georgia', 'serif'],
+                        body: ['DM Sans, system-ui', 'sans-serif'],
                     },
                     animation: {
                         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
